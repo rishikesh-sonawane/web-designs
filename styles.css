@@ -110,7 +110,7 @@ h1, h2, h3, .serif { font-family: var(--serif); font-weight: 500; line-height: 1
 /* ---------- Navigation ---------- */
 .site-nav {
   position: fixed; inset: 0 0 auto 0; z-index: 9999;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: var(--bg);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -569,6 +569,9 @@ html { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
 .noise-overlay {
   position: fixed; inset: 0; z-index: 9998; pointer-events: none;
   opacity: 0.03; mix-blend-mode: overlay;
+}
+@media (max-width: 860px) {
+  .noise-overlay { display: none; }
 }
 
 /* ---------- Page loader ---------- */
