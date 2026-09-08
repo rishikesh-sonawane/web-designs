@@ -8,3 +8,5 @@ Design_Portfolio/
 tools/
 .vercel
 .env*
+.DS_Store
+.opencode/
