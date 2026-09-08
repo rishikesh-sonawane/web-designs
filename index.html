@@ -3,145 +3,436 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Design Work — Rishikesh Sonawane</title>
-<meta name="description" content="Five concept projects by Rishikesh Sonawane: OCHRE, KEEL, ATELIER &amp; CO, LUMEN and LAYER. Each explores a different design language and interaction system.">
-<style>
-  :root {
-    --bg: #F6F3EE;
-    --ink: #1C1917;
-    --muted: #6B6258;
-    --line: #E3DDD2;
-    --accent: #A85D3F;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-
-  header.site-head { padding: 64px 0 40px; }
-  .kicker {
-    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--accent); font-weight: 600; margin-bottom: 16px;
-  }
-  h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: 500; font-size: clamp(34px, 6vw, 64px);
-    line-height: 1.05; letter-spacing: -0.01em;
-  }
-  .lede {
-    margin-top: 20px; max-width: 560px; color: var(--muted);
-    font-size: 17px;
-  }
-
-  .count { display: block; font-size: 12px; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 8px; }
-
-  ul.projects { list-style: none; margin: 40px 0 0; border-top: 1px solid var(--line); }
-  ul.projects li { border-bottom: 1px solid var(--line); }
-  ul.projects a {
-    display: grid; grid-template-columns: 72px 1fr auto;
-    gap: 20px; align-items: baseline;
-    padding: 28px 4px; text-decoration: none; color: inherit;
-    transition: padding 0.25s ease, background 0.25s ease;
-  }
-  ul.projects a:hover { padding-left: 12px; background: #F0EAE0; }
-  .no { font-size: 13px; letter-spacing: 0.14em; color: var(--accent); font-variant-numeric: tabular-nums; }
-  .proj-name { font-family: Georgia, "Times New Roman", serif; font-size: clamp(22px, 3.4vw, 34px); font-weight: 500; }
-  .proj-meta { display: block; font-size: 14px; color: var(--muted); margin-top: 4px; }
-  .arrow { font-size: 18px; color: var(--accent); align-self: center; transform: translateX(0); transition: transform 0.25s ease; }
-  ul.projects a:hover .arrow { transform: translateX(6px); }
-
-  footer.site-foot { padding: 56px 0 72px; color: var(--muted); font-size: 14px; }
-  footer.site-foot a { color: var(--accent); text-decoration: none; }
-  footer.site-foot a:hover { text-decoration: underline; }
-
-  @media (max-width: 640px) {
-    ul.projects a { grid-template-columns: 44px 1fr; gap: 12px; }
-    .arrow { display: none; }
-    header.site-head { padding: 40px 0 24px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    ul.projects a, .arrow { transition: none; }
-  }
-</style>
+<title>Rishikesh Sonawane — Web Designer &amp; Developer</title>
+<meta name="description" content="I design and build premium websites for businesses — business websites, landing pages, and redesigns. Five concept projects, five distinct design languages.">
+<link rel="canonical" href="https://rishikesh-sonawane.github.io/web-designs/">
+<meta property="og:title" content="Rishikesh Sonawane — Web Designer &amp; Developer">
+<meta property="og:description" content="I design and build premium websites for businesses. Business websites, landing pages, and redesigns.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rishikesh-sonawane.github.io/web-designs/">
+<meta property="og:image" content="https://rishikesh-sonawane.github.io/web-designs/assets/img/ochre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F4EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F7F4EF' stroke='%231F1B16' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23A4592F' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rishikesh Sonawane",
+  "jobTitle": "Web Designer & Developer",
+  "description": "Independent web designer and developer building premium websites for businesses.",
+  "knowsAbout": ["Web Design", "Frontend Development", "Responsive Design", "Design Systems"]
+}
+</script>
 </head>
 <body>
-  <header class="site-head">
-    <div class="wrap">
-      <p class="kicker">Selected work · Concept projects</p>
-      <h1>Five projects.<br>Five design languages.</h1>
-      <p class="lede">A collection of concept projects by Rishikesh Sonawane, each exploring a different visual and interaction system — from handcrafted editorial to systematic interface design.</p>
-    </div>
-  </header>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-  <main>
-    <div class="wrap">
-      <ul class="projects">
-        <li>
-          <a href="./Bohemian/">
-            <span class="no">01</span>
-            <span>
-              <span class="proj-name">OCHRE</span>
-              <span class="proj-meta">Bohemian editorial · Natural dye &amp; handloom brand</span>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </li>
-        <li>
-          <a href="./Bento-Grid/">
-            <span class="no">02</span>
-            <span>
-              <span class="proj-name">KEEL</span>
-              <span class="proj-meta">Bento grid · Deployment control plane</span>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </li>
-        <li>
-          <a href="./Skeuo/">
-            <span class="no">03</span>
-            <span>
-              <span class="proj-name">ATELIER &amp; CO</span>
-              <span class="proj-meta">Skeuomorphic · Tactile luxury materials</span>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </li>
-        <li>
-          <a href="./DarkMode-UI/">
-            <span class="no">04</span>
-            <span>
-              <span class="proj-name">LUMEN</span>
-              <span class="proj-meta">Premium dark UI · Analytics product</span>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </li>
-        <li>
-          <a href="./Material-Design/">
-            <span class="no">05</span>
-            <span>
-              <span class="proj-name">LAYER</span>
-              <span class="proj-meta">Material Design 3 · Component library</span>
-            </span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </a>
-        </li>
+<header class="site-nav">
+  <div class="site-nav__inner">
+    <a class="brand" href="#top">Rishikesh Sonawane</a>
+    <nav aria-label="Primary">
+      <ul class="site-nav__links" id="navLinks">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
+    <div class="site-nav__cta">
+      <a class="btn btn--solid" href="#contact" style="padding:10px 20px">Start a project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </main>
+  </div>
+</header>
 
-  <footer class="site-foot">
+<main id="main">
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
     <div class="wrap">
-      <p>Designed &amp; developed by Rishikesh Sonawane. All projects are concept work.</p>
-      <p style="margin-top:6px"><a href="https://github.com/rishikesh-sonawane">GitHub</a></p>
+      <div class="hero__inner">
+        <div data-reveal>
+          <p class="kicker">Designer &amp; Developer</p>
+          <h1>I design &amp; build <em>websites</em> for businesses.</h1>
+          <p class="lede hero__lede">Premium websites, landing pages, and redesigns — designed around your brand, audience, and goals, and built to load fast, work reliably, and convert.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#work">View my work <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn--outline" href="#contact">Start a project</a>
+          </div>
+          <div class="hero__meta">
+            <span><b>Five projects</b> · five design languages</span>
+            <span><b>Three services</b> · one clear offer</span>
+            <span><b>Design-led</b> · engineering-minded</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- ================= SELECTED WORK ================= -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section__head section__head--split" data-reveal>
+        <div>
+          <span class="section__no">(01)</span>
+          <h2 id="work-title" class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">Selected work</h2>
+        </div>
+        <p class="section__sub">Five projects exploring different approaches to digital design, interaction, and frontend development. Each is a concept project — designed and built from scratch, with no frameworks and no templates.</p>
+      </div>
+
+      <!-- 01 OCHRE -->
+      <article class="work-item work-item--full" data-reveal>
+        <div class="work-item__media">
+          <span class="work-item__tag">Concept project</span>
+          <img src="assets/img/ochre.jpg" alt="OCHRE website — warm Mediterranean natural-dye brand with arch motifs and terracotta tones" width="1440" height="1003" loading="lazy">
+        </div>
+        <div class="work-item__body">
+          <div class="work-item__row">
+            <span class="work-item__num">01 — OCHRE</span>
+            <span class="work-item__cat">Brand Website / Editorial Experience</span>
+          </div>
+          <h3 class="work-item__title">A handcrafted digital experience for a Mediterranean natural-dye house.</h3>
+          <p class="work-item__desc">Editorial storytelling with arch motifs, linen textures, and canvas-drawn dye plates — including an interactive dye-bath selector that dyes the cloth live.</p>
+          <div class="work-item__tags">
+            <span class="chip">Bohemian editorial</span>
+            <span class="chip">Canvas art</span>
+            <span class="chip">Dye-bath interaction</span>
+          </div>
+          <div class="work-item__links">
+            <a class="text-link" href="work/ochre/">Case study <span class="arr" aria-hidden="true">→</span></a>
+            <a class="text-link" href="Bohemian/" target="_blank" rel="noopener">View live site <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 KEEL -->
+      <article class="work-item work-item--split" data-reveal>
+        <div class="work-item__media">
+          <span class="work-item__tag">Concept project</span>
+          <img src="assets/img/keel.jpg" alt="KEEL website — modular bento-grid deployment control plane with live telemetry" width="1440" height="424" loading="lazy">
+        </div>
+        <div class="work-item__body">
+          <div class="work-item__row">
+            <span class="work-item__num">02 — KEEL</span>
+            <span class="work-item__cat">Technology Website / Product Experience</span>
+          </div>
+          <h3 class="work-item__title">A calm control room for shipping software.</h3>
+          <p class="work-item__desc">A bento-grid product page with a live control room: deploy stages, an SLO error-budget gauge, a service map, and a p95 telemetry chart — all drawn in real time.</p>
+          <div class="work-item__tags">
+            <span class="chip">Bento grid</span>
+            <span class="chip">Live data viz</span>
+            <span class="chip">Paper &amp; ink</span>
+          </div>
+          <div class="work-item__links">
+            <a class="text-link" href="work/keel/">Case study <span class="arr" aria-hidden="true">→</span></a>
+            <a class="text-link" href="Bento-Grid/" target="_blank" rel="noopener">View live site <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 ATELIER -->
+      <article class="work-item work-item--split work-item--flip" data-reveal>
+        <div class="work-item__media">
+          <span class="work-item__tag">Concept project</span>
+          <img src="assets/img/atelier.jpg" alt="ATELIER &amp; CO website — skeuomorphic leather goods brand with tactile material textures" width="1440" height="833" loading="lazy">
+        </div>
+        <div class="work-item__body">
+          <div class="work-item__row">
+            <span class="work-item__num">03 — ATELIER &amp; CO</span>
+            <span class="work-item__cat">Luxury Brand Website / Interactive Experience</span>
+          </div>
+          <h3 class="work-item__title">Materials you want to touch — built entirely in CSS.</h3>
+          <p class="work-item__desc">A skeuomorphic brand experience where leather, wood, brushed metal, glass, and linen are all generated with CSS gradients. Physical buttons depress; a control panel adjusts the whole material system live.</p>
+          <div class="work-item__tags">
+            <span class="chip">Skeuomorphic</span>
+            <span class="chip">CSS textures</span>
+            <span class="chip">Live control panel</span>
+          </div>
+          <div class="work-item__links">
+            <a class="text-link" href="work/atelier/">Case study <span class="arr" aria-hidden="true">→</span></a>
+            <a class="text-link" href="Skeuo/" target="_blank" rel="noopener">View live site <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 LUMEN -->
+      <article class="work-item work-item--center" data-reveal>
+        <div class="work-item__media">
+          <span class="work-item__tag">Concept project</span>
+          <img src="assets/img/lumen.jpg" alt="LUMEN website — premium dark-mode analytics dashboard with glowing gold accents" width="1440" height="674" loading="lazy">
+        </div>
+        <div class="work-item__body">
+          <div class="work-item__row">
+            <span class="work-item__num">04 — LUMEN</span>
+            <span class="work-item__cat">SaaS Website / Analytics Experience</span>
+          </div>
+          <h3 class="work-item__title">Premium darkness for a serious analytics product.</h3>
+          <p class="work-item__desc">An ultra-premium dark interface built around the physics of emitted light — obsidian layers, warm gold accents, cursor-following glow, and a live canvas chart.</p>
+          <div class="work-item__tags">
+            <span class="chip">Premium dark UI</span>
+            <span class="chip">Cursor glow</span>
+            <span class="chip">Live chart</span>
+          </div>
+          <div class="work-item__links">
+            <a class="text-link" href="work/lumen/">Case study <span class="arr" aria-hidden="true">→</span></a>
+            <a class="text-link" href="DarkMode-UI/" target="_blank" rel="noopener">View live site <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 LAYER -->
+      <article class="work-item work-item--offset" data-reveal>
+        <div class="work-item__media">
+          <span class="work-item__tag">Concept project</span>
+          <img src="assets/img/layer.jpg" alt="LAYER website — Material Design 3 component library with systematic elevation" width="1440" height="858" loading="lazy">
+        </div>
+        <div class="work-item__body">
+          <div class="work-item__row">
+            <span class="work-item__num">05 — LAYER</span>
+            <span class="work-item__cat">Product Website / Design System Experience</span>
+          </div>
+          <h3 class="work-item__title">A component library that behaves like a real product.</h3>
+          <p class="work-item__desc">A Material Design 3 showcase with a full token system — 13 color pairs, 10 elevation levels, live chart toggling with SVG path morphs, and an interactive control panel.</p>
+          <div class="work-item__tags">
+            <span class="chip">Material Design 3</span>
+            <span class="chip">Design tokens</span>
+            <span class="chip">Component system</span>
+          </div>
+          <div class="work-item__links">
+            <a class="text-link" href="work/layer/">Case study <span class="arr" aria-hidden="true">→</span></a>
+            <a class="text-link" href="Material-Design/" target="_blank" rel="noopener">View live site <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section section--soft" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <div>
+          <span class="section__no">(02)</span>
+          <h2 id="services-title" class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">What I build</h2>
+        </div>
+        <p class="section__sub">Three services, each scoped to your pages, features, and goals. If you're not sure which fits, tell me what you're trying to do — that's the first conversation.</p>
+      </div>
+
+      <div class="services">
+        <article class="service" data-reveal>
+          <span class="service__num">01</span>
+          <h3 class="service__title">Business Website Design &amp; Development</h3>
+          <p class="service__desc">Custom business websites designed around your brand, audience, and goals — from structure and visual direction through responsive development and launch.</p>
+          <ul class="service__list">
+            <li class="chip">Strategy</li>
+            <li class="chip">UX/UI design</li>
+            <li class="chip">Responsive development</li>
+            <li class="chip">Forms</li>
+            <li class="chip">Basic SEO</li>
+            <li class="chip">Testing &amp; launch</li>
+          </ul>
+          <div class="service__cta"><a class="text-link" href="#contact">Discuss a project <span class="arr" aria-hidden="true">→</span></a></div>
+        </article>
+
+        <article class="service" data-reveal>
+          <span class="service__num">02</span>
+          <h3 class="service__title">Landing Page Design &amp; Development</h3>
+          <p class="service__desc">Focused landing pages designed around a specific offer, campaign, product, or conversion goal — fast to build, easy to iterate.</p>
+          <ul class="service__list">
+            <li class="chip">Messaging</li>
+            <li class="chip">Single-page design</li>
+            <li class="chip">Conversion focus</li>
+            <li class="chip">Analytics-ready</li>
+            <li class="chip">Fast loading</li>
+          </ul>
+          <div class="service__cta"><a class="text-link" href="#contact">Discuss a project <span class="arr" aria-hidden="true">→</span></a></div>
+        </article>
+
+        <article class="service" data-reveal>
+          <span class="service__num">03</span>
+          <h3 class="service__title">Website Redesign</h3>
+          <p class="service__desc">Thoughtful redesigns that modernize an existing website, improve structure and usability, and create a stronger digital presence.</p>
+          <ul class="service__list">
+            <li class="chip">Audit</li>
+            <li class="chip">Information architecture</li>
+            <li class="chip">Visual refresh</li>
+            <li class="chip">Performance cleanup</li>
+            <li class="chip">Migration</li>
+          </ul>
+          <div class="service__cta"><a class="text-link" href="#contact">Discuss a project <span class="arr" aria-hidden="true">→</span></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <div>
+          <span class="section__no">(03)</span>
+          <h2 id="process-title" class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">From idea to launch</h2>
+        </div>
+        <p class="section__sub">A simple, four-step process. No twelve-stage agency workflow — just steady progress with you in the loop.</p>
+      </div>
+
+      <ol class="process">
+        <li class="process__step" data-reveal>
+          <h3 class="process__name">Discover</h3>
+          <p class="process__desc">Understand the business, audience, goals, and requirements before anything is designed.</p>
+        </li>
+        <li class="process__step" data-reveal>
+          <h3 class="process__name">Design</h3>
+          <p class="process__desc">Define the structure, visual direction, and experience. You see it before it's built.</p>
+        </li>
+        <li class="process__step" data-reveal>
+          <h3 class="process__name">Build</h3>
+          <p class="process__desc">Develop the approved design into a fast, responsive website with clean, maintainable code.</p>
+        </li>
+        <li class="process__step" data-reveal>
+          <h3 class="process__name">Launch</h3>
+          <p class="process__desc">Test, refine, deploy, and hand over the finished website — with everything you need to keep it running.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= DESIGN + ENGINEERING ================= -->
+  <section class="section" aria-labelledby="de-title">
+    <div class="wrap">
+      <div class="band" data-reveal>
+        <div>
+          <p class="kicker">(04)</p>
+          <h2 id="de-title">Design-led. Engineering-minded.</h2>
+        </div>
+        <div>
+          <p>I combine thoughtful visual design with a software engineering background to create websites that are not only polished, but responsive, performant, and built to work reliably. Every project below was written by hand — no templates, no page builders.</p>
+          <div class="band__pills">
+            <span class="chip">Semantic HTML</span>
+            <span class="chip">Accessible by default</span>
+            <span class="chip">Fast loading</span>
+            <span class="chip">Dependency-free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section section--soft" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about">
+        <div class="about__photo" data-reveal>
+          <img src="assets/img/rishi.png" alt="Portrait of Rishikesh Sonawane" width="572" height="562" loading="lazy">
+        </div>
+        <div class="about__body" data-reveal>
+          <div>
+            <span class="section__no">(05)</span>
+            <h2 id="about-title" class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">About</h2>
+          </div>
+          <p>I'm Rishikesh, a designer and developer with a software engineering background. I enjoy turning ideas into thoughtful digital experiences — combining visual design with the technical discipline needed to build them properly.</p>
+          <p>I work directly with business owners and teams to build websites that look premium, load fast, and are genuinely easy to maintain. The five projects on this page show the range: I don't have one visual style — I adapt the experience to the character of the business.</p>
+          <p class="about__sig">— Rishikesh Sonawane</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact">
+        <div class="contact__left" data-reveal>
+          <div>
+            <span class="section__no">(06)</span>
+            <h2 id="contact-title" class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">Have a project in mind?</h2>
+          </div>
+          <p class="lede">Tell me a little about what you're building, redesigning, or trying to improve. I'll reply personally, usually within a day.</p>
+          <div class="contact__direct">
+            <span class="muted" style="font-size:var(--text-sm)">Or email me directly:</span>
+            <a href="mailto:rishikeshsonawane1465@gmail.com">rishikeshsonawane1465@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" data-reveal novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-company">Company / business <span class="muted">(optional)</span></label>
+              <input type="text" id="f-company" name="company" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-type">Project type</label>
+              <select id="f-type" name="type">
+                <option value="Business Website">Business Website</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Website Redesign">Website Redesign</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-message">Project description</label>
+            <textarea id="f-message" name="message" placeholder="What are you building, and what does success look like?" required></textarea>
+          </div>
+          <div class="field">
+            <label for="f-budget">Budget range <span class="muted">(optional)</span></label>
+            <select id="f-budget" name="budget">
+              <option value="Under $500">Under $500</option>
+              <option value="$500–$1,000">$500–$1,000</option>
+              <option value="$1,000–$2,000">$1,000–$2,000</option>
+              <option value="$2,000+">$2,000+</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <button class="btn btn--solid" type="submit" style="width:fit-content">Send message <span class="arr" aria-hidden="true">→</span></button>
+          <p class="form__note">This form opens your email app with the details pre-filled — nothing is stored on a server.</p>
+          <p class="form__status" id="formStatus" role="status" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div>
+          <p class="brand">Rishikesh Sonawane</p>
+          <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
+        </div>
+        <ul class="site-footer__nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© <span id="year">2026</span> Rishikesh Sonawane · All projects shown are concept work.</span>
+        <span>Designed &amp; built by hand. No templates.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

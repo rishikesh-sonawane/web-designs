@@ -3,5 +3,8 @@ Design_Portfolio/
 
 # Backup / scratch artifacts
 *.bak
+
+# Local screenshot/check tooling (puppeteer-core scratch)
+tools/
 .vercel
 .env*

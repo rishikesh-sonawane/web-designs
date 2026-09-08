@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KEEL — Case Study | Rishikesh Sonawane</title>
+<meta name="description" content="KEEL is a concept website for a deployment control plane — a bento-grid product page with live telemetry, an SLO gauge, and a service map, all drawn in real time.">
+<link rel="canonical" href="https://rishikesh-sonawane.github.io/web-designs/work/keel/">
+<meta property="og:title" content="KEEL — Case Study">
+<meta property="og:description" content="A modular bento-grid product experience for shipping software. Concept project by Rishikesh Sonawane.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://rishikesh-sonawane.github.io/web-designs/assets/img/keel.jpg">
+<meta name="theme-color" content="#F7F4EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F7F4EF' stroke='%231F1B16' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23A4592F' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<style>:root { --proj-accent: #B45309; }</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-nav">
+  <div class="site-nav__inner">
+    <a class="brand" href="../../index.html#top">Rishikesh Sonawane</a>
+    <nav aria-label="Primary">
+      <ul class="site-nav__links" id="navLinks">
+        <li><a href="../../index.html#work">Work</a></li>
+        <li><a href="../../index.html#services">Services</a></li>
+        <li><a href="../../index.html#about">About</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="site-nav__cta">
+      <a class="btn btn--solid" href="../../index.html#contact" style="padding:10px 20px">Start a project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero">
+    <div class="wrap">
+      <div class="case-hero__meta" data-reveal>
+        <span class="case-hero__num">02 — KEEL</span>
+        <span class="case-hero__cat">Technology Website / Product Experience</span>
+        <span class="badge">Concept project</span>
+      </div>
+      <h1 data-reveal>Production, kept steady.</h1>
+      <p class="lede" data-reveal>A concept website for a deployment control plane — pipelines, live telemetry, and eight-second rollbacks presented in a modular bento-grid product page.</p>
+      <div class="case-hero__media" data-reveal>
+        <img src="../../assets/img/keel.jpg" alt="Full-page screenshot of the KEEL website" width="1440" height="424" loading="lazy">
+      </div>
+      <p class="case-hero__cap">The KEEL homepage — every cell a component, from hero copy to the live control room.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="case-grid">
+        <aside class="case-aside" data-reveal>
+          <span class="case-aside__label">Project</span>
+          <ul>
+            <li><strong>Role:</strong> Design &amp; development</li>
+            <li><strong>Type:</strong> Product website</li>
+            <li><strong>Language:</strong> Bento grid / technical minimalism</li>
+            <li><strong>Stack:</strong> HTML · CSS Grid · JS · Canvas</li>
+          </ul>
+        </aside>
+        <div class="case-body" data-reveal>
+          <h2>Overview</h2>
+          <p>KEEL is a concept product page for a fictional deployment control plane. The bento-grid layout treats every cell as a self-contained component — hero copy, control room, SLO gauge, telemetry chart, service map, and pricing — arranged with mathematical precision. The whole page reads like the calm cockpit of a serious DevOps tool.</p>
+          <blockquote>"Keel is the control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room."</blockquote>
+          <h2>Brief</h2>
+          <p>The concept explored how a technically dense product could feel calm rather than chaotic. The design challenge was information architecture: fitting real DevOps concepts — deploy stages, error budgets, request topology, p95 latency — into a layout that stays legible at every breakpoint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <div>
+          <span class="section__no">Design direction</span>
+          <h2 class="kicker" style="font-family:var(--serif);font-size:var(--h2);letter-spacing:-0.015em;text-transform:none;color:var(--ink);margin-top:12px">A calm control room</h2>
+        </div>
+      </div>
+      <div class="spec-grid" data-reveal>
+        <div class="spec">
+          <p class="spec__label">Typography</p>
+          <ul>
+            <li>Inter — clean UI at 400–900 weight</li>
+            <li>JetBrains Mono — data, metrics, timestamps</li>
+            <li>Monospace status chips add instrument feel</li>
+          </ul>
+        </div>
+        <div class="spec">
+          <p class="spec__label">Color</p>
+          <ul>
+            <li>Paper #F4F6F8 and ink #0C1220 base</li>
+            <li>Signal amber #B45309 as the single urgent accent</li>
+            <li>Steady green for healthy states</li>
+          </ul>
+        </div>
+        <div class="spec">
+          <p class="spec__label">Layout</p>
+          <ul>
+            <li>Strict CSS Grid bento bands with spanning cells</li>
+            <li>Hero copy 5×2, control room 7×2</li>
+            <li>Grid reflows 4 → 2 → 1 columns responsively</li>
+          </ul>
+        </div>
+        <div class="spec">
+          <p class="spec__label">Materials</p>
+          <ul>
+            <li>Hairline borders and soft layered shadows</li>
+            <li>Rounded 24px cells with 20px gaps</li>
+            <li>"All systems steady" status chip personality</li>
+          </ul>
+        </div>
+        <div class="spec">
+          <p class="spec__label">Interaction</p>
+          <ul>
+            <li>Live control room: build → test → canary → fleet</li>
+            <li>SLO error-budget gauge with animated needle</li>
+            <li>Service map, p95 chart with time ranges, theme toggle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="case-grid">
+        <aside class="case-aside" data-reveal>
+          <span class="case-aside__label">Key experience</span>
+        </aside>
+        <div class="case-body" data-reveal>
+          <h2>The live control room</h2>
+          <p>The hero's centrepiece is a control room that behaves like the real thing: a sparkline streams in real time, deploy stages progress from build through canary to fleet, and a UTC clock ticks alongside elapsed deploy time. Below it, an SLO gauge reads the error budget and a service map pulses with request topology across regions.</p>
+          <p>Every visualization is drawn with the Canvas 2D API at runtime — no charting libraries, no images. The telemetry chart supports three time ranges and a rollback takeover animation that dramatizes the "eight-second rollback" promise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="wrap">
+      <div class="case-grid">
+        <aside class="case-aside" data-reveal>
+          <span class="case-aside__label">Technology</span>
+        </aside>
+        <div class="case-body" data-reveal>
+          <h2>Built with</h2>
+          <p>Pure semantic HTML5 with a CSS Grid bento system, vanilla JavaScript, and the Canvas 2D API for all charts and visualizations. No frameworks, no chart libraries, no build step.</p>
+          <div class="band__pills">
+            <span class="chip">HTML5</span><span class="chip">CSS Grid</span>
+            <span class="chip">Vanilla JS</span><span class="chip">Canvas 2D</span>
+            <span class="chip">Dark mode toggle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="case-grid">
+        <aside class="case-aside" data-reveal>
+          <span class="case-aside__label">Outcome</span>
+        </aside>
+        <div class="case-body" data-reveal>
+          <h2>Honest result</h2>
+          <p>A fully responsive concept demonstrating information architecture, product thinking, technical UI design, and modular layout systems. It was designed and built from scratch as a personal project — KEEL is not a real product, and all metrics on the page are fictional placeholder data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="case-cta" data-reveal>
+      <h2>See it running</h2>
+      <p>Open the live concept site and watch the control room do its thing. The source is public on GitHub.</p>
+      <div class="case-cta__actions">
+        <a class="btn btn--light" href="../../Bento-Grid/" target="_blank" rel="noopener">View live website <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="btn btn--outline" href="https://github.com/rishikesh-sonawane/web-designs/tree/main/Bento-Grid" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.25);color:var(--on-deep)">View source <span class="arr" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <a class="next-project" href="../atelier/" data-reveal>
+      <div>
+        <span class="next-project__label">Next project</span>
+        <span class="next-project__name">ATELIER &amp; CO — Materials you can feel.</span>
+      </div>
+      <span class="next-project__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div>
+          <p class="brand">Rishikesh Sonawane</p>
+          <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
+        </div>
+        <ul class="site-footer__nav">
+          <li><a href="../../index.html#work">Work</a></li>
+          <li><a href="../../index.html#services">Services</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© <span id="year">2026</span> Rishikesh Sonawane · Concept project.</span>
+        <span>Designed &amp; built by hand. No templates.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>

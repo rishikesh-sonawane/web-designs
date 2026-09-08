@@ -1,5 +1,6 @@
-# Match the git file set — only the 5 sites + hub index get deployed
+# Match the git file set — only the sites + portfolio get deployed
 Design_Portfolio/
 _ochre/
 *.bak
 .vercel/
+tools/
