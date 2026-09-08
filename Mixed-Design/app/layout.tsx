@@ -22,7 +22,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://stone-residences.vercel.app";
+const siteUrl = "https://web-designs-by-rishi-11y8i6eaz-rishikesh-sonawanes-projects.vercel.app";
 
 export const metadata: Metadata = {
   title: {

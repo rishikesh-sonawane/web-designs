@@ -13,7 +13,7 @@ export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      ...(item.href ? { item: `https://stone-residences.vercel.app${item.href}` } : {}),
+      ...(item.href ? { item: `https://web-designs-by-rishi-11y8i6eaz-rishikesh-sonawanes-projects.vercel.app${item.href}` } : {}),
     })),
   };
 
