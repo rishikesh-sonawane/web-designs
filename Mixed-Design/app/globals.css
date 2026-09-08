@@ -136,9 +136,9 @@ body.nav-open { overflow: hidden; }
     -webkit-backdrop-filter: none;
   }
   .site-nav__links {
-    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0;
     background: var(--color-bone); flex-direction: column; gap: 0;
-    padding: calc(var(--nav-h) + 48px) var(--gutter) 48px;
+    padding: 24px var(--gutter) 48px;
     border-top: none;
     transform: translateY(-100%); opacity: 0; pointer-events: none;
     transition: transform 0.4s var(--ease), opacity 0.3s ease;
