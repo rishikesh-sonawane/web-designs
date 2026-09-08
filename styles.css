@@ -109,7 +109,7 @@ h1, h2, h3, .serif { font-family: var(--serif); font-weight: 500; line-height: 1
 
 /* ---------- Navigation ---------- */
 .site-nav {
-  position: fixed; inset: 0 0 auto 0; z-index: 100;
+  position: fixed; inset: 0 0 auto 0; z-index: 9999;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
@@ -153,6 +153,7 @@ h1, h2, h3, .serif { font-family: var(--serif); font-weight: 500; line-height: 1
     padding: 32px var(--gutter); border-top: 1px solid var(--line);
     transform: translateY(-12px); opacity: 0; pointer-events: none;
     transition: transform 0.3s var(--ease), opacity 0.3s ease;
+    z-index: 9999;
   }
   .site-nav__links[data-open="true"] { transform: none; opacity: 1; pointer-events: auto; }
   .site-nav__links a { font-size: var(--text-xl); padding: 12px 0; }
