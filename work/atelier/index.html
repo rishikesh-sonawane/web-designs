@@ -52,7 +52,7 @@
       <h1 data-reveal>Materials you can feel.</h1>
       <p class="lede" data-reveal>A concept website for a premium leather-goods house, where leather, wood, brushed metal, glass, and linen are all simulated with pure CSS — and a control panel lets you retune the entire material system live.</p>
       <div class="case-hero__media" data-reveal>
-        <img src="../../assets/img/atelier.jpg" alt="Full-page screenshot of the ATELIER &amp; CO website" width="1440" height="833" loading="lazy">
+        <img src="../../assets/img/atelier.jpg" alt="Full-page screenshot of the ATELIER &amp; CO website" width="1440" height="833" fetchpriority="high">
       </div>
       <p class="case-hero__cap">The ATELIER &amp; CO homepage — heavy shadows, beveled edges, and chrome specular highlights.</p>
     </div>
@@ -73,7 +73,7 @@
         <div class="case-body" data-reveal>
           <h2>Overview</h2>
           <p>ATELIER &amp; CO is a concept website for a fictional leather and materials brand. Every surface on the page mimics a physical object: buttons press and depress like switches, cards sit in four-layer shadows, and textures — leather grain, wood grain, brushed metal, glass, linen, plastic — are generated entirely from CSS gradients and SVG filters. There is not a single texture image on the page.</p>
-          <blockquote>"Every shadow has depth. Every highlight tells you where the light source is."</blockquote>
+          <blockquote>“Every shadow has depth. Every highlight tells you where the light source is.”</blockquote>
           <h2>Brief</h2>
           <p>The concept explored how far pure CSS could push realism. The design challenge was making digital interfaces feel tangible and weighty — like objects you could reach out and touch — while keeping the page fast and fully responsive.</p>
         </div>
@@ -212,13 +212,19 @@
           <p class="brand">Rishikesh Sonawane</p>
           <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
         </div>
-        <ul class="site-footer__nav">
-          <li><a href="../../index.html#work">Work</a></li>
-          <li><a href="../../index.html#services">Services</a></li>
-          <li><a href="../../index.html#about">About</a></li>
-          <li><a href="../../index.html#contact">Contact</a></li>
-          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <ul class="site-footer__nav">
+            <li><a href="../../index.html#work">Work</a></li>
+            <li><a href="../../index.html#services">Services</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+          </ul>
+          <ul class="site-footer__nav">
+            <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
       </div>
       <div class="site-footer__bottom">
         <span>© <span id="year">2026</span> Rishikesh Sonawane · Concept project.</span>

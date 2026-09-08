@@ -52,7 +52,7 @@
       <h1 data-reveal>Production, kept steady.</h1>
       <p class="lede" data-reveal>A concept website for a deployment control plane — pipelines, live telemetry, and eight-second rollbacks presented in a modular bento-grid product page.</p>
       <div class="case-hero__media" data-reveal>
-        <img src="../../assets/img/keel.jpg" alt="Full-page screenshot of the KEEL website" width="1440" height="424" loading="lazy">
+        <img src="../../assets/img/keel.jpg" alt="Full-page screenshot of the KEEL website" width="1440" height="424" fetchpriority="high">
       </div>
       <p class="case-hero__cap">The KEEL homepage — every cell a component, from hero copy to the live control room.</p>
     </div>
@@ -73,7 +73,7 @@
         <div class="case-body" data-reveal>
           <h2>Overview</h2>
           <p>KEEL is a concept product page for a fictional deployment control plane. The bento-grid layout treats every cell as a self-contained component — hero copy, control room, SLO gauge, telemetry chart, service map, and pricing — arranged with mathematical precision. The whole page reads like the calm cockpit of a serious DevOps tool.</p>
-          <blockquote>"Keel is the control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room."</blockquote>
+          <blockquote>“Keel is the control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room.”</blockquote>
           <h2>Brief</h2>
           <p>The concept explored how a technically dense product could feel calm rather than chaotic. The design challenge was information architecture: fitting real DevOps concepts — deploy stages, error budgets, request topology, p95 latency — into a layout that stays legible at every breakpoint.</p>
         </div>
@@ -119,7 +119,7 @@
           <ul>
             <li>Hairline borders and soft layered shadows</li>
             <li>Rounded 24px cells with 20px gaps</li>
-            <li>"All systems steady" status chip personality</li>
+            <li>“All systems steady” status chip personality</li>
           </ul>
         </div>
         <div class="spec">
@@ -143,7 +143,7 @@
         <div class="case-body" data-reveal>
           <h2>The live control room</h2>
           <p>The hero's centrepiece is a control room that behaves like the real thing: a sparkline streams in real time, deploy stages progress from build through canary to fleet, and a UTC clock ticks alongside elapsed deploy time. Below it, an SLO gauge reads the error budget and a service map pulses with request topology across regions.</p>
-          <p>Every visualization is drawn with the Canvas 2D API at runtime — no charting libraries, no images. The telemetry chart supports three time ranges and a rollback takeover animation that dramatizes the "eight-second rollback" promise.</p>
+          <p>Every visualization is drawn with the Canvas 2D API at runtime — no charting libraries, no images. The telemetry chart supports three time ranges and a rollback takeover animation that dramatizes the “eight-second rollback” promise.</p>
         </div>
       </div>
     </div>
@@ -212,13 +212,19 @@
           <p class="brand">Rishikesh Sonawane</p>
           <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
         </div>
-        <ul class="site-footer__nav">
-          <li><a href="../../index.html#work">Work</a></li>
-          <li><a href="../../index.html#services">Services</a></li>
-          <li><a href="../../index.html#about">About</a></li>
-          <li><a href="../../index.html#contact">Contact</a></li>
-          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <ul class="site-footer__nav">
+            <li><a href="../../index.html#work">Work</a></li>
+            <li><a href="../../index.html#services">Services</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+          </ul>
+          <ul class="site-footer__nav">
+            <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
       </div>
       <div class="site-footer__bottom">
         <span>© <span id="year">2026</span> Rishikesh Sonawane · Concept project.</span>

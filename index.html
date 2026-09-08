@@ -25,7 +25,12 @@
   "name": "Rishikesh Sonawane",
   "jobTitle": "Web Designer & Developer",
   "description": "Independent web designer and developer building premium websites for businesses.",
-  "knowsAbout": ["Web Design", "Frontend Development", "Responsive Design", "Design Systems"]
+  "knowsAbout": ["Web Design", "Frontend Development", "Responsive Design", "Design Systems"],
+  "sameAs": [
+    "https://github.com/rishikesh-sonawane",
+    "https://www.linkedin.com/in/rishikeshsonawane1465/",
+    "https://www.instagram.com/another.polymath._/"
+  ]
 }
 </script>
 </head>
@@ -339,6 +344,11 @@
           <p>I'm Rishikesh, a designer and developer with a software engineering background. I enjoy turning ideas into thoughtful digital experiences — combining visual design with the technical discipline needed to build them properly.</p>
           <p>I work directly with business owners and teams to build websites that look premium, load fast, and are genuinely easy to maintain. The five projects on this page show the range: I don't have one visual style — I adapt the experience to the character of the business.</p>
           <p class="about__sig">— Rishikesh Sonawane</p>
+          <div class="about__socials">
+            <a class="text-link" href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -361,6 +371,7 @@
         </div>
 
         <form class="form" id="contactForm" data-reveal novalidate>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form__row">
             <div class="field">
               <label for="f-name">Name</label>
@@ -368,7 +379,7 @@
             </div>
             <div class="field">
               <label for="f-email">Email</label>
-              <input type="email" id="f-email" name="email" autocomplete="email" required>
+              <input type="email" id="f-email" name="email" autocomplete="email" spellcheck="false" required>
             </div>
           </div>
           <div class="form__row">
@@ -378,7 +389,7 @@
             </div>
             <div class="field">
               <label for="f-type">Project type</label>
-              <select id="f-type" name="type">
+              <select id="f-type" name="type" autocomplete="off">
                 <option value="Business Website">Business Website</option>
                 <option value="Landing Page">Landing Page</option>
                 <option value="Website Redesign">Website Redesign</option>
@@ -388,11 +399,11 @@
           </div>
           <div class="field">
             <label for="f-message">Project description</label>
-            <textarea id="f-message" name="message" placeholder="What are you building, and what does success look like?" required></textarea>
+            <textarea id="f-message" name="message" autocomplete="off" placeholder="Tell me about the project — what are you building, and what does success look like?…" required></textarea>
           </div>
           <div class="field">
             <label for="f-budget">Budget range <span class="muted">(optional)</span></label>
-            <select id="f-budget" name="budget">
+            <select id="f-budget" name="budget" autocomplete="off">
               <option value="Under $500">Under $500</option>
               <option value="$500–$1,000">$500–$1,000</option>
               <option value="$1,000–$2,000">$1,000–$2,000</option>
@@ -417,13 +428,19 @@
           <p class="brand">Rishikesh Sonawane</p>
           <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
         </div>
-        <ul class="site-footer__nav">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <ul class="site-footer__nav">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="site-footer__nav">
+            <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
       </div>
       <div class="site-footer__bottom">
         <span>© <span id="year">2026</span> Rishikesh Sonawane · All projects shown are concept work.</span>

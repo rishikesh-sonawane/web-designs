@@ -52,7 +52,7 @@
       <h1 data-reveal>Components, systematically.</h1>
       <p class="lede" data-reveal>A concept website for a fictional component library built on Material Design 3 — a full token system, real elevation hierarchy, and interactive components that behave like a shipped product, not a demo.</p>
       <div class="case-hero__media" data-reveal>
-        <img src="../../assets/img/layer.jpg" alt="Full-page screenshot of the LAYER website" width="1440" height="858" loading="lazy">
+        <img src="../../assets/img/layer.jpg" alt="Full-page screenshot of the LAYER website" width="1440" height="858" fetchpriority="high">
       </div>
       <p class="case-hero__cap">The LAYER homepage — systematic spacing, MD3 elevation, and a dashboard proof-of-product.</p>
     </div>
@@ -73,7 +73,7 @@
         <div class="case-body" data-reveal>
           <h2>Overview</h2>
           <p>LAYER is a concept website for a production-grade Material Design 3 component library. Every color, radius, elevation, and motion duration is a CSS custom property — 13 semantic color pairs, 5 shape tokens, 10 elevation levels, 4 easing curves. The page itself is the proof: a hero dashboard with real data, sparklines, and an activity feed shows the components working before a single feature card appears.</p>
-          <blockquote>"The most commercially relevant design language for SaaS and product work — done properly."</blockquote>
+          <blockquote>“The most commercially relevant design language for SaaS and product work — done properly.”</blockquote>
           <h2>Brief</h2>
           <p>The concept explored why most Material-inspired sites feel generic, and whether a systematic design language could be made to feel genuinely premium. The design challenge was coherence: every element on the page had to justify itself against the token system it demonstrates.</p>
         </div>
@@ -212,13 +212,19 @@
           <p class="brand">Rishikesh Sonawane</p>
           <p class="muted" style="font-size:var(--text-sm);margin-top:4px">Web Designer &amp; Developer</p>
         </div>
-        <ul class="site-footer__nav">
-          <li><a href="../../index.html#work">Work</a></li>
-          <li><a href="../../index.html#services">Services</a></li>
-          <li><a href="../../index.html#about">About</a></li>
-          <li><a href="../../index.html#contact">Contact</a></li>
-          <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+          <ul class="site-footer__nav">
+            <li><a href="../../index.html#work">Work</a></li>
+            <li><a href="../../index.html#services">Services</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+          </ul>
+          <ul class="site-footer__nav">
+            <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
       </div>
       <div class="site-footer__bottom">
         <span>© <span id="year">2026</span> Rishikesh Sonawane · Concept project.</span>
