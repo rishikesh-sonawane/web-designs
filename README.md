@@ -1,261 +1,282 @@
-<p align="center">
-  <img src="assets/img/rishi.png" width="100" height="100" style="border-radius:50%; object-fit:cover;" alt="Rishikesh Sonawane">
-</p>
-
-<h1 align="center">Rishikesh Sonawane</h1>
+<h1 align="center">
+  <code>R I S H I</code>
+</h1>
 
 <p align="center">
-  <strong>Web Designer & Developer</strong><br>
-  <em>Six projects. Six design languages. Zero templates.</em>
+  <sub>Web Designer & Developer</sub>
 </p>
 
 <p align="center">
-  <a href="https://rishikesh-sonawane.github.io/web-designs/">Portfolio</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/stone/">STONE</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/ochre/">OCHRE</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/keel/">KEEL</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/atelier/">ATELIER</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/lumen/">LUMEN</a> ·
-  <a href="https://rishikesh-sonawane.github.io/web-designs/work/layer/">LAYER</a>
+  <a href="https://rishikesh-sonawane.github.io/web-designs/">Portfolio</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/rishikesh-sonawane">GitHub</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://www.linkedin.com/in/rishikeshsonawane1465/">LinkedIn</a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://www.instagram.com/another.polymath._/">Instagram</a>
 </p>
 
 ---
 
-## The Collection
-
-Six concept projects, each exploring a different design language. No templates. No page builders. Every line written by hand.
-
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="https://rishikesh-sonawane.github.io/web-designs/Mixed-Design/">
-<img src="assets/img/stone.jpg" width="100%" alt="STONE">
-<br><strong>01 — STONE</strong>
-<br><em>Luxury Real Estate</em>
-<br><code>Next.js · TypeScript · Tailwind</code>
-</a>
-</td>
-<td align="center" width="33%">
-<a href="https://rishikesh-sonawane.github.io/web-designs/Bohemian/">
-<img src="assets/img/ochre.jpg" width="100%" alt="OCHRE">
-<br><strong>02 — OCHRE</strong>
-<br><em>Mediterranean Brand</em>
-<br><code>HTML · CSS · Canvas 2D</code>
-</a>
-</td>
-<td align="center" width="33%">
-<a href="https://rishikesh-sonawane.github.io/web-designs/Bento-Grid/">
-<img src="assets/img/keel.jpg" width="100%" alt="KEEL">
-<br><strong>03 — KEEL</strong>
-<br><em>DevOps Control Plane</em>
-<br><code>HTML · CSS Grid · Canvas 2D</code>
-</a>
-</td>
-</tr>
-<tr>
-<td align="center">
-<a href="https://rishikesh-sonawane.github.io/web-designs/Skeuo/">
-<img src="assets/img/atelier.jpg" width="100%" alt="ATELIER">
-<br><strong>04 — ATELIER</strong>
-<br><em>Skeuomorphic Luxury</em>
-<br><code>HTML · CSS · SVG Filters</code>
-</a>
-</td>
-<td align="center">
-<a href="https://rishikesh-sonawane.github.io/web-designs/DarkMode-UI/">
-<img src="assets/img/lumen.jpg" width="100%" alt="LUMEN">
-<br><strong>05 — LUMEN</strong>
-<br><em>Dark Analytics</em>
-<br><code>HTML · CSS · Canvas 2D</code>
-</a>
-</td>
-<td align="center">
-<a href="https://rishikesh-sonawane.github.io/web-designs/Material-Design/">
-<img src="assets/img/layer.jpg" width="100%" alt="LAYER">
-<br><strong>06 — LAYER</strong>
-<br><em>Material Design 3</em>
-<br><code>HTML · CSS · SVG</code>
-</a>
-</td>
-</tr>
-</table>
-
----
-
-## Design Languages
-
-| Project | Design Language | Palette | Typography | Signature Move |
-|---------|----------------|---------|------------|----------------|
-| **STONE** | Quiet Luxury + Swiss Editorial | Bone, Charcoal, Moss | Cormorant Garamond + Inter | Parallax hero, noise overlay, custom cursor |
-| **OCHRE** | Bohemian Editorial | Terracotta, Linen, Sand | Playfair Display + Caveat | Canvas-drawn dye bath, floating botanicals |
-| **KEEL** | Bento Grid / Technical | Paper, Ink, Sage | Inter + JetBrains Mono | Live deploy stages, SLO gauge, sparklines |
-| **ATELIER** | Skeuomorphic Tactile | Leather, Chrome, Walnut | Playfair Display + Inter | CSS-only materials, draggable control panel |
-| **LUMEN** | Premium Dark / Atmospheric | Obsidian, Cyan, Violet | Sora + DM Sans | Cursor-following glow, light-pipe nav |
-| **LAYER** | Material Design 3 | 13 semantic pairs | Inter + Roboto Mono | SVG path morph chart, token system |
-
----
-
-## Tech Stack
-
 ```
-Portfolio ........... HTML5 + CSS3 + Vanilla JS
-STONE ............... Next.js 16 + TypeScript + Tailwind CSS v4 + Leaflet
-OCHRE ............... HTML5 + CSS3 + Canvas 2D API
-KEEL ................ HTML5 + CSS Grid + Canvas 2D API
-ATELIER ............. HTML5 + CSS3 + SVG Filters
-LUMEN ............... HTML5 + CSS3 + Canvas 2D API
-LAYER ............... HTML5 + CSS3 + SVG
+                         __
+                        / _|
+   ___ _ __ ___   ___ | |_ _   _
+  / _ \ '_ ` _ \ / _ \|  _| | | |
+ |  __/ | | | | | (_) | | | |_| |
+  \___|_| |_| |_|\___/|_|  \__, |
+                            |___/
 ```
 
-**Zero external dependencies** across five of six projects. No React, no charting libraries, no animation frameworks. Just the web platform.
+> **Six projects. Six design languages. Zero templates.**
 
 ---
 
-## Features
+## W H A T  I S  T H I S ?
 
-### Portfolio
-- Custom cursor (dot + ring, mix-blend-mode)
-- Scroll progress bar
-- Noise overlay (SVG feTurbulence)
-- Page loader with letter-stagger animation
-- Magnetic buttons with cursor tracking
-- Service card 3D tilt on hover
-- Editorial link underline wipe
-- Cookie consent with localStorage
-- Back-to-top button
-- Now Playing widget (decorative)
-- Scroll reveal animations (IntersectionObserver)
-- Fully responsive with prefers-reduced-motion support
+A collection of concept projects — each one a complete design exploration of a different visual language. No Figma files. No wireframes. Just code.
 
-### STONE
-- 5 fictional European properties with full structured data
-- Interactive SVG floor plans
-- Leaflet map integration
-- Image lightbox with keyboard/swipe
-- Filterable property explorer
-- Parallax hero effect
-- 34 React components
-- Static export
+Every project answers one question: **what does this business feel like?**
 
-### OCHRE
-- Canvas-drawn artwork (pottery, textiles, botanicals)
-- Interactive dye-bath selector
-- Floating botanical emoji particles
-- Arch motifs at three scales
-- Linen texture overlay
-- Bilingual navigation
-
-### KEEL
-- 15+ bento grid cells
-- Live deploy stages (build → test → canary → fleet)
-- SLO error-budget gauge
-- Service map with request topology
-- Interactive line chart (4 time ranges)
-- Dark mode toggle
-- Clipboard API color copy
-
-### ATELIER
-- 6 CSS-generated material textures (zero images)
-- SVG feTurbulence leather filter
-- Physical button states (press-to-depress)
-- Floating control panel (draggable, localStorage-persisted)
-- Spotlight cursor effect
-- Chrome specular highlights
-
-### LUMEN
-- Obsidian layering system (4 depth levels)
-- Cursor-following radial glow
-- Live canvas chart with neon glow
-- Keycap buttons with glow projection
-- Light-pipe navigation
-- Telemetry ticker
-
-### LAYER
-- Full MD3 token system (398/412 CSS variables)
-- 10 elevation levels (dp 0–24)
-- SVG path morph chart toggle
-- Material ripple effects
-- Floating control panel
-- 93 ARIA attributes
-- content-visibility: auto optimization
+Not what template fits. Not what's trending. But what texture, rhythm, and material would make a visitor *feel* the brand before reading a single word.
 
 ---
 
-## Project Structure
+## T H E  C O L L E C T I O N
 
 ```
-Web-Design/
-├── index.html              # Portfolio landing page
-├── styles.css              # Shared editorial design system
-├── script.js               # Shared interactions
-├── assets/img/             # Portfolio images + architecture photos
-├── work/                   # Case study pages (one per project)
+ ┌─────────────────────────────────────────────────────────────────┐
+ │                                                                 │
+ │   0 1   S T O N E                                              │
+ │         Luxury Real Estate                                      │
+ │         Next.js · TypeScript · Tailwind CSS v4 · Leaflet       │
+ │         "Built to endure. Designed to inspire."                 │
+ │                                                                 │
+ │   ◆ Quiet Luxury + Swiss Editorial                             │
+ │   ◆ 5 European properties · 34 React components                │
+ │   ◆ Interactive SVG floor plans · Leaflet maps                  │
+ │   ◆ Custom cursor · Noise overlay · Parallax hero              │
+ │                                                                 │
+ │   → stone-residences.vercel.app                                │
+ │                                                                 │
+ ├─────────────────────────────────────────────────────────────────┤
+ │                                                                 │
+ │   0 2   O C H R E                                              │
+ │         Mediterranean Natural-Dye Brand                         │
+ │         HTML5 · CSS3 · Canvas 2D API                            │
+ │         "Cloth remembers the hands that make it."               │
+ │                                                                 │
+ │   ◆ Bohemian Editorial                                         │
+ │   ◆ Every visual drawn at runtime via Canvas 2D                 │
+ │   ◆ Interactive dye-bath selector · Floating botanicals         │
+ │   ◆ Bilingual Spanish/English navigation                        │
+ │                                                                 │
+ │   → rishikesh-sonawane.github.io/web-designs/Bohemian/         │
+ │                                                                 │
+ ├─────────────────────────────────────────────────────────────────┤
+ │                                                                 │
+ │   0 3   K E E L                                                │
+ │         Deployment Control Plane                                │
+ │         HTML5 · CSS Grid · Canvas 2D API                        │
+ │         "Production, kept steady."                              │
+ │                                                                 │
+ │   ◆ Bento Grid / Technical Minimalism                          │
+ │   ◆ 15+ grid cells with live data visualizations                │
+ │   ◆ Deploy pipeline · SLO gauge · Service map                   │
+ │   ◆ Dark mode toggle · Clipboard API color copy                 │
+ │                                                                 │
+ │   → rishikesh-sonawane.github.io/web-designs/Bento-Grid/       │
+ │                                                                 │
+ ├─────────────────────────────────────────────────────────────────┤
+ │                                                                 │
+ │   0 4   A T E L I E R  &  C O                                  │
+ │         Skeuomorphic Leather Goods                              │
+ │         HTML5 · CSS3 · SVG Filters                              │
+ │         "Materials you can feel."                               │
+ │                                                                 │
+ │   ◆ Skeuomorphic Tactile                                       │
+ │   ◆ 6 CSS-generated material textures — zero images             │
+ │   ◆ Draggable control panel · Spotlight cursor                  │
+ │   ◆ Physical button states · Chrome specular highlights         │
+ │                                                                 │
+ │   → rishikesh-sonawane.github.io/web-designs/Skeuo/            │
+ │                                                                 │
+ ├─────────────────────────────────────────────────────────────────┤
+ │                                                                 │
+ │   0 5   L U M E N                                              │
+ │         Premium Dark Analytics                                  │
+ │         HTML5 · CSS3 · Canvas 2D API                            │
+ │         "Premium darkness for serious analytics."               │
+ │                                                                 │
+ │   ◆ Premium Dark / Atmospheric                                 │
+ │   ◆ Cursor-following radial glow on feature cards               │
+ │   ◆ Obsidian layer system · Light-pipe navigation               │
+ │   ◆ Keycap buttons · Cosmic shadows · Telemetry ticker         │
+ │                                                                 │
+ │   → rishikesh-sonawane.github.io/web-designs/DarkMode-UI/      │
+ │                                                                 │
+ ├─────────────────────────────────────────────────────────────────┤
+ │                                                                 │
+ │   0 6   L A Y E R                                              │
+ │         Material Design 3 Library                               │
+ │         HTML5 · CSS3 · SVG                                      │
+ │         "Components, systematically."                           │
+ │                                                                 │
+ │   ◆ Material Design 3 / Systematic                             │
+ │   ◆ 398/412 CSS variables from token system                    │
+ │   ◆ SVG path morph chart · Material ripple effects              │
+ │   ◆ 93 ARIA attributes · Floating control panel                │
+ │                                                                 │
+ │   → rishikesh-sonawane.github.io/web-designs/Material-Design/  │
+ │                                                                 │
+ └─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## T E C H  S T A C K
+
+```
+    portfolio ............ html5 + css3 + vanilla js
+    stone ................ next.js 16 + typescript + tailwind css v4 + leaflet
+    ochre ................ html5 + css3 + canvas 2d api
+    keel ................. html5 + css grid + canvas 2d api
+    atelier .............. html5 + css3 + svg filters
+    lumen ................ html5 + css3 + canvas 2d api
+    layer ................ html5 + css3 + svg
+```
+
+**five of six projects have zero dependencies.**
+
+no react. no charting libraries. no animation frameworks.  
+just the web platform, used thoroughly.
+
+---
+
+## F E A T U R E S
+
+```
+  PORTFOLIO                          STONE
+  ─────────                          ─────
+  custom cursor (dot + ring)         5 european properties
+  scroll progress bar                interactive svg floor plans
+  noise overlay (svg)                leaflet map integration
+  page loader (letter stagger)       image lightbox (keyboard + swipe)
+  magnetic buttons                   filterable property explorer
+  3d tilt service cards              parallax hero effect
+  editorial underline wipe           34 react components
+  cookie consent                     static export
+
+  OCHRE                              KEEL
+  ────                               ────
+  canvas-drawn artwork               15+ bento grid cells
+  interactive dye bath               live deploy pipeline
+  floating botanicals                slo error-budget gauge
+  arch motifs (3 scales)             service map topology
+  linen texture overlay              interactive line chart
+  bilingual navigation               dark mode toggle
+
+  ATELIER                            LUMEN
+  ───────                            ─────
+  6 css-only material textures       obsidian layer system (4 depths)
+  svg feTurbulence leather           cursor-following radial glow
+  physical button states             live canvas chart (neon glow)
+  draggable control panel            keycap buttons + glow projection
+  spotlight cursor effect            light-pipe navigation
+  chrome specular highlights         telemetry ticker
+
+  LAYER
+  ─────
+  md3 token system (398 variables)
+  10 elevation levels (dp 0-24)
+  svg path morph chart toggle
+  material ripple effects
+  93 aria attributes
+  content-visibility: auto
+```
+
+---
+
+## S T R U C T U R E
+
+```
+web-designs/
+│
+├── index.html                   portfolio landing page
+├── styles.css                   shared editorial design system
+├── script.js                    shared interactions
+│
+├── assets/img/                  project thumbnails + architecture photos
+├── work/                        case study pages
 │   ├── stone/
 │   ├── ochre/
 │   ├── keel/
 │   ├── atelier/
 │   ├── lumen/
 │   └── layer/
-├── Mixed-Design/           # STONE — Next.js project
-├── Bohemian/               # OCHRE — HTML/CSS/JS
-├── Bento-Grid/             # KEEL — HTML/CSS/JS
-├── Skeuo/                  # ATELIER — HTML/CSS/JS
-├── DarkMode-UI/            # LUMEN — HTML/CSS/JS
-└── Material-Design/        # LAYER — HTML/CSS/JS
+│
+├── Mixed-Design/                stone — next.js
+├── Bohemian/                    ochre — html/css/js
+├── Bento-Grid/                  keel — html/css/js
+├── Skeuo/                       atelier — html/css/js
+├── DarkMode-UI/                 lumen — html/css/js
+└── Material-Design/             layer — html/css/js
 ```
 
 ---
 
-## Getting Started
+## G E T  S T A R T E D
 
 ```bash
-# Clone the repository
+# clone
 git clone https://github.com/rishikesh-sonawane/web-designs.git
 cd web-designs
 
-# Portfolio — just open in a browser
+# portfolio — just open in a browser
 open index.html
 
-# STONE — requires Node.js 18+
-cd Mixed-Design
-npm install
-npm run dev
+# stone — requires node.js 18+
+cd Mixed-Design && npm install && npm run dev
 # → http://localhost:3000
 ```
 
 ---
 
-## Deployment
+## D E P L O Y M E N T
 
-| Project | Platform | URL |
-|---------|----------|-----|
-| Portfolio + OCHRE + KEEL + ATELIER + LUMEN + LAYER | GitHub Pages | [rishikesh-sonawane.github.io/web-designs](https://rishikesh-sonawane.github.io/web-designs/) |
-| STONE | Vercel | [stone-residences.vercel.app](https://web-designs-by-rishi-11y8i6eaz-rishikesh-sonawanes-projects.vercel.app/) |
+```
+  GITHUB PAGES                       VERCEL
+  ──────────────                     ───────
+  portfolio + 5 projects             stone
+  branch: main                       root: Mixed-Design
+  .nojekyll at repo root             static export via next build
 
----
-
-## Design Philosophy
-
-> *If you have to scream about being premium, you probably aren't.*
-
-Every project here started with a question: **what does this business feel like?** Not what template fits, not what's trending on Dribbble — but what texture, rhythm, and material language would make a visitor *feel* the brand before reading a word.
-
-STONE feels like cold marble under bare feet. OCHRE feels like sun-warmed linen. KEEL feels like a calm control room at 3 AM. ATELIER feels like running your thumb over full-grain leather. LUMEN feels like light passing through obsidian. LAYER feels like a well-organized component shelf.
-
-The portfolio itself is the seventh project — warm, editorial, unhurried. Fraunces serif meets Inter sans. Terracotta on cream. It doesn't compete with the work. It frames it.
+  → rishikesh-sonawane.              → stone-residences
+    github.io/web-designs/             .vercel.app
+```
 
 ---
 
-## Author
+## P H I L O S O P H Y
 
-**Rishikesh Sonawane** — Designer & Developer
+> *if you have to scream about being premium, you probably aren't.*
 
-- [GitHub](https://github.com/rishikesh-sonawane)
-- [LinkedIn](https://www.linkedin.com/in/rishikeshsonawane1465/)
-- [Instagram](https://www.instagram.com/another.polymath._/)
+stone feels like cold marble under bare feet.  
+ochre feels like sun-warmed linen in a ronda courtyard.  
+keel feels like a calm control room at 3 am.  
+atelier feels like running your thumb over full-grain leather.  
+lumen feels like light passing through obsidian.  
+layer feels like a well-organized component shelf.
+
+the portfolio itself is the seventh project — warm, editorial, unhurried.  
+fraunces serif meets inter sans. terracotta on cream.  
+it doesn't compete with the work. it frames it.
 
 ---
 
-## License
-
-Concept projects — not for commercial use. Photography via Unsplash.
+<p align="center">
+  <sub>
+    concept projects — not for commercial use<br>
+    photography via unsplash · built with care in india
+  </sub>
+</p>
