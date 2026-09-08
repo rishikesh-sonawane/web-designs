@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keel — Production, kept steady.</title>
+  <meta name="description" content="Keel is the control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room.">
+  <meta name="theme-color" content="#F4F6F8">
+  <meta name="theme-color" content="#0A0E14" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Keel — Production, kept steady.">
+  <meta property="og:description" content="The control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0E14'/%3E%3Cpath d='M32 12L44 44L32 36L20 44Z' fill='%23FBBF24'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <header class="site-nav">
+    <a class="site-nav__brand" href="#top">
+      <span class="brand-mark">keel</span>
+      <span class="status-chip"><span class="status-chip__dot" aria-hidden="true"></span>All systems steady</span>
+    </a>
+    <nav class="site-nav__links" aria-label="Primary">
+      <a class="nav-link" href="#platform">Platform</a>
+      <a class="nav-link" href="#telemetry">Telemetry</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#docs">Docs</a>
+    </nav>
+    <div class="site-nav__end">
+      <button class="btn btn--ghost" data-start>Start free</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- TIER 1 · HERO — copy span 5 × 2 · control-room visual span 7 × 2 -->
+    <div class="band band--hero">
+      <section class="cell cell--hero-copy" aria-labelledby="heroTitle">
+        <p class="label">Deployment control plane</p>
+        <h1 class="hero-copy__title" id="heroTitle">Production, kept steady.</h1>
+        <p class="hero-copy__sub">Keel is the control plane for shipping software — pipelines, live telemetry and eight-second rollbacks in one calm room.</p>
+        <div class="hero-copy__cta">
+          <button class="btn btn--primary" data-start>Start free — no card</button>
+          <a class="btn btn--ghost" href="#rollback">Watch a deploy ↓</a>
+        </div>
+        <dl class="hero-copy__metrics">
+          <div class="metric-row"><dt>Teams</dt><dd class="mono">2,400+</dd></div>
+          <div class="metric-row"><dt>Deploys / mo</dt><dd class="mono">1.2M</dd></div>
+          <div class="metric-row"><dt>Median deploy</dt><dd class="mono">42s</dd></div>
+        </dl>
+      </section>
+
+      <section class="cell cell--room" aria-label="Live control room">
+        <div class="room__head">
+          <p class="label label--inverted">Control room</p>
+          <span class="room__live mono"><span class="room__live-dot" aria-hidden="true"></span>LIVE</span>
+        </div>
+        <ul class="room__stages">
+          <li class="stage stage--done"><span class="stage__dot" aria-hidden="true"></span><span class="stage__name">build</span><span class="stage__time mono">12s</span><span class="stage__mark" aria-label="done">✓</span></li>
+          <li class="stage stage--done"><span class="stage__dot" aria-hidden="true"></span><span class="stage__name">test</span><span class="stage__time mono">9s</span><span class="stage__mark" aria-label="done">✓</span></li>
+          <li class="stage stage--active"><span class="stage__dot" aria-hidden="true"></span><span class="stage__name">canary</span><span class="stage__time mono">6%</span><span class="stage__mark" aria-label="in progress">●</span></li>
+          <li class="stage stage--pending"><span class="stage__dot" aria-hidden="true"></span><span class="stage__name">fleet</span><span class="stage__time mono">—</span><span class="stage__mark" aria-label="pending">○</span></li>
+        </ul>
+        <div class="room__chart">
+          <canvas id="roomSpark" width="640" height="120" aria-hidden="true"></canvas>
+          <div class="room__stamps mono" aria-hidden="true"><span id="roomClock">14:02:11 UTC</span><span id="roomElapsed">T+42s</span></div>
+        </div>
+        <p class="room__foot"><span class="mono">web-api v2.4.1</span> · canary serving 6% of fleet · healthy</p>
+      </section>
+    </div>
+
+    <!-- TIER 2 · PLATFORM A — pipelines 7×2 · control room 5 · SLO gauge 5 -->
+    <div class="band">
+      <section class="cell cell--pipelines" id="platform" aria-labelledby="pipelinesTitle">
+        <div class="pipelines__head">
+          <div>
+            <p class="label">Pipelines</p>
+            <h2 class="cell__title" id="pipelinesTitle">Every deploy, one story.</h2>
+          </div>
+          <div class="pipelines__run">
+            <span class="mono pipelines__ver">web-api v2.4.1</span>
+            <span class="pipelines__owner">owner <span class="mono">mara</span></span>
+          </div>
+        </div>
+        <p class="cell__body">Watch build, test, canary and fleet land in real time — stages, owners and artifacts without spelunking through CI logs.</p>
+        <ol class="pipelines__stages">
+          <li class="pstage pstage--done">
+            <span class="pstage__name">build</span>
+            <span class="pstage__bar"><span style="--w:100%"></span></span>
+            <span class="pstage__time mono">12s</span>
+          </li>
+          <li class="pstage pstage--done">
+            <span class="pstage__name">test</span>
+            <span class="pstage__bar"><span style="--w:100%"></span></span>
+            <span class="pstage__time mono">9s</span>
+          </li>
+          <li class="pstage pstage--active">
+            <span class="pstage__name">canary</span>
+            <span class="pstage__bar"><span style="--w:38%"></span></span>
+            <span class="pstage__time mono">6%</span>
+          </li>
+          <li class="pstage pstage--pending">
+            <span class="pstage__name">fleet</span>
+            <span class="pstage__bar"><span style="--w:0%"></span></span>
+            <span class="pstage__time mono">—</span>
+          </li>
+        </ol>
+        <div class="pipelines__artifacts">
+          <span class="chip mono">docker · clean</span>
+          <span class="chip mono">sha 9f3c2e1</span>
+          <span class="chip chip--featured mono">run #4812</span>
+        </div>
+        <p class="label phist__title" id="recentRuns">Recent runs</p>
+        <ul class="pipelines__history" aria-labelledby="recentRuns">
+          <li class="phist__row">
+            <span class="mono phist__id">#4811</span>
+            <span class="phist__svc">worker-queue v1.9.0</span>
+            <span class="phist__state phist__state--steady"><span class="phist__dot" aria-hidden="true"></span>fleet</span>
+            <span class="mono phist__meta">41s · 2h ago</span>
+          </li>
+          <li class="phist__row">
+            <span class="mono phist__id">#4810</span>
+            <span class="phist__svc">web-api v2.4.0</span>
+            <span class="phist__state phist__state--alert"><span class="phist__dot" aria-hidden="true"></span>rolled back</span>
+            <span class="mono phist__meta">8s · 26h ago</span>
+          </li>
+          <li class="phist__row">
+            <span class="mono phist__id">#4809</span>
+            <span class="phist__svc">billing-cron v0.7.2</span>
+            <span class="phist__state phist__state--steady"><span class="phist__dot" aria-hidden="true"></span>fleet</span>
+            <span class="mono phist__meta">1m 12s · 2d ago</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cell cell--ctl" aria-labelledby="ctlTitle">
+        <p class="label">Control room</p>
+        <h2 class="cell__title cell__title--sm" id="ctlTitle">Route the room your way.</h2>
+        <p class="cell__body">Modes re-tune telemetry instantly.</p>
+        <div class="ctl__modes" role="group" aria-label="Data mode">
+          <button class="mode-btn mode-btn--active" data-mode="live" aria-pressed="true">LIVE</button>
+          <button class="mode-btn" data-mode="batch" aria-pressed="false">BATCH</button>
+          <button class="mode-btn" data-mode="stream" aria-pressed="false">STREAM</button>
+        </div>
+        <label class="ctl__slider-row" for="sampling">
+          <span class="ctl__slider-label">Sampling</span>
+          <input type="range" id="sampling" min="10" max="100" step="1" value="72">
+          <span class="mono ctl__slider-val" id="samplingVal">72%</span>
+        </label>
+        <div class="ctl__routes">
+          <button class="route-toggle" aria-pressed="true"><span>PagerDuty</span><span class="route-toggle__knob" aria-hidden="true"></span></button>
+          <button class="route-toggle" aria-pressed="true"><span>Slack</span><span class="route-toggle__knob" aria-hidden="true"></span></button>
+          <button class="route-toggle" aria-pressed="false"><span>Email</span><span class="route-toggle__knob" aria-hidden="true"></span></button>
+        </div>
+      </section>
+
+      <section class="cell cell--gauge" aria-labelledby="gaugeTitle">
+        <p class="label">SLO</p>
+        <h2 class="cell__title cell__title--sm" id="gaugeTitle">Error budget</h2>
+        <p class="cell__body">Burn-rate alerts fire long before the budget does.</p>
+        <div class="gauge__wrap">
+          <canvas id="gaugeCanvas" width="240" height="140" role="img" aria-label="Error budget remaining: 87 percent"></canvas>
+          <span class="gauge__value mono">87%</span>
+        </div>
+        <div class="gauge__meta mono"><span>burn 0.4x</span><span>30d window</span><span>p95&lt;180ms</span></div>
+      </section>
+    </div>
+    <!-- TIER 2 · PLATFORM B — service map 4 · telemetry chart 5 · ship log 3 -->
+    <div class="band">
+      <section class="cell cell--map" aria-labelledby="mapTitle">
+        <p class="label">Topology</p>
+        <h2 class="cell__title cell__title--sm" id="mapTitle">Service map</h2>
+        <p class="cell__body">Live request topology across regions. Every edge is traffic; every pulse is health.</p>
+        <canvas id="mapCanvas" width="440" height="250" role="img" aria-label="Request topology of six keel-monitored services"></canvas>
+        <div class="map__legend mono"><span>6 services</span><span>edge → db</span><span>18.2k req/min</span></div>
+      </section>
+
+      <section class="cell cell--chart" id="telemetry" aria-labelledby="chartTitle">
+        <div class="chart__head">
+          <div>
+            <p class="label">Telemetry</p>
+            <h2 class="cell__title cell__title--sm" id="chartTitle">p95 at a glance</h2>
+          </div>
+          <div class="chart__tabs" role="tablist" aria-label="Time range">
+            <button class="chart-tab chart-tab--active" id="tab-1h" data-range="1h" role="tab" aria-selected="true" aria-controls="chartPanel" tabindex="0">1h</button>
+            <button class="chart-tab" id="tab-24h" data-range="24h" role="tab" aria-selected="false" aria-controls="chartPanel" tabindex="-1">24h</button>
+            <button class="chart-tab" id="tab-7d" data-range="7d" role="tab" aria-selected="false" aria-controls="chartPanel" tabindex="-1">7d</button>
+          </div>
+        </div>
+        <div class="chart__body" id="chartPanel" role="tabpanel" aria-label="p95 latency chart">
+          <canvas id="chartCanvas" width="560" height="240" role="img" aria-label="Line chart of p95 response latency for the selected time range"></canvas>
+          <span class="sr-only" id="chartStatus" role="status">Showing p95 for the last hour.</span>
+          <div class="chart-tip" id="chartTip" aria-hidden="true">
+            <span class="mono chart-tip__val" id="chartTipVal">142ms</span>
+            <span class="mono chart-tip__time" id="chartTipTime">14:02</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cell cell--log" aria-labelledby="logTitle">
+        <p class="label">Incident feed</p>
+        <h2 class="cell__title cell__title--sm" id="logTitle">Ship log</h2>
+        <div class="log__filters" role="group" aria-label="Filter ship log">
+          <button class="fchip" data-filter="all" aria-pressed="true">All</button>
+          <button class="fchip" data-filter="deploy" aria-pressed="false">Deploys</button>
+          <button class="fchip" data-filter="alert" aria-pressed="false">Alerts</button>
+          <button class="fchip" data-filter="promote" aria-pressed="false">Promotions</button>
+        </div>
+        <ul class="log__list" id="logList">
+          <li class="log__item" data-kind="deploy">
+            <time class="mono log__time">14:02:11</time>
+            <p class="log__text">web-api v2.4.1 deployed · canary healthy</p>
+          </li>
+          <li class="log__item" data-kind="deploy">
+            <time class="mono log__time">14:11:48</time>
+            <p class="log__text">web-api v2.4.2 canary started · 6% traffic</p>
+          </li>
+          <li class="log__item" data-kind="alert">
+            <time class="mono log__time">14:07:36</time>
+            <p class="log__text">p95 alert cleared · back under 180ms</p>
+          </li>
+          <li class="log__item" data-kind="alert">
+            <time class="mono log__time">13:51:19</time>
+            <p class="log__text">rollback drill passed · steady in 8s</p>
+          </li>
+          <li class="log__item" data-kind="promote">
+            <time class="mono log__time">13:58:02</time>
+            <p class="log__text">canary promoted · fleet rollout started</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- TIER 3 · PLATFORM C — quick actions 3 · uptime stat 4 · uptime bars 5 -->
+    <div class="band">
+      <section class="cell cell--actions" aria-labelledby="actionsTitle">
+        <p class="label">Quick actions</p>
+        <h2 class="cell__title cell__title--sm" id="actionsTitle">One keystroke each.</h2>
+        <div class="actions__grid">
+          <button class="action" data-action="deploy"><span class="action__key mono" aria-hidden="true">D</span><span class="action__name">Deploy</span></button>
+          <button class="action" data-action="promote"><span class="action__key mono" aria-hidden="true">P</span><span class="action__name">Promote</span></button>
+          <button class="action action--alert" data-action="rollback"><span class="action__key mono" aria-hidden="true">R</span><span class="action__name">Rollback</span></button>
+          <button class="action" data-action="snapshot"><span class="action__key mono" aria-hidden="true">S</span><span class="action__name">Snapshot</span></button>
+        </div>
+      </section>
+
+      <section class="cell cell--stat" aria-labelledby="statTitle">
+        <p class="label">Platform uptime</p>
+        <p class="stat__numeral mono" id="statTitle">99.98%</p>
+        <p class="cell__body">Keel eats its own dogfood — Keel deploys Keel 40× a day.</p>
+      </section>
+
+      <section class="cell cell--uptime" aria-labelledby="uptimeTitle">
+        <div class="uptime__head">
+          <p class="label">Last 90 days</p>
+          <h2 class="cell__title cell__title--sm" id="uptimeTitle">Every deploy accounted for.</h2>
+        </div>
+        <div class="uptime__bars" id="uptimeBars" aria-hidden="true"></div>
+        <div class="uptime__meta mono"><span>90d ago</span><span>1 warn day · 0 outages</span><span>today</span></div>
+      </section>
+    </div>
+
+    <!-- ROLLBACK — full-bleed immersive moment (spec §3.4, Plan §14) -->
+    <section class="rollback" id="rollback" aria-labelledby="rollbackTitle" tabindex="-1" data-expansion="rollback">
+      <div class="rollback__inner" id="rollbackInner">
+        <p class="label label--inverted">Rollback</p>
+        <p class="rollback__display mono" id="rollbackTitle"><span id="rollbackVerb">rollback</span> <span class="rollback__count" id="rollbackCount">8s</span></p>
+        <p class="rollback__line">From alert to steady in eight seconds — one keystroke, fleet-wide, traffic drained and drained back clean.</p>
+        <div class="rollback__seq mono" id="rollbackSeq" aria-hidden="true">
+          <span class="rollback__stage">drain</span>
+          <span class="rollback__stage">revert</span>
+          <span class="rollback__stage">verify</span>
+          <span class="rollback__stage">steady</span>
+        </div>
+        <div class="rollback__bar" aria-hidden="true"><div class="rollback__bar-fill" id="rollbackBar"></div></div>
+        <button class="btn btn--rollback" id="rollbackBtn" data-action="rollback-demo">Run the eight seconds →</button>
+        <p class="rollback__hint mono" id="rollbackHint" aria-hidden="true" hidden>press esc to abort</p>
+        <span class="sr-only" id="rollbackStatus" role="status"></span>
+      </div>
+    </section>
+    <!-- PROOF — card-free rhythm break (spec §3.5, Plan §11/§12) -->
+    <div class="band band--proof">
+      <section class="proofnum" aria-labelledby="proofTitle">
+        <p class="label">Customer median · first quarter</p>
+        <p class="proofnum__value mono" id="proofTitle">38%</p>
+        <p class="proofnum__caption">fewer incident minutes for teams who moved their on-call into Keel.</p>
+      </section>
+      <figure class="quote">
+        <blockquote class="quote__text">&ldquo;We deleted three dashboards the week we moved to Keel. The incident feed is the only tab open during on-call now.&rdquo;</blockquote>
+        <figcaption class="quote__by">
+          <span class="quote__avatar" aria-hidden="true">MC</span>
+          <span class="quote__who"><strong>Mara Chen</strong><span>Platform Lead, Northwind Logistics</span></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- PRICING — Crew / Fleet / Armada (BRAND §7) -->
+    <div class="band" id="pricing">
+      <section class="cell cell--tier" aria-labelledby="tierCrew">
+        <h2 class="cell__title cell__title--sm" id="tierCrew">Crew</h2>
+        <p class="tier__price mono">$0<span>/mo</span></p>
+        <p class="cell__body">For side projects.</p>
+        <ul class="tier__list">
+          <li>3 services</li>
+          <li>7-day telemetry</li>
+          <li>Community support</li>
+        </ul>
+        <button class="btn btn--ghost tier__btn" data-start>Start free</button>
+      </section>
+      <section class="cell cell--tier cell--tier-featured" aria-labelledby="tierFleet">
+        <span class="tier__badge">POPULAR</span>
+        <h2 class="cell__title cell__title--sm" id="tierFleet">Fleet</h2>
+        <p class="tier__price mono">$29<span>/user/mo</span></p>
+        <p class="cell__body">For growing teams.</p>
+        <ul class="tier__list">
+          <li>Unlimited services</li>
+          <li>90-day telemetry</li>
+          <li>SLO gauges &amp; burn alerts</li>
+          <li>Incident feed</li>
+          <li>Slack routing</li>
+        </ul>
+        <button class="btn btn--primary tier__btn" data-start>Start Fleet</button>
+      </section>
+      <section class="cell cell--tier" aria-labelledby="tierArmada">
+        <h2 class="cell__title cell__title--sm" id="tierArmada">Armada</h2>
+        <p class="tier__price mono">Custom</p>
+        <p class="cell__body">For platform orgs.</p>
+        <ul class="tier__list">
+          <li>SSO / SAML</li>
+          <li>Audit log</li>
+          <li>Dedicated SLA</li>
+          <li>On-prem runners</li>
+        </ul>
+        <button class="btn btn--ghost tier__btn" data-action="contact">Talk to us</button>
+      </section>
+    </div>
+
+    <!-- FINAL CTA (spec §3.7) -->
+    <div class="band">
+      <section class="cta" aria-labelledby="ctaTitle">
+        <h2 class="cta__title" id="ctaTitle">Ship steady tonight.</h2>
+        <p class="cta__sub">Three services free, forever. Your first pipeline is five minutes away.</p>
+        <div class="cta__row">
+          <button class="btn btn--primary" data-start>Start free — no card</button>
+          <a class="btn btn--ghost" href="#platform">See a pipeline ↓</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="docs">
+    <span class="footer__brand mono">keel</span>
+    <p class="footer__line">Steady ships · <span class="mono">v2.4.1</span> · status <span class="footer__ok mono">all steady</span></p>
+    <nav class="footer__nav" aria-label="Footer">
+      <a class="nav-link" href="#platform">Platform</a>
+      <a class="nav-link" href="#telemetry">Telemetry</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#rollback">Rollback</a>
+      <a class="nav-link" href="case-study.html">Case study</a>
+    </nav>
+  </footer>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

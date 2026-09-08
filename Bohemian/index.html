@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCHRE — A House of Natural Dye &amp; Handloom</title>
+<meta name="description" content="Cloth dyed by root, insect and sun since 1962. Small-batch handloom linen coloured with madder, weld, indigo and walnut. No synthetics — sun, water, time.">
+<meta name="theme-color" content="#F7F4EB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 28V16a10 10 0 0 1 20 0v12' fill='none' stroke='%23A85D3F' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23C08A3E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Tenor+Sans&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.remove('no-js');try{var t=localStorage.getItem('ochre-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#story" class="skip-link">Skip to main content</a>
+
+  <!-- Paper grain texture overlay -->
+  <div class="paper-grain" aria-hidden="true"></div>
+  <!-- Linen weave texture overlay -->
+  <div class="linen-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================
+       NAVIGATION — Archival Index
+       ============================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand" aria-label="OCHRE home">
+        <!-- Hand-drawn sun stamp SVG -->
+        <svg class="nav__sun" width="28" height="28" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="50" y1="8" x2="50" y2="22"/>
+            <line x1="50" y1="78" x2="50" y2="92"/>
+            <line x1="8" y1="50" x2="22" y2="50"/>
+            <line x1="78" y1="50" x2="92" y2="50"/>
+            <line x1="20" y1="20" x2="30" y2="30"/>
+            <line x1="70" y1="70" x2="80" y2="80"/>
+            <line x1="80" y1="20" x2="70" y2="30"/>
+            <line x1="20" y1="80" x2="30" y2="70"/>
+          </g>
+        </svg>
+        <span class="nav__brand-text">OCHRE</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="#story" class="nav__link">La Historia</a>
+        <a href="#collection" class="nav__link">La Colección</a>
+        <a href="#archive" class="nav__link">El Archivo</a>
+        <a href="#taller" class="nav__link">El Taller</a>
+        <a href="#talleres" class="nav__link">Talleres</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+      <div class="nav__right">
+        <span class="nav__time" id="navTime" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- Hamburger — outside nav__inner so it sits above mobile overlay -->
+    <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="mobile-menu__brand">
+        <span class="mobile-menu__brand-text">OCHRE</span>
+        <span class="mobile-menu__brand-sub">Root, water &amp; patience</span>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+        <a href="#story" class="mobile-menu__link">La Historia</a>
+        <a href="#collection" class="mobile-menu__link">La Colección</a>
+        <a href="#archive" class="mobile-menu__link">El Archivo</a>
+        <a href="#taller" class="mobile-menu__link">El Taller</a>
+        <a href="#talleres" class="mobile-menu__link">Talleres</a>
+        <a href="#contacto" class="mobile-menu__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO — Arco del Sol
+       ============================================ -->
+  <section class="hero" id="top">
+  <div class="hero__inner">
+    <div class="hero__copy" data-reveal>
+      <p class="hero__overline">A house of natural dye &amp; handloom</p>
+      <h1 class="hero__title">Cloth remembers<br><em>the hands</em> that make it.</h1>
+      <p class="hero__lede">Since 1962 our atelier has coloured linen with what the earth gives — madder root, weld, indigo, walnut husk. No synthetics, no shortcuts. Sun, water and time do the rest.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#collections">Explore the collections</a>
+        <a class="btn btn--ghost" href="#philosophy">The dye journal</a>
+      </div>
+      <ul class="hero__dyes" aria-label="Natural dye sources">
+        <li>Madder</li><li>Weld</li><li>Indigo</li><li>Walnut</li><li>Pomegranate</li>
+      </ul>
+    </div>
+    <div class="hero__plates">
+      <svg class="hero__archline" viewBox="0 0 400 560" aria-hidden="true" focusable="false">
+        <path d="M40 540 V300 a160 160 0 0 1 320 0 V540" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M64 540 V304 a136 136 0 0 1 272 0 V540" fill="none" stroke="currentColor" stroke-width="1" opacity=".45"/>
+        <circle cx="200" cy="288" r="4" fill="currentColor"/>
+      </svg>
+      <figure class="plate plate--sun" data-reveal>
+        <svg viewBox="0 0 200 260" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <circle cx="100" cy="118" r="34"/>
+            <line x1="148" y1="118" x2="176" y2="118"/><line x1="52" y1="118" x2="24" y2="118"/>
+            <line x1="100" y1="166" x2="100" y2="194"/><line x1="100" y1="70" x2="100" y2="42"/>
+            <line x1="142" y1="142" x2="166" y2="156"/><line x1="58" y1="94" x2="34" y2="80"/>
+            <line x1="142" y1="94" x2="166" y2="80"/><line x1="58" y1="142" x2="34" y2="156"/>
+            <line x1="124" y1="160" x2="138" y2="172"/><line x1="76" y1="160" x2="62" y2="172"/>
+            <line x1="124" y1="76" x2="138" y2="64"/><line x1="76" y1="76" x2="62" y2="64"/>
+          </g>
+          <path d="M0 210 H200" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M28 234 Q100 216 172 234" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M44 252 Q100 238 156 252" fill="none" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <figcaption>Plate I — Weld &amp; sun</figcaption>
+      </figure>
+      <figure class="plate plate--moon" data-reveal>
+        <svg viewBox="0 0 200 260" aria-hidden="true" focusable="false">
+          <path d="M126 58a62 62 0 1 0 0 108 74 74 0 0 1 0-108Z" fill="currentColor"/>
+          <circle cx="150" cy="88" r="3" fill="currentColor"/>
+          <circle cx="58" cy="196" r="2" fill="currentColor"/>
+          <path d="M24 232 Q100 214 176 232" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <figcaption>Plate II — Indigo night</figcaption>
+      </figure>
+      <figure class="plate plate--flora" data-reveal>
+        <svg viewBox="0 0 200 260" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M100 238 C96 192 104 150 100 96"/>
+            <path d="M100 238 C82 214 70 196 64 168"/>
+            <path d="M100 238 C118 216 132 202 140 172"/>
+            <path d="M100 168 q-20 -12 -30 -30 q22 2 30 14"/>
+            <path d="M100 168 q20 -10 28 -28 q-22 2 -28 12"/>
+            <path d="M64 168 q-16 -6 -24 -20 q18 -2 24 6"/>
+            <path d="M140 172 q16 -8 22 -24 q-18 0 -22 10"/>
+          </g>
+          <circle cx="100" cy="92" r="3.5" fill="#A85D3F"/>
+          <circle cx="62" cy="164" r="3" fill="#A85D3F"/>
+          <circle cx="142" cy="168" r="3" fill="#A85D3F"/>
+        </svg>
+        <figcaption>Plate III — Madder field</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span class="hero__scroll-line"></span>Scroll — slowly</div>
+  <div class="arch-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" focusable="false">
+      <path d="M0 60 V32 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 a30 30 0 0 1 60 0 V60 Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+
+  <!-- Sun divider SVG -->
+  <div class="section-divider" aria-hidden="true">
+    <svg class="sun-divider" viewBox="0 0 200 40" width="200" height="40">
+      <line x1="0" y1="20" x2="75" y2="20" stroke="currentColor" stroke-width="0.75"/>
+      <circle cx="100" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <line x1="100" y1="8" x2="100" y2="3"/>
+        <line x1="100" y1="37" x2="100" y2="32"/>
+        <line x1="88" y1="20" x2="83" y2="20"/>
+        <line x1="117" y1="20" x2="112" y2="20"/>
+      </g>
+      <line x1="125" y1="20" x2="200" y2="20" stroke="currentColor" stroke-width="0.75"/>
+    </svg>
+  </div>
+
+  <!-- ============================================
+       MANIFESTO — Una Casa
+       ============================================ -->
+  <section class="philosophy" id="story" aria-labelledby="story-title">
+    <div class="philosophy__inner">
+      <div class="philosophy__left">
+        <span class="philosophy__meta">01 / LA HISTORIA</span>
+        <h2 id="story-title" class="philosophy__title">We believe in<br>the beauty of<br><em>slowness.</em></h2>
+      </div>
+      <div class="philosophy__right">
+        <p class="philosophy__text philosophy__text--lead">
+          In a world racing toward the digital future, we chose to look back —
+          at the warmth of terracotta, the texture of handwoven linen,
+          and the quiet rhythm of natural materials.
+        </p>
+        <p class="philosophy__text">
+          Every element in our design system is inspired by the organic world:
+          the curve of a dried pampas stalk, the grain of aged wood,
+          the imperfect beauty of hand-dyed cloth.
+        </p>
+        <p class="philosophy__text">
+          We don't chase trends. We cultivate experiences that feel
+          timeless, warm, and deeply human.
+        </p>
+        <div class="philosophy__quote">
+          <blockquote>"Every bloom on the cloth tells a story the vat decided to keep."</blockquote>
+          <cite>— Amparo Solares, fourth-generation maker</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TIMELINE — The Lineage
+       ============================================ -->
+  <section class="timeline" id="timeline" aria-labelledby="timeline-title">
+    <div class="timeline__header">
+      <span class="timeline__meta">02 / LINEAGE</span>
+      <h2 id="timeline-title" class="timeline__title">Four generations of dye</h2>
+    </div>
+    <div class="timeline__track">
+      <div class="timeline__spine" aria-hidden="true"></div>
+      <div class="timeline__entry" data-year="1927">
+        <div class="timeline__year">1927</div>
+        <div class="timeline__card">
+          <span class="timeline__label">The Madder Field</span>
+          <h3 class="timeline__card-title">Concepción plants the first madder</h3>
+          <p class="timeline__card-text">Concha carries the dye traditions of her hometown into a small dye house by the Tagus gorge. Madder reds and walnut browns define the first collection.</p>
+        </div>
+      </div>
+      <div class="timeline__entry" data-year="1954">
+        <div class="timeline__year">1954</div>
+        <div class="timeline__card">
+          <span class="timeline__label">Garden Palette</span>
+          <h3 class="timeline__card-title">Isabel tends the dye garden</h3>
+          <p class="timeline__card-text">The palette moves into the garden — madder, weld, the ochre of dry Andalusian hills. Cloths begin to carry the colours of the landscape itself.</p>
+        </div>
+      </div>
+      <div class="timeline__entry" data-year="1978">
+        <div class="timeline__year">1978</div>
+        <div class="timeline__card">
+          <span class="timeline__label">Logwood Black</span>
+          <h3 class="timeline__card-title">A three-year exchange in Oaxaca</h3>
+          <p class="timeline__card-text">The Taller learns the language of cochineal and a new patience with the vat. Three years of shared vats, shared meals, shared mistakes.</p>
+        </div>
+      </div>
+      <div class="timeline__entry" data-year="2001">
+        <div class="timeline__year">2001</div>
+        <div class="timeline__card">
+          <span class="timeline__label">The Indigo Vat</span>
+          <h3 class="timeline__card-title">Amparo returns from Sado, Japan</h3>
+          <p class="timeline__card-text">Great-granddaughter Amparo brings indigo in her hands and founds the Triple Dip method — a bath that honours all three lineages in one breath.</p>
+        </div>
+      </div>
+      <div class="timeline__entry" data-year="hoy">
+        <div class="timeline__year">Hoy</div>
+        <div class="timeline__card">
+          <span class="timeline__label">Today</span>
+          <h3 class="timeline__card-title">The courtyard vats stay warm</h3>
+          <p class="timeline__card-text">Amparo and twelve dyers keep the vats warm. Every cloth carries a number, a date, and a signature. The courtyard echoes with the rhythm of the loom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sun divider -->
+  <div class="section-divider" aria-hidden="true">
+    <svg class="sun-divider" viewBox="0 0 200 40" width="200" height="40">
+      <line x1="0" y1="20" x2="75" y2="20" stroke="currentColor" stroke-width="0.75"/>
+      <circle cx="100" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <line x1="100" y1="8" x2="100" y2="3"/>
+        <line x1="100" y1="37" x2="100" y2="32"/>
+        <line x1="88" y1="20" x2="83" y2="20"/>
+        <line x1="117" y1="20" x2="112" y2="20"/>
+      </g>
+      <line x1="125" y1="20" x2="200" y2="20" stroke="currentColor" stroke-width="0.75"/>
+    </svg>
+  </div>
+
+  <!-- ============================================
+       LA COLECCIÓN — Heritage Cards
+       ============================================ -->
+  <section class="courtyard" id="collection" aria-labelledby="collection-title">
+    <div class="courtyard__header">
+      <span class="courtyard__meta">03 / LA COLECCIÓN</span>
+      <h2 id="collection-title" class="courtyard__title">Heritage cloth</h2>
+      <p class="courtyard__subtitle">Each cloth carries a number, a bath, and a lineage</p>
+    </div>
+
+    <div class="courtyard__grid">
+      <!-- Card 1 — Large -->
+      <div class="courtyard__card courtyard__card--large">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="pottery"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Plate No. 214</span>
+            <h3 class="courtyard__card-title">Madder Red</h3>
+            <p class="courtyard__card-text">Handwoven linen in deep madder red. First dipped in the Concha vat, 1968.</p>
+            <span class="courtyard__card-provenance">Provenance: Taller de Ronda</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Medium -->
+      <div class="courtyard__card courtyard__card--medium">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="textile"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Plate No. 387</span>
+            <h3 class="courtyard__card-title">Weld Gold</h3>
+            <p class="courtyard__card-text">Weld and olive cloth, dried soft in the hill winds.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Small -->
+      <div class="courtyard__card courtyard__card--small">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="botanical"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Plate No. 502</span>
+            <h3 class="courtyard__card-title">Logwood Black</h3>
+            <p class="courtyard__card-text">Oaxacan logwood black, refined in Ronda.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Small -->
+      <div class="courtyard__card courtyard__card--small">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="ceramic"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Plate No. 611</span>
+            <h3 class="courtyard__card-title">Sado Indigo</h3>
+            <p class="courtyard__card-text">Vat-black indigo, each length unrepeatable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 — Medium -->
+      <div class="courtyard__card courtyard__card--medium">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="weave"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Plate No. 723</span>
+            <h3 class="courtyard__card-title">Triple Dip</h3>
+            <p class="courtyard__card-text">Amparo's signature method — three dips, three lineages, one cloth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 — Large -->
+      <div class="courtyard__card courtyard__card--large">
+        <div class="courtyard__card-inner">
+          <canvas class="courtyard__canvas" data-type="space"></canvas>
+          <div class="courtyard__card-content">
+            <span class="courtyard__card-tag">Interior</span>
+            <h3 class="courtyard__card-title">The Courtyard</h3>
+            <p class="courtyard__card-text">Rooms that breathe with natural light, warm wool, and the quiet confidence of four generations of craft.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EL ARCHIVO — Journal / Archive
+       ============================================ -->
+  <section class="journal" id="archive" aria-labelledby="archive-title">
+    <div class="journal__header">
+      <span class="journal__meta">04 / EL ARCHIVO</span>
+      <h2 id="archive-title" class="journal__title">From the ledger</h2>
+    </div>
+    <div class="journal__grid">
+      <article class="journal-entry">
+        <div class="journal-entry__image">
+          <canvas class="journal-entry__canvas" data-type="journal1"></canvas>
+        </div>
+        <div class="journal-entry__body">
+          <span class="journal-entry__date">August 2026</span>
+          <span class="journal-entry__archive-no">Archive No. 147</span>
+          <h3 class="journal-entry__title">The Dye Ledger</h3>
+          <p class="journal-entry__text">Why we keep handwritten records of every bath — the vat numbers, the temperatures, the weather, the mood of the maker.</p>
+          <a href="#" class="journal-entry__link">Read the archive →</a>
+        </div>
+      </article>
+      <article class="journal-entry">
+        <div class="journal-entry__image">
+          <canvas class="journal-entry__canvas" data-type="journal2"></canvas>
+        </div>
+        <div class="journal-entry__body">
+          <span class="journal-entry__date">July 2026</span>
+          <span class="journal-entry__archive-no">Archive No. 143</span>
+          <h3 class="journal-entry__title">Desert Colour Notes</h3>
+          <p class="journal-entry__text">How we extract our signature terracotta, sage, and mustard tones from the landscapes of southern Morocco and Andalucía.</p>
+          <a href="#" class="journal-entry__link">Read the archive →</a>
+        </div>
+      </article>
+      <article class="journal-entry">
+        <div class="journal-entry__image">
+          <canvas class="journal-entry__canvas" data-type="journal3"></canvas>
+        </div>
+        <div class="journal-entry__body">
+          <span class="journal-entry__date">June 2026</span>
+          <span class="journal-entry__archive-no">Archive No. 138</span>
+          <h3 class="journal-entry__title">Field Notes from Oaxaca</h3>
+          <p class="journal-entry__text">A maker's notebook entry on learning logwood black — the patience of the vat and the silence of the drying room.</p>
+          <a href="#" class="journal-entry__link">Read the archive →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EL TALLER — Studio / Testimonials
+       ============================================ -->
+  <section class="studio" id="taller" aria-labelledby="taller-title">
+    <div class="studio__inner">
+      <div class="studio__left">
+        <span class="studio__meta">05 / EL TALLER</span>
+        <h2 id="taller-title" class="studio__title">Where root<br>meets <em>cloth.</em></h2>
+        <p class="studio__text">
+          Our studio sits where natural light pours through linen curtains
+          onto workbenches of reclaimed wood. Here, every texture is touched
+          before it's translated to screen.
+        </p>
+        <div class="studio__stats">
+          <div class="studio__stat">
+            <span class="studio__stat-number" data-count="147">0</span>
+            <span class="studio__stat-label">Artisan pieces fired</span>
+          </div>
+          <div class="studio__stat">
+            <span class="studio__stat-number" data-count="98">0</span>
+            <span class="studio__stat-label">Years of slow craft</span>
+          </div>
+          <div class="studio__stat">
+            <span class="studio__stat-number" data-count="12">0</span>
+            <span class="studio__stat-label">Makers in the courtyard</span>
+          </div>
+        </div>
+
+        <!-- The Process — 4 steps -->
+        <div class="process">
+          <span class="process__label">The process</span>
+          <div class="process__steps">
+            <div class="process__step">
+              <span class="process__step-num">I</span>
+              <span class="process__step-name">Fibre</span>
+            </div>
+            <div class="process__step">
+              <span class="process__step-num">II</span>
+              <span class="process__step-name">Mordant</span>
+            </div>
+            <div class="process__step">
+              <span class="process__step-num">III</span>
+              <span class="process__step-name">Bath</span>
+            </div>
+            <div class="process__step">
+              <span class="process__step-num">IV</span>
+              <span class="process__step-name">Fire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio__right">
+        <!-- Maker Letter 1 -->
+        <div class="maker-letter">
+          <div class="maker-letter__card">
+            <div class="maker-letter__stamp" aria-hidden="true">
+              <svg viewBox="0 0 60 60" width="48" height="48">
+                <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                  <line x1="30" y1="10" x2="30" y2="6"/>
+                  <line x1="30" y1="54" x2="30" y2="50"/>
+                  <line x1="10" y1="30" x2="6" y2="30"/>
+                  <line x1="54" y1="30" x2="50" y2="30"/>
+                </g>
+              </svg>
+            </div>
+            <p class="maker-letter__text">"I learned to dye at my grandmother's vat. The cloth remembers her hands. When I dip a length, I'm not just making an object — I'm continuing a conversation that started in 1927."</p>
+            <div class="maker-letter__author">
+              <div class="maker-letter__avatar">AS</div>
+              <div>
+                <span class="maker-letter__name">Amparo Solares</span>
+                <span class="maker-letter__role">Fourth-generation maker · Ronda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Maker Letter 2 -->
+        <div class="maker-letter">
+          <div class="maker-letter__card">
+            <div class="maker-letter__stamp" aria-hidden="true">
+              <svg viewBox="0 0 60 60" width="48" height="48">
+                <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                  <line x1="30" y1="10" x2="30" y2="6"/>
+                  <line x1="30" y1="54" x2="30" y2="50"/>
+                  <line x1="10" y1="30" x2="6" y2="30"/>
+                  <line x1="54" y1="30" x2="50" y2="30"/>
+                </g>
+              </svg>
+            </div>
+            <p class="maker-letter__text">"The Triple Dip method is patience made visible. Three baths, each honouring a different lineage — madder, logwood, indigo. It takes time. But the best things always do."</p>
+            <div class="maker-letter__author">
+              <div class="maker-letter__avatar">MR</div>
+              <div>
+                <span class="maker-letter__name">Miguel Reyes</span>
+                <span class="maker-letter__role">Dye master · 22 years at the Taller</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sun divider -->
+  <div class="section-divider" aria-hidden="true">
+    <svg class="sun-divider" viewBox="0 0 200 40" width="200" height="40">
+      <line x1="0" y1="20" x2="75" y2="20" stroke="currentColor" stroke-width="0.75"/>
+      <circle cx="100" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <line x1="100" y1="8" x2="100" y2="3"/>
+        <line x1="100" y1="37" x2="100" y2="32"/>
+        <line x1="88" y1="20" x2="83" y2="20"/>
+        <line x1="117" y1="20" x2="112" y2="20"/>
+      </g>
+      <line x1="125" y1="20" x2="200" y2="20" stroke="currentColor" stroke-width="0.75"/>
+    </svg>
+  </div>
+
+  <!-- ============================================
+       THE DYE BATHS — Signature Interaction
+       ============================================ -->
+  <section class="glaze-lab" id="glazeLab" aria-labelledby="glazelab-title">
+    <div class="glaze-lab__inner">
+      <div class="glaze-lab__info">
+        <span class="glaze-lab__meta">06 / THE DYE BATHS</span>
+        <h2 id="glazelab-title" class="glaze-lab__title">Choose a bath,<br>see it <em>live.</em></h2>
+        <p class="glaze-lab__text">
+          Select a historical dye recipe below and watch it take to the cloth in real time.
+          Each colour carries a century of memory.
+        </p>
+        <div class="glaze-lab__swatches" role="radiogroup" aria-label="Dye bath selection">
+          <button class="glaze-swatch glaze-swatch--active" data-glaze="talavera" role="radio" aria-checked="true" aria-label="Madder Red bath">
+            <span class="glaze-swatch__color" style="background: #A8402F;"></span>
+            <span class="glaze-swatch__name">Madder Red</span>
+          </button>
+          <button class="glaze-swatch" data-glaze="verde" role="radio" aria-checked="false" aria-label="Weld Gold bath">
+            <span class="glaze-swatch__color" style="background: #C9A227;"></span>
+            <span class="glaze-swatch__name">Weld Gold</span>
+          </button>
+          <button class="glaze-swatch" data-glaze="negro" role="radio" aria-checked="false" aria-label="Logwood Black bath">
+            <span class="glaze-swatch__color" style="background: #2C2420;"></span>
+            <span class="glaze-swatch__name">Logwood Black</span>
+          </button>
+          <button class="glaze-swatch" data-glaze="raku" role="radio" aria-checked="false" aria-label="Sado Indigo bath">
+            <span class="glaze-swatch__color" style="background: #2F4156;"></span>
+            <span class="glaze-swatch__name">Sado Indigo</span>
+          </button>
+        </div>
+      </div>
+      <div class="glaze-lab__vessel">
+        <canvas id="glazeCanvas" aria-label="Interactive cloth canvas showing the selected bath"></canvas>
+        <span class="glaze-lab__vessel-label" id="glazeLabel">Madder Red · 1968</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TALLERES — Workshops & Commissions (Pricing)
+       ============================================ -->
+  <section class="pricing" id="talleres" aria-labelledby="talleres-title">
+    <div class="pricing__header">
+      <span class="pricing__meta">07 / TALLERES</span>
+      <h2 id="talleres-title" class="pricing__title">Workshops &amp; commissions</h2>
+      <p class="pricing__subtitle">Every plan comes with our full warmth and attention</p>
+    </div>
+    <div class="pricing__grid">
+      <div class="price-pod">
+        <span class="price-pod__tier">TALLER</span>
+        <div class="price-pod__amount">€120<span>/day</span></div>
+        <p class="price-pod__desc">A day at the loom, guided by our makers</p>
+        <ul class="price-pod__list">
+          <li>Full-day workshop (10:00–17:00)</li>
+          <li>Cloth, mordants and aprons provided</li>
+          <li>Dip and dry your own cloth</li>
+          <li>Lunch in the courtyard</li>
+          <li>Take home your creations</li>
+        </ul>
+        <button class="price-pod__btn">Book a Workshop</button>
+      </div>
+      <div class="price-pod price-pod--featured">
+        <div class="price-pod__badge">Most Loved ✦</div>
+        <span class="price-pod__tier">ENCARGO</span>
+        <div class="price-pod__amount">€450<span>+</span></div>
+        <p class="price-pod__desc">Commission a bespoke piece with our makers</p>
+        <ul class="price-pod__list">
+          <li>Consultation at the Taller</li>
+          <li>Custom dye and weave</li>
+          <li>Provenance certificate</li>
+          <li>Numbered and signed</li>
+          <li>International shipping</li>
+        </ul>
+        <button class="price-pod__btn price-pod__btn--featured">Start a Commission</button>
+      </div>
+      <div class="price-pod">
+        <span class="price-pod__tier">RESIDENCIA</span>
+        <div class="price-pod__amount">€1,200<span>/week</span></div>
+        <p class="price-pod__desc">A week-long immersive retreat in Ronda</p>
+        <ul class="price-pod__list">
+          <li>Everything in Taller</li>
+          <li>7 nights in the courtyard studio</li>
+          <li>Daily vat sessions</li>
+          <li>Guided tours of Ronda's weaving houses</li>
+          <li>Lifetime collection access</li>
+        </ul>
+        <button class="price-pod__btn">Apply for Residency</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACTO — Contact Form
+       ============================================ -->
+  <section class="connect" id="contacto" aria-labelledby="contacto-title">
+    <div class="connect__inner">
+      <div class="connect__left">
+        <span class="connect__meta">08 / CONTACTO</span>
+        <h2 id="contacto-title" class="connect__title">Let's create<br>together.</h2>
+        <p class="connect__text">
+          Every great collaboration starts with a conversation.
+          Tell us about your vision and we'll bring our earth-toned warmth to it.
+        </p>
+        <div class="connect__details">
+          <div class="connect__detail">
+            <span class="connect__detail-label">Location</span>
+            <span class="connect__detail-value">Calle Rueda Alcalá, 14 · Ronda, Málaga</span>
+          </div>
+          <div class="connect__detail">
+            <span class="connect__detail-label">Email</span>
+            <span class="connect__detail-value">hola@ochre.es</span>
+          </div>
+          <div class="connect__detail">
+            <span class="connect__detail-label">Studio Hours</span>
+            <span class="connect__detail-value">Tue–Sat · 10:00–18:00</span>
+          </div>
+        </div>
+      </div>
+      <form class="connect__form" id="connectForm" novalidate>
+        <div class="form-pod">
+          <label class="form-pod__label" for="formName">Your Name</label>
+          <input class="form-pod__input" type="text" id="formName" placeholder="What shall we call you?" required autocomplete="name">
+        </div>
+        <div class="form-pod">
+          <label class="form-pod__label" for="formEmail">Email</label>
+          <input class="form-pod__input" type="email" id="formEmail" placeholder="For our warmest replies" required autocomplete="email">
+        </div>
+        <div class="form-pod">
+          <label class="form-pod__label" for="formType">Enquiry Type</label>
+          <select class="form-pod__input form-pod__select" id="formType" required>
+            <option value="" disabled selected>Choose one...</option>
+            <option value="commission">Commission a piece</option>
+            <option value="workshop">Book a workshop</option>
+            <option value="residency">Apply for residency</option>
+            <option value="wholesale">Wholesale enquiry</option>
+            <option value="press">Press &amp; collaboration</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form-pod">
+          <label class="form-pod__label" for="formMessage">Your Vision</label>
+          <textarea class="form-pod__textarea" id="formMessage" rows="5" placeholder="Tell us about the world you want to create..." required></textarea>
+        </div>
+        <button class="form-pod__btn" type="submit">
+          Send with Warmth ☀
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="faq__header">
+      <span class="faq__meta">09 / WISDOM</span>
+      <h2 id="faq-title" class="faq__title">Questions we're often asked</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>What inspired the OCHRE palette?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer">
+          <div><p>The landscapes of southern Morocco, the dye markets of Oaxaca, and the quiet beauty of handwoven textiles from across the Mediterranean. We draw from centuries of artisan tradition and translate it into digital form.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>How do you source your materials?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer">
+          <div><p>Every material — digital or physical — is sourced with intention. We partner directly with artisan cooperatives in 12 countries, ensuring fair wages and sustainable practices at every step.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Can I commission a custom piece?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer">
+          <div><p>Absolutely. Our Encargo plan includes bespoke commission work. Simply reach out through our contact form and we'll schedule a studio session to discuss your vision.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Do you ship internationally?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer">
+          <div><p>We ship to over 40 countries worldwide. Each piece is carefully wrapped in recycled kraft paper and shipped with a handwritten note from our studio.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>How long does a commission take?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__answer">
+          <div><p>Typically 6–10 weeks from consultation to delivery. Each length passes through three baths — madder, logwood, and indigo — and each stage requires patience. We'll keep you updated with photographs throughout.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER — Colophon
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="footer__ticker">
+      <div class="footer__ticker-track" id="footerTicker">
+        <span>✦ FUEGO LENTO</span>
+        <span>🌿 LA MEMORIA</span>
+        <span>☀ HAZLO A MANO</span>
+        <span>✦ ROOT, WATER &amp; PATIENCE</span>
+        <span>🌿 DESDE 1927</span>
+        <span>☀ RONDA, ANDALUCÍA</span>
+        <span>✦ FUEGO LENTO</span>
+        <span>🌿 LA MEMORIA</span>
+        <span>☀ HAZLO A MANO</span>
+        <span>✦ ROOT, WATER &amp; PATIENCE</span>
+        <span>🌿 DESDE 1927</span>
+        <span>☀ RONDA, ANDALUCÍA</span>
+      </div>
+    </div>
+    <div class="footer__content">
+      <div class="footer__left">
+        <span class="footer__brand">✦ OCHRE</span>
+        <p class="footer__copy">Set at the Taller, Ronda — MMXXVI.</p>
+      </div>
+      <div class="footer__center">
+        <span class="footer__studio" id="footerStudio">Studio time: --:--</span>
+      </div>
+      <div class="footer__right">
+        <p class="footer__copy">Handcrafted with warmth. Every detail matters.</p>
+        <p class="footer__copy">© 2026 OCHRE · Made on earth, for earthlings.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast container -->
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+      <path d="M12 19V6M6 12l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

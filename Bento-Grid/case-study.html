@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keel — Case study: from brief to shipped system</title>
+  <meta name="description" content="How a 2,516-line design brief became BRAND.md, DESIGN-SPEC.md, 62 tokens and a shipped Keel — process, decisions and two real bugs, documented.">
+  <meta name="theme-color" content="#F4F6F8">
+  <meta name="theme-color" content="#0A0E14" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Keel — Case study">
+  <meta property="og:description" content="From a 2,516-line brief to 62 tokens and 2,567 shipped lines — the process behind Keel.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0E14'/%3E%3Cpath d='M32 12L44 44L32 36L20 44Z' fill='%23FBBF24'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <header class="site-nav">
+    <a class="site-nav__brand" href="index.html">
+      <span class="brand-mark">keel</span>
+      <span class="status-chip"><span class="status-chip__dot" aria-hidden="true"></span>Case study</span>
+    </a>
+    <nav class="site-nav__links" aria-label="Primary">
+      <a class="nav-link" href="#process">Process</a>
+      <a class="nav-link" href="#system">System</a>
+      <a class="nav-link" href="#bugs">Bugs</a>
+      <a class="nav-link" href="index.html">Live site</a>
+    </nav>
+    <div class="site-nav__end">
+      <a class="btn btn--ghost" href="index.html#pricing">Start free</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top" class="case">
+    <section class="case-hero">
+      <span class="label">Case study — Keel</span>
+      <h1>From a 2,516-line brief to a shipped system.</h1>
+      <p class="lede">Keel was built the slow way on purpose: brand first, spec second, tokens third, CSS last. This page is the record — the decisions, the numbers, and the two bugs worth more than the features they delayed.</p>
+      <div class="case-meta">
+        <p><strong>Role</strong> Design + build</p>
+        <p><strong>Stack</strong> HTML · CSS · vanilla JS</p>
+        <p><strong>Brief</strong> 2,516 lines · 94 directives</p>
+        <p><strong>Output</strong> 2,567 lines · ~92KB</p>
+      </div>
+    </section>
+
+    <div class="case-flow" aria-label="Process flow">
+      <div class="flow-node">
+        <span class="flow-node__step">01</span>
+        <span class="flow-node__name">Brief</span>
+        <span class="flow-node__desc">Read every directive before writing a line</span>
+      </div>
+      <div class="flow-node">
+        <span class="flow-node__step">02</span>
+        <span class="flow-node__name">Brand</span>
+        <span class="flow-node__desc">Keel — a shipping control plane, not a grid demo</span>
+      </div>
+      <div class="flow-node">
+        <span class="flow-node__step">03</span>
+        <span class="flow-node__name">Spec</span>
+        <span class="flow-node__desc">Grid math, tokens, motion — decided on paper</span>
+      </div>
+      <div class="flow-node flow-node--live">
+        <span class="flow-node__step">04</span>
+        <span class="flow-node__name">Build</span>
+        <span class="flow-node__desc">Composition, interaction, signature moment</span>
+      </div>
+      <div class="flow-node">
+        <span class="flow-node__step">05</span>
+        <span class="flow-node__name">Polish</span>
+        <span class="flow-node__desc">Audit every claim against the actual bytes</span>
+      </div>
+    </div>
+
+    <div class="case-stats">
+      <div class="case-stat">
+        <span class="case-stat__num">2,516</span>
+        <span class="case-stat__label">lines of brief, digested before the build</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-stat__num">62</span>
+        <span class="case-stat__label">design tokens governing every color and space</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-stat__num">94</span>
+        <span class="case-stat__label">directives from the brief, each traceable in the build</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-stat__num"><em>0</em></span>
+        <span class="case-stat__label">frameworks, build steps or libraries shipped</span>
+      </div>
+    </div>
+
+    <section class="case-sec" id="process">
+      <span class="case-sec__eyebrow">01 / Process</span>
+      <h2>The process was the product</h2>
+      <p>The brief was explicit: the Bento grid is the <strong>vehicle, not the subject</strong> (§4). So before any layout existed, the project committed to a fictional company real enough to charge money — <strong>Keel</strong>, the control plane for shipping software. Every module earns its place by serving that story, and every number on the page traces to one canonical metrics table.</p>
+      <p>That produced a chain rare in portfolio work: <strong>Plan.md → BRAND.md → DESIGN-SPEC.md → build</strong>. The 2,516-line brief was distilled into a 94-line brand document (voice, naming, the amber signal color, mono numerals), then a 176-line spec (grid math, five surface tiers, motion durations scaled by tile size) — all before a single line of CSS was written.</p>
+      <blockquote class="case-quote">
+        <p>“The Bento Grid is the vehicle, not the subject. The user should think: this is a beautiful website for this company.”</p>
+        <cite>— Plan.md, §4</cite>
+      </blockquote>
+      <ul class="case-list">
+        <li><strong>BRAND.md (94 lines)</strong> — naming, voice, the one-accent rule, canonical numbers like 99.98% uptime and the 8-second rollback.</li>
+        <li><strong>DESIGN-SPEC.md (176 lines)</strong> — 12/6/4-column grid with real span maps, the full token table, surface hierarchy, motion tokens.</li>
+        <li><strong>The build</strong> — executed mechanically against the spec, so every later dispute was settled by looking it up, not re-arguing taste.</li>
+      </ul>
+    </section>
+
+    <section class="case-sec" id="system">
+      <span class="case-sec__eyebrow">02 / System</span>
+      <h2>Tokens before pixels</h2>
+      <p>The spec defined 62 custom properties across two themes before composition began. Nothing in the stylesheet colors itself by hand — <strong>every value flows through a token</strong>, which is what makes dark mode a data change instead of a redesign, and what made the contrast audit recomputable by script.</p>
+      <ul class="case-list">
+        <li><strong>Grid</strong> — 12 columns desktop / 6 tablet / 4 mobile, with every module's span mapped per breakpoint in the spec, not improvised in the browser.</li>
+        <li><strong>Identity</strong> — paper-and-ink neutrals with one amber accent; JetBrains Mono carries every measurement, so numbers became the brand texture.</li>
+        <li><strong>Hierarchy</strong> — five surface tiers (primary, secondary, tertiary, featured, immersive) replace the equal-card soup the brief warned against.</li>
+        <li><strong>Motion</strong> — durations scale with tile size (160ms small / 240ms normal / 420ms large), with one spring curve reserved for the signature moment.</li>
+      </ul>
+      <p>The signature interaction — the <strong>eight-second rollback</strong> — is the one place the system spends its spring: the page dims, the strip rises with overshoot, stages flip build→test→canary→fleet while the countdown ticks, and Escape aborts. One exceptional interaction, as the brief demanded. Everywhere else stays calm.</p>
+    </section>
+
+    <section class="case-sec" id="bugs">
+      <span class="case-sec__eyebrow">03 / Bugs worth keeping</span>
+      <h2>Two bugs that proved the system</h2>
+      <p>Both were caught by auditing the build against its own claims. Each fix is small; each lesson is not.</p>
+
+      <article class="case-bug">
+        <span class="case-bug__tag">Bug 01 · animation</span>
+        <h3>One keyword silently killed every hover on the page</h3>
+        <p>Entrance reveals used <code>animation-fill-mode: both</code>. That sounds harmless — it even sounds thorough — but <code>both</code> <strong>permanently pins</strong> the animation's final keyframe at a cascade level above hover rules. Every cell that had ever revealed was stuck at <code>translateY(0)</code>, and the hover lift had quietly stopped working everywhere at once.</p>
+        <pre class="case-code"><code><span class="del">.reveal { animation: rise 420ms ease-out both; }     /* pins the transform forever */</span>
+<span class="add">.reveal { animation: rise 420ms ease-out backwards; } /* covers delays, then lets go */</span></code></pre>
+        <p>The fix is one word: <code>backwards</code> still covers the stagger delay before the animation starts, but afterwards the element returns to its own styles — and the hover transforms come back to life. The full forensic version lives in <a href="BUG-STORIES.md">Bug stories</a>.</p>
+      </article>
+
+      <article class="case-bug">
+        <span class="case-bug__tag">Bug 02 · tokens</span>
+        <h3>A token referenced everywhere and defined nowhere</h3>
+        <p>The rollback layer asked for <code>var(--success)</code> four times. No such token existed — in either theme. Because custom properties fail silently, the browser substituted nothing: no crash, no console warning, steady-state colors quietly absent. The honest fix wasn't to define the missing token — it was to <strong>rename the intent</strong>. The system already had a <code>--steady</code> family, and the rollback layer had drifted from it.</p>
+        <pre class="case-code"><code><span class="cmt">/* --success: referenced 4×, defined 0× — silent failure */</span>
+<span class="del">border-left: 3px solid var(--success);</span>
+<span class="add">border-left: 3px solid var(--steady);</span></code></pre>
+        <p>The detection mattered more than the fix: a mechanical audit cross-referencing every <code>var()</code> against every definition. That script also recomputes WCAG contrast from the real token values — which is how it later caught two genuinely failing contrast pairs before ship.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="case-foot">
+    <span class="mono">keel — case study · built to Plan §88, phases 1–15</span>
+    <nav aria-label="Case study">
+      <a class="nav-link" href="index.html">Back to keel</a>
+      <a class="nav-link" href="BUG-STORIES.md">Bug stories (full writeup)</a>
+      <a class="nav-link" href="#top">Top</a>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      var t = document.getElementById('themeToggle');
+      if (!t) return;
+      t.addEventListener('click', function () {
+        var root = document.documentElement;
+        var dark = root.getAttribute('data-theme') === 'dark';
+        root.setAttribute('data-theme', dark ? '' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

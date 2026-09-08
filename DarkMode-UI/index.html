@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumen — Analytics for Digital Products</title>
+  <meta name="description" content="Lumen gives product teams real-time analytics, user insights, and performance monitoring in one sophisticated dashboard.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand" aria-label="Lumen home">
+        <svg class="nav__logo" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="4" fill="currentColor"/>
+        </svg>
+        <span class="nav__name">LUMEN</span>
+      </a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#product" class="nav__link">Product</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#dashboard" class="nav__link">Dashboard</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </div>
+
+      <div class="nav__actions">
+        <a href="#contact" class="nav__link nav__link--subtle">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Switch theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm">Get Started</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#product" class="nav__mobile-link">Product</a>
+      <a href="#features" class="nav__mobile-link">Features</a>
+      <a href="#dashboard" class="nav__mobile-link">Dashboard</a>
+      <a href="#pricing" class="nav__mobile-link">Pricing</a>
+      <a href="#faq" class="nav__mobile-link">FAQ</a>
+      <a href="#contact" class="nav__mobile-link">Contact</a>
+      <div class="nav__mobile-theme">
+        <span class="nav__mobile-theme-label">Theme</span>
+        <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="Toggle light/dark mode">
+          <svg class="theme-toggle__icon theme-toggle__icon--dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+      <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <span class="hero__badge">Analytics Platform</span>
+            <h1 class="hero__title">
+              See your product<br>
+              <span class="hero__title-accent">clearly.</span>
+            </h1>
+            <p class="hero__desc">
+              Real-time analytics, user behavior insights, and performance monitoring — unified in one calm, focused dashboard. Built for product teams who make decisions with data, not dashboards.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Start Free Trial</a>
+              <a href="#dashboard" class="btn btn--ghost">View Live Demo</a>
+            </div>
+            <div class="hero__proof">
+              <div class="hero__proof-item">
+                <span class="hero__proof-value">2,400+</span>
+                <span class="hero__proof-label">teams</span>
+              </div>
+              <div class="hero__proof-divider"></div>
+              <div class="hero__proof-item">
+                <span class="hero__proof-value">99.98%</span>
+                <span class="hero__proof-label">uptime</span>
+              </div>
+              <div class="hero__proof-divider"></div>
+              <div class="hero__proof-item">
+                <span class="hero__proof-value">&lt;8ms</span>
+                <span class="hero__proof-label">latency</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__dashboard">
+              <div class="hero__dash-header">
+                <div class="hero__dash-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="hero__dash-title">Lumen Dashboard</span>
+                <span class="hero__dash-status">
+                  <span class="status-dot"></span>
+                  Live
+                </span>
+              </div>
+              <div class="hero__dash-body">
+                <canvas id="heroChart" class="hero__chart" role="img" aria-label="Real-time analytics line chart showing user activity"></canvas>
+                <div class="hero__dash-metrics">
+                  <div class="hero__dash-metric">
+                    <span class="hero__dash-metric-label">Active Users</span>
+                    <span class="hero__dash-metric-value">1,847</span>
+                    <span class="hero__dash-metric-change hero__dash-metric-change--up">+12.4%</span>
+                  </div>
+                  <div class="hero__dash-metric">
+                    <span class="hero__dash-metric-label">Revenue</span>
+                    <span class="hero__dash-metric-value">$48.2K</span>
+                    <span class="hero__dash-metric-change hero__dash-metric-change--up">+8.1%</span>
+                  </div>
+                  <div class="hero__dash-metric">
+                    <span class="hero__dash-metric-label">Conversion</span>
+                    <span class="hero__dash-metric-value">3.24%</span>
+                    <span class="hero__dash-metric-change hero__dash-metric-change--down">-0.3%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         PRODUCT STATEMENT
+         ============================================ -->
+    <section class="statement" id="product">
+      <div class="container">
+        <div class="statement__grid">
+          <div class="statement__label">Why Lumen</div>
+          <div class="statement__content">
+            <h2 class="statement__title">Most analytics tools give you data.<br>Lumen gives you <em>clarity.</em></h2>
+            <p class="statement__text">
+              We built Lumen because product teams were drowning in dashboards — dozens of charts, hundreds of metrics, zero insight. Lumen strips away the noise and surfaces only the numbers that drive decisions. One dashboard. One truth. One calm interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         FEATURES
+         ============================================ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features__header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Core Modules</h2>
+          <span class="section-subtitle">Built for product teams</span>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 12h4l3-9 4 18 3-9h4"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Real-Time Streams</h3>
+            <p class="feature-card__text">Watch user behavior unfold live. See sessions, events, and conversions as they happen — not in yesterday's report.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 3v18"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Cohort Analysis</h3>
+            <p class="feature-card__text">Group users by behavior, signup date, or custom properties. Understand retention curves and lifetime value at a glance.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 3"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Performance Alerts</h3>
+            <p class="feature-card__text">Set thresholds for Core Web Vitals, error rates, and API latency. Get notified before your users notice problems.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Funnel Builder</h3>
+            <p class="feature-card__text">Drag-and-drop funnel creation. Identify drop-off points, A/B test variations, and optimize conversion paths.</p>
+          </div>
+
+          <div class="feature-card feature-card--wide">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Unified Data Layer</h3>
+            <p class="feature-card__text">One SDK, every platform. Web, mobile, server-side — all events flow into a single, queryable data layer. No more stitching together five different tools to answer one question.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Team Collaboration</h3>
+            <p class="feature-card__text">Shared dashboards, annotations, and scheduled reports. Keep your entire team aligned on the same metrics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         DASHBOARD SHOWCASE
+         ============================================ -->
+    <section class="showcase" id="dashboard">
+      <div class="container">
+        <div class="showcase__header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">The Dashboard</h2>
+          <span class="section-subtitle">Designed for focus</span>
+        </div>
+
+        <div class="showcase__main">
+          <div class="showcase__panel">
+            <div class="showcase__panel-header">
+              <span class="showcase__panel-title">Overview</span>
+              <div class="showcase__panel-tabs">
+                <button class="showcase__tab showcase__tab--active">7 days</button>
+                <button class="showcase__tab">30 days</button>
+                <button class="showcase__tab">90 days</button>
+              </div>
+            </div>
+            <div class="showcase__chart-area">
+              <canvas id="showcaseChart" class="showcase__canvas" role="img" aria-label="Detailed analytics chart showing user trends over time"></canvas>
+            </div>
+          </div>
+
+          <div class="showcase__sidebar">
+            <div class="showcase__stat">
+              <span class="showcase__stat-label">Total Users</span>
+              <span class="showcase__stat-value">12,847</span>
+              <span class="showcase__stat-change showcase__stat-change--up">↑ 14.2% vs last month</span>
+            </div>
+            <div class="showcase__stat">
+              <span class="showcase__stat-label">Active Sessions</span>
+              <span class="showcase__stat-value">1,847</span>
+              <span class="showcase__stat-change showcase__stat-change--up">↑ 8.7% vs last month</span>
+            </div>
+            <div class="showcase__stat">
+              <span class="showcase__stat-label">Avg. Session Duration</span>
+              <span class="showcase__stat-value">4m 32s</span>
+              <span class="showcase__stat-change showcase__stat-change--down">↓ 2.1% vs last month</span>
+            </div>
+            <div class="showcase__stat">
+              <span class="showcase__stat-label">Bounce Rate</span>
+              <span class="showcase__stat-value">34.2%</span>
+              <span class="showcase__stat-change showcase__stat-change--up">↑ 1.8% improvement</span>
+            </div>
+            <div class="showcase__stat">
+              <span class="showcase__stat-label">Revenue per User</span>
+              <span class="showcase__stat-value">$3.75</span>
+              <span class="showcase__stat-change showcase__stat-change--up">↑ 5.3% vs last month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         INTEGRATIONS
+         ============================================ -->
+    <section class="integrations">
+      <div class="container">
+        <div class="integrations__header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Integrations</h2>
+          <span class="section-subtitle">Works with your stack</span>
+        </div>
+        <div class="integrations__grid">
+          <div class="integration-card">
+            <div class="integration-card__icon">S</div>
+            <span class="integration-card__name">Stripe</span>
+            <span class="integration-card__type">Payments</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__icon">Sl</div>
+            <span class="integration-card__name">Slack</span>
+            <span class="integration-card__type">Notifications</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__icon">G</div>
+            <span class="integration-card__name">GitHub</span>
+            <span class="integration-card__type">Releases</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__icon">V</div>
+            <span class="integration-card__name">Vercel</span>
+            <span class="integration-card__type">Hosting</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__icon">Se</div>
+            <span class="integration-card__name">Segment</span>
+            <span class="integration-card__type">Data Pipeline</span>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card__icon">P</div>
+            <span class="integration-card__name">PostHog</span>
+            <span class="integration-card__type">Migration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         PRICING
+         ============================================ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="pricing__header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Pricing</h2>
+          <span class="section-subtitle">Transparent, predictable</span>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="pricing-card">
+            <span class="pricing-card__tier">Starter</span>
+            <div class="pricing-card__price">$0</div>
+            <span class="pricing-card__period">Free forever</span>
+            <div class="pricing-card__divider"></div>
+            <ul class="pricing-card__list">
+              <li>Up to 10,000 events/month</li>
+              <li>3 team members</li>
+              <li>7-day data retention</li>
+              <li>Basic dashboards</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--full">Start Free</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Most Popular</span>
+            <span class="pricing-card__tier">Professional</span>
+            <div class="pricing-card__price">$49</div>
+            <span class="pricing-card__period">per month</span>
+            <div class="pricing-card__divider"></div>
+            <ul class="pricing-card__list">
+              <li>Up to 1M events/month</li>
+              <li>Unlimited team members</li>
+              <li>12-month data retention</li>
+              <li>Advanced funnels & cohorts</li>
+              <li>Custom dashboards</li>
+              <li>Priority email support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full">Start Free Trial</a>
+          </div>
+
+          <div class="pricing-card">
+            <span class="pricing-card__tier">Business</span>
+            <div class="pricing-card__price">$199</div>
+            <span class="pricing-card__period">per month</span>
+            <div class="pricing-card__divider"></div>
+            <ul class="pricing-card__list">
+              <li>Unlimited events</li>
+              <li>Unlimited team members</li>
+              <li>Unlimited data retention</li>
+              <li>Custom integrations</li>
+              <li>SSO & audit logs</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--full">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         TESTIMONIALS
+         ============================================ -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">What Teams Say</h2>
+          <span class="section-subtitle">Designed conceptually for product teams</span>
+        </div>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">"We replaced three separate analytics tools with Lumen. The unified dashboard alone saved our team 4 hours a week in reporting."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">S</div>
+              <div>
+                <span class="testimonial-card__name">Sarah Chen</span>
+                <span class="testimonial-card__role">Head of Product, Cloudwave</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">"The cohort analysis is best-in-class. We finally understand why users drop off at step 3 of our onboarding — and fixed it in a week."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">M</div>
+              <div>
+                <span class="testimonial-card__name">Marcus Rivera</span>
+                <span class="testimonial-card__role">Growth Lead, Stackform</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">"Lumen feels like it was designed by people who actually use analytics daily. No bloat, no confusion — just the data I need."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">A</div>
+              <div>
+                <span class="testimonial-card__name">Aisha Patel</span>
+                <span class="testimonial-card__role">CTO, Neoncraft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         FAQ
+         ============================================ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">FAQ</h2>
+          <span class="section-subtitle">Common questions</span>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">
+              How does the free tier work?
+              <span class="faq__chevron" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </summary>
+            <div class="faq__answer-wrap">
+              <div class="faq__answer">
+                <p>The Starter plan is free forever with up to 10,000 events per month, 3 team members, and 7-day data retention. No credit card required. Upgrade anytime when you need more capacity.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              Can I migrate from another analytics tool?
+              <span class="faq__chevron" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </summary>
+            <div class="faq__answer-wrap">
+              <div class="faq__answer">
+                <p>Yes. Lumen supports one-click imports from Google Analytics, Mixpanel, Amplitude, PostHog, and Segment. Historical data is preserved and immediately queryable in your new dashboard.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              Is my data secure?
+              <span class="faq__chevron" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </summary>
+            <div class="faq__answer-wrap">
+              <div class="faq__answer">
+                <p>Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II certified and GDPR compliant. Business plans include dedicated infrastructure and custom data residency options.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              Do you offer an API?
+              <span class="faq__chevron" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </summary>
+            <div class="faq__answer-wrap">
+              <div class="faq__answer">
+                <p>Yes. Lumen provides a comprehensive REST API and real-time WebSocket API for building custom dashboards, triggering workflows, and integrating analytics data into your own applications.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              What happens when I exceed my event limit?
+              <span class="faq__chevron" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </span>
+            </summary>
+            <div class="faq__answer-wrap">
+              <div class="faq__answer">
+                <p>We never cut off your data. If you exceed your monthly event limit, Lumen continues collecting and we notify you. You can upgrade your plan at any time — retroactive billing is prorated automatically.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================
+         CTA
+         ============================================ -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta__grid">
+          <div class="cta__content">
+            <h2 class="cta__title">Start seeing<br>clearly.</h2>
+            <p class="cta__desc">Set up in under 5 minutes. No credit card required for the free tier.</p>
+          </div>
+          <div class="cta__form-wrap">
+            <form id="contactForm" class="cta__form" novalidate>
+              <div class="form-group">
+                <label for="cta-name" class="form-label">Name</label>
+                <input type="text" id="cta-name" name="name" class="form-input" placeholder="Your name" required>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="cta-email" class="form-label">Work email</label>
+                <input type="email" id="cta-email" name="email" class="form-input" placeholder="you@company.com" required>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="cta-message" class="form-label">Message <span class="form-optional">(optional)</span></label>
+                <textarea id="cta-message" name="message" class="form-input form-input--area" placeholder="Tell us about your project..." rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="ctaSubmit">
+                <span class="btn__text">Get Started</span>
+                <span class="btn__loading" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-dasharray="28" stroke-dashoffset="8"><animateTransform attributeName="transform" type="rotate" from="0 8 8" to="360 8 8" dur="0.8s" repeatCount="indefinite"/></circle></svg>
+                </span>
+                <span class="btn__success" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l3.5 3.5L13 5"/></svg>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__brand" aria-label="Lumen home">
+            <svg class="nav__logo" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            </svg>
+            <span class="nav__name">LUMEN</span>
+          </a>
+          <p class="footer__tagline">Analytics for product teams<br>who make decisions with data.</p>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Product</span>
+          <a href="#features" class="footer__link">Features</a>
+          <a href="#dashboard" class="footer__link">Dashboard</a>
+          <a href="#pricing" class="footer__link">Pricing</a>
+          <a href="#" class="footer__link">Changelog</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Resources</span>
+          <a href="#" class="footer__link">Documentation</a>
+          <a href="#" class="footer__link">API Reference</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#faq" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Company</span>
+          <a href="#" class="footer__link">About</a>
+          <a href="#contact" class="footer__link">Contact</a>
+          <a href="#" class="footer__link">Privacy</a>
+          <a href="#" class="footer__link">Terms</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Lumen Analytics, Inc.</span>
+        <span class="footer__locations">San Francisco · London · Tokyo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       CONTROL CENTER
+       ============================================ -->
+  <div class="control-center" id="controlCenter">
+    <button class="control-center__toggle" id="controlToggle" aria-label="Open settings" aria-expanded="false" aria-controls="controlPanel">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <div class="control-center__panel" id="controlPanel">
+      <div class="control-center__title">Settings</div>
+
+      <div class="control-center__group">
+        <div class="control-center__label">
+          <span class="control-center__label-text">Chart Speed</span>
+          <span class="control-center__label-value" id="speedValue">Normal</span>
+        </div>
+        <input type="range" class="control-center__slider" id="chartSpeed" min="1" max="3" value="2">
+      </div>
+
+      <div class="control-center__group">
+        <div class="control-center__label">
+          <span class="control-center__label-text">Card Opacity</span>
+          <span class="control-center__label-value" id="opacityValue">100%</span>
+        </div>
+        <input type="range" class="control-center__slider" id="cardOpacity" min="50" max="100" value="100">
+      </div>
+
+      <div class="control-center__group">
+        <div class="control-center__toggle-row">
+          <span class="control-center__label-text">Cursor Spotlight</span>
+          <button class="control-center__switch control-center__switch--on" id="spotlightToggle" role="switch" aria-checked="true" aria-label="Toggle cursor spotlight"></button>
+        </div>
+      </div>
+
+      <div class="control-center__group">
+        <div class="control-center__toggle-row">
+          <span class="control-center__label-text">Scroll Animations</span>
+          <button class="control-center__switch control-center__switch--on" id="scrollToggle" role="switch" aria-checked="true" aria-label="Toggle scroll animations"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       BACK TO TOP
+       ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

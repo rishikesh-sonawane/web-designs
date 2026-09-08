@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier & Co — Handcrafted Leather Goods & Premium Workshop</title>
+  <meta name="description" content="Atelier & Co crafts premium leather journals, wallets, and accessories using traditional techniques and modern design. Hand-stitched, hand-finished, built to last.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=31">
+  <meta name="theme-color" content="#c9b896" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#2a1f12" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%238B4513'/%3E%3Cpath d='M8 14L12 10L16 14L12 18Z' fill='white' opacity='0.9'/%3E%3Cpath d='M12 10L16 6L20 10L16 14Z' fill='white' opacity='0.6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Skip navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       NAVIGATION — Polished leather bar
+       ============================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__brand">
+        <div class="nav__logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect width="28" height="28" rx="6" fill="url(#logo-grad)"/>
+            <path d="M8 14L12 10L16 14L12 18Z" fill="white" opacity="0.9"/>
+            <path d="M12 10L16 6L20 10L16 14Z" fill="white" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28">
+                <stop offset="0%" stop-color="#8B4513"/>
+                <stop offset="100%" stop-color="#D2691E"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="nav__name">Atelier & Co</span>
+        </div>
+      </div>
+
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#story" class="nav__link">Our Story</a>
+        <a href="#craft" class="nav__link">The Craft</a>
+        <a href="#collection" class="nav__link">Collection</a>
+        <a href="#workshop" class="nav__link">Workshop</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#pricing" class="sk-btn sk-btn--primary nav__cta">Shop Collection</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#story" class="nav__link">Our Story</a>
+      <a href="#craft" class="nav__link">The Craft</a>
+      <a href="#collection" class="nav__link">Collection</a>
+      <a href="#workshop" class="nav__link">Workshop</a>
+      <a href="#faq" class="nav__link">FAQ</a>
+      <div class="nav__mobile-actions">
+        <a href="#pricing" class="sk-btn sk-btn--primary btn--full">Shop Collection</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+  <!-- ============================================
+       HERO — Rich leather background with chrome accents
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="sk-chip hero__badge hero__badge-anim">
+        <span class="hero__badge-dot"></span>
+        Est. 2019 — Portland, Oregon
+      </div>
+      <h1 class="hero__title hero__title-anim">
+        Handcrafted leather,<br>
+        <span class="hero__title-gradient">built to outlast you.</span>
+      </h1>
+      <p class="hero__subtitle hero__subtitle-anim">
+        Premium journals, wallets, and accessories made from full-grain leather,
+        hand-stitched with waxed thread. Each piece develops a rich patina over years of use.
+      </p>
+      <div class="hero__ctas hero__ctas-anim">
+        <a href="#collection" class="sk-btn sk-btn--primary sk-btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Shop Collection
+        </a>
+        <a href="#story" class="sk-btn sk-btn--secondary sk-btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Our Story
+        </a>
+      </div>
+      <div class="hero__proof hero__proof-anim">
+        <div class="hero__proof-item">
+          <span class="hero__proof-num">12+</span>
+          <span class="hero__proof-label">Years Crafting</span>
+        </div>
+        <div class="hero__proof-divider"></div>
+        <div class="hero__proof-item">
+          <span class="hero__proof-num">4.9★</span>
+          <span class="hero__proof-label">Average Rating</span>
+        </div>
+        <div class="hero__proof-divider"></div>
+        <div class="hero__proof-item">
+          <span class="hero__proof-num">100%</span>
+          <span class="hero__proof-label">Full-Grain</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__card sk-card spotlight hero__card-anim">
+      <div class="hero__card-header">
+        <div class="hero__card-dots">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+        </div>
+        <span class="hero__card-title">Workshop Dashboard</span>
+        <div class="sk-pill-group">
+          <button class="sk-pill sk-pill--active" data-period="week">Week</button>
+          <button class="sk-pill" data-period="month">Month</button>
+          <button class="sk-pill" data-period="year">Year</button>
+        </div>
+      </div>
+      <div class="hero__card-body">
+        <div class="hero__card-stats">
+          <div class="sk-stat">
+            <span class="sk-stat__label">Orders</span>
+            <span class="sk-stat__value" id="revenueStat">$48,295</span>
+            <span class="sk-stat__change sk-stat__change--up">↑ 12.5%</span>
+          </div>
+          <div class="sk-stat">
+            <span class="sk-stat__label">Pieces Made</span>
+            <span class="sk-stat__value" id="usersStat">2,847</span>
+            <span class="sk-stat__change sk-stat__change--up">↑ 8.2%</span>
+          </div>
+          <div class="sk-stat">
+            <span class="sk-stat__label">Satisfaction</span>
+            <span class="sk-stat__value" id="convStat">98.6%</span>
+            <span class="sk-stat__change sk-stat__change--up">↑ 1.2%</span>
+          </div>
+        </div>
+        <div class="hero__chart">
+          <svg class="chart-svg" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(139,69,19,0.4)"/>
+                <stop offset="100%" stop-color="rgba(139,69,19,0)"/>
+              </linearGradient>
+              <linearGradient id="chart-stroke" x1="0" y1="0" x2="400" y2="0">
+                <stop offset="0%" stop-color="#8B4513"/>
+                <stop offset="100%" stop-color="#D2691E"/>
+              </linearGradient>
+            </defs>
+            <path class="chart-area" d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,25 C280,20 320,40 360,15 C380,10 400,20 400,20 L400,120 L0,120 Z" fill="url(#chart-fill)"/>
+            <path class="chart-line" d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,25 C280,20 320,40 360,15 C380,10 400,20 400,20" fill="none" stroke="url(#chart-stroke)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="chart-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TRUST BAR — Key guarantees
+       ============================================ -->
+  <div class="trust-bar">
+    <div class="trust-bar__inner">
+      <div class="trust-bar__item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Lifetime Guarantee</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span>Free Shipping Over $150</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>30-Day Returns</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span>Handmade with Care</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       STORY — Brand narrative
+       ============================================ -->
+  <section class="story" id="story">
+    <div class="story__inner">
+      <div class="story__text">
+        <span class="story__label">Our Story</span>
+        <h2 class="story__title">Born from a single piece of leather and a stubborn belief that things should last.</h2>
+        <p class="story__body">In 2019, Marcus Torres left a corporate design job in San Francisco with a simple idea: make things the way they used to be made. By hand. With materials that get better with time.
+        </p>
+        <p class="story__body">He rented a small workshop in Portland's Pearl District, bought his first set of hand tools, and started cutting leather on a marble slab he found at a salvage yard. The first journal took six hours. The customer wore it every day for three years and came back for another.</p>
+        <p class="story__body">That's how Atelier & Co started. Not with a business plan, but with one customer who understood what good leather feels like.</p>
+        <div class="story__stats">
+          <div class="story__stat">
+            <span class="story__stat-num" data-count="1200" data-suffix="+">0</span>
+            <span class="story__stat-label">Pieces Crafted</span>
+          </div>
+          <div class="story__stat">
+            <span class="story__stat-num" data-count="34">0</span>
+            <span class="story__stat-label">Countries Shipped</span>
+          </div>
+          <div class="story__stat">
+            <span class="story__stat-num" data-count="100" data-suffix="%">0</span>
+            <span class="story__stat-label">Hand-Stitched</span>
+          </div>
+        </div>
+      </div>
+      <div class="story__visual">
+        <div class="story__frame sk-card spotlight">
+          <div class="story__icon">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="12" width="48" height="40" rx="4"/>
+              <line x1="8" y1="20" x2="56" y2="20"/>
+              <line x1="16" y1="28" x2="48" y2="28"/>
+              <line x1="16" y1="34" x2="40" y2="34"/>
+              <line x1="16" y1="40" x2="36" y2="40"/>
+              <circle cx="48" cy="44" r="8" fill="var(--accent)" opacity="0.2"/>
+              <path d="M45 44l2 2 4-4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="story__frame-label">Portland, Oregon</span>
+          <span class="story__frame-year">Since 2019</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CRAFT — Our process and materials
+       ============================================ -->
+  <section class="features" id="craft">
+    <h2 class="section-title">The Craft</h2>
+    <p class="section-subtitle">Every piece begins with a single hide and ends with your hands. Here's how we make it happen.</p>
+
+    <div class="features__grid">
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--leather">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="sk-card__title">Full-Grain Selection</h3>
+        <p class="sk-card__desc">We source only the finest full-grain leather from tanneries in Italy and the American West. Each hide is inspected by hand for natural markings and grain quality.</p>
+        <a href="#collection" class="sk-card__link">See our leathers →</a>
+      </article>
+
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--wood">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3 class="sk-card__title">Hand Cutting</h3>
+        <p class="sk-card__desc">Each pattern is cut by hand using precision knives on marble slabs. No die cuts, no machines — every edge follows the artisan's steady hand.</p>
+        <a href="#" class="sk-card__link">Watch the process →</a>
+      </article>
+
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--chrome">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="sk-card__title">Waxed Thread Stitching</h3>
+        <p class="sk-card__desc">Saddle-stitched by hand using waxed linen thread. Two needles, one thread — a technique that's been used for centuries because it simply doesn't unravel.</p>
+        <a href="#" class="sk-card__link">Feel the stitch →</a>
+      </article>
+
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--glass">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <h3 class="sk-card__title">Edge Finishing</h3>
+        <p class="sk-card__desc">Edges are beveled, dyed, and burnished with a wooden slicker until they're smooth as glass. A process that takes patience but creates a seamless finish.</p>
+        <a href="#" class="sk-card__link">Trace the edge →</a>
+      </article>
+
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--linen">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="sk-card__title">Brass Hardware</h3>
+        <p class="sk-card__desc">Solid brass closures, rivets, and pen loops — not plated, not coated. Real brass that develops a warm patina alongside your leather over years of use.</p>
+        <a href="#" class="sk-card__link">See the metal →</a>
+      </article>
+
+      <article class="sk-card sk-card--feature spotlight">
+        <div class="sk-icon sk-icon--md sk-icon--amber">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="sk-card__title">Lifetime Guarantee</h3>
+        <p class="sk-card__desc">Every piece comes with a lifetime guarantee. If it breaks, we fix it. If it wears, we restore it. That's how confident we are in what we make.</p>
+        <a href="#pricing" class="sk-card__link">Learn more →</a>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       COLLECTION — Flip-card product showcase
+       ============================================ -->
+  <section class="materials" id="collection">
+    <h2 class="section-title">The Collection</h2>
+    <p class="section-subtitle">Tap any card to flip it and reveal the details — like turning a leather sample.</p>
+
+    <div class="materials__grid">
+      <!-- Heritage Journal -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for The Heritage Journal">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--leather sk-card--stitched spotlight">
+            <div class="sk-card__material-label">Journals</div>
+            <h3 class="sk-card__title">The Heritage Journal</h3>
+            <p class="sk-card__desc">A5 format, 192 pages of Tomoe River paper, full-grain saddle brown leather cover with brass clasp.</p>
+            <div class="sk-card__price">$185</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--leather sk-card--stitched">
+            <span class="flip-card__back-label">Specifications</span>
+            <h3 class="sk-card__title">Heritage Journal</h3>
+            <ul class="flip-card__specs">
+              <li><span>Size</span><span>A5 (148 × 210mm)</span></li>
+              <li><span>Pages</span><span>192 (Tomoe River 52gsm)</span></li>
+              <li><span>Leather</span><span>Full-grain vegetable tanned</span></li>
+              <li><span>Closure</span><span>Solid brass clasp</span></li>
+              <li><span>Thread</span><span>Waxed linen, saddle-stitched</span></li>
+              <li><span>Weight</span><span>340g</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bifold Wallet -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for The Bifold Wallet">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--wood sk-card--stitched spotlight">
+            <div class="sk-card__material-label">Wallets</div>
+            <h3 class="sk-card__title">The Bifold Wallet</h3>
+            <p class="sk-card__desc">Slim profile, 6 card slots, hand-stitched with waxed thread. Fits perfectly in a front pocket.</p>
+            <div class="sk-card__price">$120</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--wood sk-card--stitched">
+            <span class="flip-card__back-label">Specifications</span>
+            <h3 class="sk-card__title">Bifold Wallet</h3>
+            <ul class="flip-card__specs">
+              <li><span>Dimensions</span><span>110 × 85mm (folded)</span></li>
+              <li><span>Card Slots</span><span>6</span></li>
+              <li><span>Bill Pocket</span><span>2 full-length</span></li>
+              <li><span>Leather</span><span>Full-grain English bridle</span></li>
+              <li><span>Thread</span><span>Waxed linen, saddle-stitched</span></li>
+              <li><span>Thickness</span><span>12mm (empty)</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pen Sleeve -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for The Pen Sleeve">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--brushed sk-card--stitched spotlight">
+            <div class="sk-card__material-label">Accessories</div>
+            <h3 class="sk-card__title">The Pen Sleeve</h3>
+            <p class="sk-card__desc">Single pen holder with snap closure. Fits standard fountain pens and rollerballs.</p>
+            <div class="sk-card__price">$65</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--brushed sk-card--stitched">
+            <span class="flip-card__back-label">Specifications</span>
+            <h3 class="sk-card__title">Pen Sleeve</h3>
+            <ul class="flip-card__specs">
+              <li><span>Length</span><span>145mm</span></li>
+              <li><span>Fits</span><span>Up to 14mm diameter</span></li>
+              <li><span>Closure</span><span>Brass snap button</span></li>
+              <li><span>Leather</span><span>Full-grain vegetable tanned</span></li>
+              <li><span>Thread</span><span>Waxed linen, saddle-stitched</span></li>
+              <li><span>Weight</span><span>45g</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messenger Bag -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for The Messenger Bag">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--dark spotlight">
+            <div class="sk-card__material-label">Bags</div>
+            <h3 class="sk-card__title">The Messenger Bag</h3>
+            <p class="sk-card__desc">Full-grain leather messenger with adjustable shoulder strap. Ages beautifully with daily use.</p>
+            <div class="sk-card__price">$340</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--dark">
+            <span class="flip-card__back-label">Specifications</span>
+            <h3 class="sk-card__title">Messenger Bag</h3>
+            <ul class="flip-card__specs">
+              <li><span>Dimensions</span><span>380 × 280 × 100mm</span></li>
+              <li><span>Strap</span><span>Adjustable, 70–130cm</span></li>
+              <li><span>Compartments</span><span>3 (main + 2 interior)</span></li>
+              <li><span>Leather</span><span>Full-grain Horween shell</span></li>
+              <li><span>Closure</span><span>Brass turn-lock</span></li>
+              <li><span>Weight</span><span>980g</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workspace Set -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for The Workspace Set">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--tan spotlight">
+            <div class="sk-card__material-label">Sets</div>
+            <h3 class="sk-card__title">The Workspace Set</h3>
+            <p class="sk-card__desc">Journal + Wallet + Pen Sleeve bundled together. The perfect gift for someone who values craft.</p>
+            <div class="sk-card__price">$320</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--tan">
+            <span class="flip-card__back-label">What's Included</span>
+            <h3 class="sk-card__title">Workspace Set</h3>
+            <ul class="flip-card__specs">
+              <li><span>Heritage Journal</span><span>$185 value</span></li>
+              <li><span>Bifold Wallet</span><span>$120 value</span></li>
+              <li><span>Pen Sleeve</span><span>$65 value</span></li>
+              <li><span>Total Value</span><span>$370</span></li>
+              <li><span>Set Price</span><span>$320 (save $50)</span></li>
+              <li><span>Bonus</span><span>Free monogramming</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bespoke Orders -->
+      <div class="flip-card" tabindex="0" role="button" aria-expanded="false" aria-label="Flip card to see details for Bespoke Orders">
+        <div class="flip-card__inner">
+          <div class="flip-card__front sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--chocolate spotlight">
+            <div class="sk-card__material-label">Custom</div>
+            <h3 class="sk-card__title">Bespoke Orders</h3>
+            <p class="sk-card__desc">Custom embossing, monogramming, and material selection. Tell us what you need — we'll make it.</p>
+            <div class="sk-card__price">From $250</div>
+            <span class="flip-card__hint">Tap to flip →</span>
+          </div>
+          <div class="flip-card__back sk-card sk-card--material sk-card--leather sk-card--stitched sk-card--chocolate">
+            <span class="flip-card__back-label">Custom Options</span>
+            <h3 class="sk-card__title">Bespoke Orders</h3>
+            <ul class="flip-card__specs">
+              <li><span>Monogramming</span><span>Blind, gold, or copper foil</span></li>
+              <li><span>Leathers</span><span>12+ options available</span></li>
+              <li><span>Thread Colors</span><span>8 waxed linen colors</span></li>
+              <li><span>Hardware</span><span>Brass, nickel, or antique</span></li>
+              <li><span>Turnaround</span><span>3–4 weeks</span></li>
+              <li><span>Minimum</span><span>No minimum order</span></li>
+            </ul>
+            <span class="flip-card__hint">← Tap to flip back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       WORKSHOP — Inside our Portland workshop
+       ============================================ -->
+  <section class="dashboard" id="workshop">
+    <h2 class="section-title">The Workshop</h2>
+    <p class="section-subtitle">A peek inside our Portland studio where every piece is made by hand.</p>
+
+    <div class="dashboard__layout">
+      <aside class="sidebar sk-card" id="sidebar">
+        <button class="sidebar__toggle sk-btn sk-btn--icon" id="sidebarToggle" aria-label="Toggle sidebar" aria-expanded="true" aria-controls="sidebarNav">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <nav class="sidebar__nav" id="sidebarNav">
+          <a href="#" class="sidebar__item sidebar__item--active" data-tooltip="Workshop">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            <span class="sidebar__label">Workshop</span>
+          </a>
+          <a href="#" class="sidebar__item" data-tooltip="Inventory">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span class="sidebar__label">Inventory</span>
+            <span class="sk-badge">3</span>
+          </a>
+          <a href="#" class="sidebar__item" data-tooltip="Orders">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <span class="sidebar__label">Orders</span>
+          </a>
+          <a href="#" class="sidebar__item" data-tooltip="Messages">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span class="sidebar__label">Messages</span>
+            <span class="sk-badge">12</span>
+          </a>
+          <a href="#" class="sidebar__item" data-tooltip="Settings">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span class="sidebar__label">Settings</span>
+          </a>
+        </nav>
+        <div class="sidebar__profile sk-card sk-card--nested">
+          <div class="sidebar__avatar">
+            <div class="sk-avatar sk-avatar--leather">
+              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="13" r="5" fill="white" opacity="0.9"/><ellipse cx="16" cy="26" rx="8" ry="6" fill="white" opacity="0.7"/></svg>
+            </div>
+          </div>
+          <div class="sidebar__user-info">
+            <span class="sidebar__username">Marcus Torres</span>
+            <span class="sidebar__userrole">Master Craftsman</span>
+          </div>
+          <button class="sidebar__menu-btn" aria-label="User menu">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+          </button>
+        </div>
+      </aside>
+
+      <main class="dashboard__main">
+        <div class="dashboard__main-header">
+          <div>
+            <h3 class="dashboard__greeting">Good morning, Marcus 👋</h3>
+            <p class="dashboard__greeting-sub">Here's what's happening in the workshop today.</p>
+          </div>
+          <button class="sk-btn sk-btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            New Order
+          </button>
+        </div>
+
+        <div class="dashboard__stats-row">
+          <div class="sk-card sk-card--stat spotlight">
+            <div class="sk-icon sk-icon--sm sk-icon--leather">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="sk-stat-info">
+              <span class="sk-stat-label">Revenue</span>
+              <span class="sk-stat-value">$12,840</span>
+              <span class="sk-stat-change sk-stat-change--up">+18.3% this quarter</span>
+            </div>
+          </div>
+          <div class="sk-card sk-card--stat spotlight">
+            <div class="sk-icon sk-icon--sm sk-icon--wood">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="sk-stat-info">
+              <span class="sk-stat-label">Active Orders</span>
+              <span class="sk-stat-value">47</span>
+              <span class="sk-stat-change sk-stat-change--up">+5 new this week</span>
+            </div>
+          </div>
+          <div class="sk-card sk-card--stat spotlight">
+            <div class="sk-icon sk-icon--sm sk-icon--chrome">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="sk-stat-info">
+              <span class="sk-stat-label">Completion Rate</span>
+              <span class="sk-stat-value">98.2%</span>
+              <span class="sk-stat-change sk-stat-change--up">On time delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-card sk-card--wide spotlight">
+          <h4 class="sk-card__heading">Recent Activity</h4>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="sk-dot sk-dot--green"></div>
+              <div class="activity-info">
+                <span class="activity-text"><strong>Order shipped</strong> — Heritage Journal #1247 delivered to Portland</span>
+                <span class="activity-time">2 hours ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="sk-dot sk-dot--amber"></div>
+              <div class="activity-info">
+                <span class="activity-text"><strong>Leather arrived</strong> — 12 hides from Badalassi Carlo tannery</span>
+                <span class="activity-time">4 hours ago</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="sk-dot sk-dot--blue"></div>
+              <div class="activity-info">
+                <span class="activity-text"><strong>New commission</strong> — Custom messenger bag for corporate client</span>
+                <span class="activity-time">1 day ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       REVIEWS — Customer testimonials
+       ============================================ -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="section-title">Loved by Our Customers</h2>
+    <p class="section-subtitle">What people say about their Atelier & Co pieces.</p>
+
+    <div class="testimonials__grid">
+      <article class="sk-card sk-card--testimonial spotlight">
+        <div class="sk-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="sk-card__quote">"I bought my first Heritage Journal three years ago. The leather has developed this incredible patina — it looks better now than when it was new. I've never owned something that ages this gracefully."</blockquote>
+        <div class="sk-card__author">
+          <div class="sk-avatar sk-avatar--leather"><svg width="20" height="20" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="13" r="5" fill="white" opacity="0.9"/><ellipse cx="16" cy="26" rx="8" ry="6" fill="white" opacity="0.7"/></svg></div>
+          <div><span class="sk-card__author-name">Elena Voss</span><span class="sk-card__author-role">Creative Director, Portland</span></div>
+        </div>
+      </article>
+      <article class="sk-card sk-card--testimonial spotlight">
+        <div class="sk-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="sk-card__quote">"The craftsmanship is extraordinary. You can feel the hand-stitching the moment you pick it up. I've tried dozens of wallets — this is the one I'll keep for life."</blockquote>
+        <div class="sk-card__author">
+          <div class="sk-avatar sk-avatar--wood"><svg width="20" height="20" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="13" r="5" fill="white" opacity="0.9"/><ellipse cx="16" cy="26" rx="8" ry="6" fill="white" opacity="0.7"/></svg></div>
+          <div><span class="sk-card__author-name">James Chen</span><span class="sk-card__author-role">Software Engineer, Seattle</span></div>
+        </div>
+      </article>
+      <article class="sk-card sk-card--testimonial spotlight">
+        <div class="sk-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="sk-card__quote">"I ordered a custom messenger bag as a wedding gift. The monogramming was perfect, the leather was stunning, and it arrived in a beautiful cotton dust bag. The whole experience felt premium."</blockquote>
+        <div class="sk-card__author">
+          <div class="sk-avatar sk-avatar--chrome"><svg width="20" height="20" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="13" r="5" fill="white" opacity="0.9"/><ellipse cx="16" cy="26" rx="8" ry="6" fill="white" opacity="0.7"/></svg></div>
+          <div><span class="sk-card__author-name">Sarah Mitchell</span><span class="sk-card__author-role">Architect, San Francisco</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       PRICING — Product bundles
+       ============================================ -->
+  <section class="pricing" id="pricing">
+    <h2 class="section-title">Simple Pricing</h2>
+    <p class="section-subtitle">Each piece is individually crafted. No subscription, no hidden fees.</p>
+
+    <div class="pricing__grid">
+      <article class="sk-card sk-card--pricing spotlight">
+        <h3 class="sk-card__plan-name">Essentials</h3>
+        <div class="sk-card__plan-price"><span class="sk-card__plan-amount">$65</span><span class="sk-card__plan-period">starting at</span></div>
+        <ul class="sk-card__plan-features">
+          <li>✓ Pen Sleeve</li>
+          <li>✓ Card Holder</li>
+          <li>✓ Key Fob</li>
+          <li>✓ Gift wrapping</li>
+        </ul>
+        <button class="sk-btn sk-btn--secondary btn--full">Shop Essentials</button>
+      </article>
+      <article class="sk-card sk-card--pricing sk-card--featured spotlight">
+        <span class="sk-card__plan-badge">Best Seller</span>
+        <h3 class="sk-card__plan-name">Heritage</h3>
+        <div class="sk-card__plan-price"><span class="sk-card__plan-amount">$185</span><span class="sk-card__plan-period">starting at</span></div>
+        <ul class="sk-card__plan-features">
+          <li>✓ Heritage Journal</li>
+          <li>✓ Bifold Wallet</li>
+          <li>✓ Lifetime guarantee</li>
+          <li>✓ Free monogramming</li>
+        </ul>
+        <button class="sk-btn sk-btn--primary btn--full">Shop Heritage</button>
+      </article>
+      <article class="sk-card sk-card--pricing spotlight">
+        <h3 class="sk-card__plan-name">Workshop</h3>
+        <div class="sk-card__plan-price"><span class="sk-card__plan-amount">$340</span><span class="sk-card__plan-period">starting at</span></div>
+        <ul class="sk-card__plan-features">
+          <li>✓ Messenger Bag</li>
+          <li>✓ Laptop Sleeve</li>
+          <li>✓ Bespoke options</li>
+          <li>✓ Priority fulfillment</li>
+        </ul>
+        <button class="sk-btn sk-btn--secondary btn--full">Shop Workshop</button>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FAQ — About Atelier & Co
+       ============================================ -->
+  <section class="faq" id="faq">
+    <h2 class="section-title">Frequently Asked</h2>
+    <p class="section-subtitle">Everything you need to know about our leather goods.</p>
+
+    <div class="faq__list">
+      <details class="sk-card faq__item">
+        <summary class="faq__question">
+          What kind of leather do you use?
+          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__answer-wrap"><div class="faq__answer">We use exclusively full-grain leather — the highest grade available. Unlike top-grain or bonded leather, full-grain retains the entire grain surface, making it stronger and more durable. Each hide develops a unique patina over time.</div></div>
+      </details>
+      <details class="sk-card faq__item">
+        <summary class="faq__question">
+          How long does each piece take to make?
+          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__answer-wrap"><div class="faq__answer">A journal takes approximately 4-6 hours of hands-on work. A wallet takes 2-3 hours. A messenger bag can take 8-12 hours. Every piece is cut, stitched, and finished by a single craftsman.</div></div>
+      </details>
+      <details class="sk-card faq__item">
+        <summary class="faq__question">
+          What's your return policy?
+          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__answer-wrap"><div class="faq__answer">We offer a 30-day satisfaction guarantee. If you're not happy with your purchase, return it in its original condition for a full refund. Custom orders can be returned within 14 days.</div></div>
+      </details>
+      <details class="sk-card faq__item">
+        <summary class="faq__question">
+          Can I get my initials monogrammed?
+          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__answer-wrap"><div class="faq__answer">Yes. We offer blind embossing (no color), gold foil, and copper foil monogramming. Heritage and Workshop tier products include free monogramming. Standard fonts and custom fonts are available.</div></div>
+      </details>
+      <details class="sk-card faq__item">
+        <summary class="faq__question">
+          Where do you source your leather?
+          <svg class="faq__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq__answer-wrap"><div class="faq__answer">Our primary suppliers are Badalassi Carlo in Tuscany, Italy, and Wickett & Craig in Pennsylvania, USA. Both tanneries use traditional vegetable tanning methods that produce leather with exceptional character and durability.</div></div>
+      </details>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT — Get in touch with us
+       ============================================ -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Have a question, custom order, or partnership inquiry? We'd love to hear from you.</p>
+
+    <div class="contact__wrapper">
+      <form class="sk-card contact__form" id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" class="sk-input" placeholder=" " required autocomplete="name">
+          <label for="name" class="form-label">Full Name</label>
+          <span class="form-hint">Please enter your name</span>
+          <svg class="form-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" class="sk-input" placeholder=" " required autocomplete="email">
+          <label for="email" class="form-label">Email Address</label>
+          <span class="form-hint">Please enter a valid email</span>
+          <svg class="form-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <select id="subject" class="sk-input" required aria-label="Select inquiry subject">
+            <option value="" disabled selected>Subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="partnership">Partnership</option>
+          </select>
+          <span class="form-hint">Please select a subject</span>
+          <svg class="form-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="form-group">
+          <textarea id="message" class="sk-input sk-textarea" placeholder=" " rows="4" required></textarea>
+          <label for="message" class="form-label">Message</label>
+          <span class="form-hint">At least 10 characters</span>
+          <svg class="form-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <button type="submit" class="sk-btn sk-btn--primary sk-btn--lg btn--full contact__submit">Send Message</button>
+        <div class="contact__success" id="contactSuccess" role="status" aria-live="polite">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Message sent successfully!
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TOAST DEMO — Order notifications
+       ============================================ -->
+  <section class="toast-demo">
+    <h2 class="section-title">Order Updates</h2>
+    <p class="section-subtitle">See how we keep you informed about your order status.</p>
+    <div class="toast-demo__buttons">
+      <button class="sk-btn sk-btn--ghost toast-trigger" data-type="success">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Success
+      </button>
+      <button class="sk-btn sk-btn--ghost toast-trigger" data-type="error">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Error
+      </button>
+      <button class="sk-btn sk-btn--ghost toast-trigger" data-type="info">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Info
+      </button>
+    </div>
+  </section>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+
+  <!-- ============================================
+       WOODEN TOGGLE — Premium toggle switches
+       ============================================ -->
+  <section class="wood-toggle-demo">
+    <h2 class="section-title">Leather Options</h2>
+    <p class="section-subtitle">Choose from three premium leather finishes for your custom order.</p>
+
+    <div class="wood-toggle-demo__grid">
+      <!-- Saddle Brown -->
+      <div class="wood-toggle-showcase">
+        <span class="wood-toggle-showcase__label">Saddle Brown</span>
+        <label class="wood-toggle">
+          <input type="checkbox" class="wood-toggle__input" data-toggle-state>
+          <div class="wood-toggle__track"></div>
+          <div class="wood-toggle__thumb"></div>
+          <div class="wood-toggle__indicator"></div>
+        </label>
+        <span class="wood-toggle-showcase__state" data-toggle-label>Off</span>
+      </div>
+
+      <!-- Dark Walnut -->
+      <div class="wood-toggle-showcase">
+        <span class="wood-toggle-showcase__label">English Bridle</span>
+        <label class="wood-toggle wood-toggle--dark">
+          <input type="checkbox" class="wood-toggle__input" data-toggle-state>
+          <div class="wood-toggle__track"></div>
+          <div class="wood-toggle__thumb"></div>
+          <div class="wood-toggle__indicator"></div>
+        </label>
+        <span class="wood-toggle-showcase__state" data-toggle-label>Off</span>
+      </div>
+
+      <!-- Horween Shell -->
+      <div class="wood-toggle-showcase">
+        <span class="wood-toggle-showcase__label">Horween Shell</span>
+        <label class="wood-toggle wood-toggle--cherry">
+          <input type="checkbox" class="wood-toggle__input" data-toggle-state>
+          <div class="wood-toggle__track"></div>
+          <div class="wood-toggle__thumb"></div>
+          <div class="wood-toggle__indicator"></div>
+        </label>
+        <span class="wood-toggle-showcase__state" data-toggle-label>Off</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTROL PANEL — Workshop tools
+       ============================================ -->
+  <div class="control-panel sk-card" id="controlPanel" role="region" aria-label="Workshop tools">
+    <button class="control-panel__toggle" id="controlToggle" aria-label="Toggle tools" aria-expanded="false" aria-controls="controlBody">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+    <div class="control-panel__body" id="controlBody" aria-hidden="true">
+      <span class="control-panel__title">Craft Options</span>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Stitch Depth</span>
+          <span class="control-panel__value" id="shadowValue">8</span>
+        </div>
+        <input type="range" id="shadowSlider" class="sk-slider" min="0" max="30" value="8" step="1" aria-label="Shadow depth">
+      </div>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Edge Finish</span>
+          <span class="control-panel__value" id="bevelValue">2</span>
+        </div>
+        <input type="range" id="bevelSlider" class="sk-slider" min="0" max="6" value="2" step="1" aria-label="Bevel intensity">
+      </div>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Corner Round</span>
+          <span class="control-panel__value" id="radiusValue">12px</span>
+        </div>
+        <input type="range" id="radiusSlider" class="sk-slider" min="0" max="30" value="12" step="1" aria-label="Border radius">
+      </div>
+
+      <div class="control-panel__presets">
+        <button class="sk-preset sk-preset--active" data-shadow="8" data-bevel="2" data-radius="12">Default</button>
+        <button class="sk-preset" data-shadow="3" data-bevel="1" data-radius="6">Flat</button>
+        <button class="sk-preset" data-shadow="16" data-bevel="4" data-radius="16">Deep</button>
+        <button class="sk-preset" data-shadow="30" data-bevel="6" data-radius="24">Extreme</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+
+  </main>
+
+  <!-- ============================================
+       FOOTER — Brand footer
+       ============================================ -->
+  <footer class="footer sk-card">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+          <rect width="28" height="28" rx="6" fill="url(#logo-grad2)"/>
+          <path d="M8 14L12 10L16 14L12 18Z" fill="white" opacity="0.9"/>
+          <path d="M12 10L16 6L20 10L16 14Z" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="logo-grad2" x1="0" y1="0" x2="28" y2="28">
+              <stop offset="0%" stop-color="#8B4513"/>
+              <stop offset="100%" stop-color="#D2691E"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Atelier & Co</span>
+      </div>
+      <div class="footer__links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#craft">The Craft</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">© 2026 Atelier & Co. Handcrafted in Portland, Oregon.</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=30" defer></script>
+</body>
+</html>

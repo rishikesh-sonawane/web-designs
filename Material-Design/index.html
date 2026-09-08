@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layer — Production-Ready Material Design Components</title>
+  <meta name="description" content="Layer is a production-ready component library built on Material Design 3. Ship beautiful, accessible products faster with systematic elevation, color, and motion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+  <meta name="theme-color" content="#FFFBFE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C1B1F" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='8' fill='%236750A4'/%3E%3Cpath d='M8 10h12M8 14h8M8 18h10' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Skip navigation -->
+  <a href="#main-content" class="skip-link" style="position: absolute; top: -100%; left: 16px; z-index: 999; padding: 12px 24px; background: var(--md-primary); color: var(--md-on-primary); border-radius: var(--md-radius-xs); font: var(--md-label-large); text-decoration: none; transition: top 0.2s;">Skip to main content</a>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="md-nav" id="nav">
+    <div class="md-nav__inner">
+      <div class="md-nav__brand">
+        <div class="md-nav__logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect width="28" height="28" rx="8" fill="var(--md-primary)"/>
+            <path d="M8 10h12M8 14h8M8 18h10" stroke="var(--md-on-primary)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="md-nav__name">Layer</span>
+      </div>
+
+      <nav class="md-nav__links" aria-label="Main navigation">
+        <a href="#features" class="md-nav__link">Features</a>
+        <a href="#elevation" class="md-nav__link">Elevation</a>
+        <a href="#components" class="md-nav__link">Components</a>
+        <a href="#dashboard" class="md-nav__link">Dashboard</a>
+        <a href="#pricing" class="md-nav__link">Pricing</a>
+      </nav>
+
+      <div class="md-nav__actions">
+        <button class="md-icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <span class="material-icons-outlined theme-toggle__icon--dark">dark_mode</span>
+          <span class="material-icons-outlined theme-toggle__icon--light">light_mode</span>
+        </button>
+        <a href="#pricing" class="md-btn md-btn--filled nav__cta">Get Started</a>
+      </div>
+
+      <button class="md-nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="material-icons-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+
+    <div class="md-nav__mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#features" class="md-nav__link">Features</a>
+      <a href="#elevation" class="md-nav__link">Elevation</a>
+      <a href="#components" class="md-nav__link">Components</a>
+      <a href="#dashboard" class="md-nav__link">Dashboard</a>
+      <a href="#pricing" class="md-nav__link">Pricing</a>
+      <div class="md-nav__mobile-actions">
+        <a href="#pricing" class="md-btn md-btn--filled btn--full">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================
+       HERO — Product introduction
+       ============================================ -->
+  <section class="md-hero" id="main-content">
+    <div class="md-hero__content">
+      <div class="md-chip md-chip--assist hero__badge hero__badge-anim">
+        <span class="material-icons-outlined md-chip__icon" aria-hidden="true">auto_awesome</span>
+        v2.4 — Now with dynamic color
+      </div>
+      <h1 class="md-hero__title md-hero__title-anim">
+        Ship beautiful products,<br>
+        <span class="md-hero__title-accent">faster.</span>
+      </h1>
+      <p class="md-hero__subtitle md-hero__subtitle-anim">
+        Layer is a production-ready component library built on Material Design 3.
+        Systematic elevation, dynamic color, and accessible interactions — so you
+        can focus on what matters: your product.
+      </p>
+      <div class="md-hero__ctas md-hero__ctas-anim">
+        <a href="#pricing" class="md-btn md-btn--filled md-btn--lg">
+          <span class="material-icons-outlined" aria-hidden="true">arrow_forward</span>
+          Start Building
+        </a>
+        <a href="#components" class="md-btn md-btn--outlined md-btn--lg">
+          <span class="material-icons-outlined" aria-hidden="true">play_circle</span>
+          View Components
+        </a>
+      </div>
+      <div class="md-hero__proof md-hero__proof-anim">
+        <div class="md-hero__proof-item">
+          <span class="md-hero__proof-num">48+</span>
+          <span class="md-hero__proof-label">Components</span>
+        </div>
+        <div class="md-hero__proof-divider"></div>
+        <div class="md-hero__proof-item">
+          <span class="md-hero__proof-num">WCAG AA</span>
+          <span class="md-hero__proof-label">Accessible</span>
+        </div>
+        <div class="md-hero__proof-divider"></div>
+        <div class="md-hero__proof-item">
+          <span class="md-hero__proof-num">MIT</span>
+          <span class="md-hero__proof-label">Open Source</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero visual: mini dashboard preview -->
+    <div class="md-hero__visual md-hero__visual-anim">
+      <div class="hero-preview md-card md-card--elevated">
+        <div class="hero-preview__bar">
+          <div class="hero-preview__dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="hero-preview__title">Layer Dashboard</span>
+          <div style="margin-left: auto; display: flex; gap: 8px; align-items: center;">
+            <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--md-primary-container); display: flex; align-items: center; justify-content: center;">
+              <span class="material-icons-outlined" aria-hidden="true" style="font-size: 14px; color: var(--md-on-primary-container);">person</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-preview__body">
+          <div class="hero-preview__sidebar">
+            <div class="hero-preview__nav-item hero-preview__nav-item--active"></div>
+            <div class="hero-preview__nav-item"></div>
+            <div class="hero-preview__nav-item"></div>
+            <div class="hero-preview__nav-item"></div>
+            <div class="hero-preview__nav-item"></div>
+          </div>
+          <div class="hero-preview__main">
+            <div class="hero-preview__stat-row">
+              <div class="hero-preview__stat">
+                <div style="padding: 12px;">
+                  <div style="font-size: 10px; color: var(--md-on-surface-variant); margin-bottom: 4px;">Revenue</div>
+                  <div style="font-size: 16px; font-weight: 700; color: var(--md-on-surface);">$48.2k</div>
+                  <div style="font-size: 9px; color: #2e7d32; margin-top: 2px;">+12.5%</div>
+                </div>
+              </div>
+              <div class="hero-preview__stat">
+                <div style="padding: 12px;">
+                  <div style="font-size: 10px; color: var(--md-on-surface-variant); margin-bottom: 4px;">Users</div>
+                  <div style="font-size: 16px; font-weight: 700; color: var(--md-on-surface);">2,847</div>
+                  <div style="font-size: 9px; color: #2e7d32; margin-top: 2px;">+8.2%</div>
+                </div>
+              </div>
+              <div class="hero-preview__stat">
+                <div style="padding: 12px;">
+                  <div style="font-size: 10px; color: var(--md-on-surface-variant); margin-bottom: 4px;">Conv.</div>
+                  <div style="font-size: 16px; font-weight: 700; color: var(--md-on-surface);">3.6%</div>
+                  <div style="font-size: 9px; color: var(--md-error); margin-top: 2px;">-0.4%</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-preview__chart" style="position: relative;">
+              <svg width="100%" height="100%" viewBox="0 0 400 120" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0;" aria-hidden="true">
+                <defs>
+                  <linearGradient id="hero-chart-fill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--md-primary)" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="var(--md-primary)" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,25 C280,20 320,40 360,15 L400,10 L400,120 L0,120 Z" fill="url(#hero-chart-fill)"/>
+                <path d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,25 C280,20 320,40 360,15 L400,10" fill="none" stroke="var(--md-primary)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FEATURES — Core value proposition
+       ============================================ -->
+  <section class="md-features" id="features">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Why Layer</span>
+      <h2 class="md-section-title">Built for teams that ship.</h2>
+      <p class="md-section-subtitle">Every component follows the same elevation, color, and motion system. No guesswork. No inconsistencies.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Hero feature: spans full width with visual -->
+      <div class="md-card md-card--elevated feature-card feature-card--hero spotlight">
+        <div class="md-card__content">
+          <span class="material-icons-outlined feature-icon" style="font-size: 48px;">layers</span>
+          <h3 class="md-card__title" style="font: var(--md-headline-medium); margin-bottom: 12px;">Systematic Elevation</h3>
+          <p class="md-card__body" style="font: var(--md-body-large); max-width: 440px;">10 elevation levels from dp 0 to dp 24. Every shadow communicates hierarchy. Cards lift on hover, dialogs float above, and the FAB casts the deepest shadow.</p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="md-chip md-chip--filter md-chip--selected"><span class="material-icons-outlined md-chip__icon" aria-hidden="true">check</span>dp 0–24</span>
+            <span class="md-chip md-chip--filter"><span class="material-icons-outlined md-chip__icon" aria-hidden="true">check</span>CSS Variables</span>
+            <span class="md-chip md-chip--filter"><span class="material-icons-outlined md-chip__icon" aria-hidden="true">check</span>Customizable</span>
+          </div>
+        </div>
+        <div class="feature-hero-visual" aria-hidden="true">
+          <div style="display: flex; gap: 16px; align-items: flex-end; padding: 24px;">
+            <div style="width: 64px; height: 48px; border-radius: 8px; background: var(--md-surface-container-low); box-shadow: var(--md-elevation-0); border: 1px solid var(--md-outline-variant);"></div>
+            <div style="width: 64px; height: 64px; border-radius: 12px; background: var(--md-surface-container-low); box-shadow: var(--md-elevation-2);"></div>
+            <div style="width: 64px; height: 80px; border-radius: 12px; background: var(--md-surface-container-low); box-shadow: var(--md-elevation-4);"></div>
+            <div style="width: 64px; height: 96px; border-radius: 12px; background: var(--md-surface-container-low); box-shadow: var(--md-elevation-8);"></div>
+            <div style="width: 64px; height: 112px; border-radius: 12px; background: var(--md-primary-container); box-shadow: var(--md-elevation-12);"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated feature-card spotlight">
+        <div class="md-card__content">
+          <span class="material-icons-outlined feature-icon">palette</span>
+          <h3 class="md-card__title">Dynamic Color</h3>
+          <p class="md-card__body">Full MD3 color system with primary, secondary, tertiary, and surface tones. Dark mode included. One toggle switches the entire palette seamlessly.</p>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated feature-card spotlight">
+        <div class="md-card__content">
+          <span class="material-icons-outlined feature-icon">accessibility_new</span>
+          <h3 class="md-card__title">Accessible by Default</h3>
+          <p class="md-card__body">WCAG AA contrast, keyboard navigation, focus indicators, reduced motion support. Every component works for every user.</p>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated feature-card spotlight">
+        <div class="md-card__content">
+          <span class="material-icons-outlined feature-icon">speed</span>
+          <h3 class="md-card__title">Motion Language</h3>
+          <p class="md-card__body">Consistent easing curves and durations. Standard, emphasized, decelerate, accelerate — every transition feels intentional and physical.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       ELEVATION SHOWCASE
+       ============================================ -->
+  <section class="md-elevation-section" id="elevation">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Foundation</span>
+      <h2 class="md-section-title">Elevation system</h2>
+      <p class="md-section-subtitle">Elements live at different Z-heights. Higher elevation = more shadow = more importance.</p>
+    </div>
+
+    <div class="elevation-grid">
+      <div class="elevation-demo" data-elevation="0">
+        <div class="elevation-card elevation-card--0">
+          <span class="elevation-label">dp 0</span>
+          <span class="elevation-desc">Flat surface</span>
+        </div>
+        <code class="elevation-code">0dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="1">
+        <div class="elevation-card elevation-card--1">
+          <span class="elevation-label">dp 1</span>
+          <span class="elevation-desc">Resting cards</span>
+        </div>
+        <code class="elevation-code">1dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="2">
+        <div class="elevation-card elevation-card--2">
+          <span class="elevation-label">dp 2</span>
+          <span class="elevation-desc">Cards on hover</span>
+        </div>
+        <code class="elevation-code">2dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="3">
+        <div class="elevation-card elevation-card--3">
+          <span class="elevation-label">dp 3</span>
+          <span class="elevation-desc">FAB resting</span>
+        </div>
+        <code class="elevation-code">3dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="4">
+        <div class="elevation-card elevation-card--4">
+          <span class="elevation-label">dp 4</span>
+          <span class="elevation-desc">Menus, dialogs</span>
+        </div>
+        <code class="elevation-code">4dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="6">
+        <div class="elevation-card elevation-card--6">
+          <span class="elevation-label">dp 6</span>
+          <span class="elevation-desc">FAB pressed</span>
+        </div>
+        <code class="elevation-code">6dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="8">
+        <div class="elevation-card elevation-card--8">
+          <span class="elevation-label">dp 8</span>
+          <span class="elevation-desc">Navigation drawer</span>
+        </div>
+        <code class="elevation-code">8dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="12">
+        <div class="elevation-card elevation-card--12">
+          <span class="elevation-label">dp 12</span>
+          <span class="elevation-desc">FAB moving</span>
+        </div>
+        <code class="elevation-code">12dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="16">
+        <div class="elevation-card elevation-card--16">
+          <span class="elevation-label">dp 16</span>
+          <span class="elevation-desc">Modal bottom sheet</span>
+        </div>
+        <code class="elevation-code">16dp</code>
+      </div>
+      <div class="elevation-demo" data-elevation="24">
+        <div class="elevation-card elevation-card--24">
+          <span class="elevation-label">dp 24</span>
+          <span class="elevation-desc">Dialog, snackbar</span>
+        </div>
+        <code class="elevation-code">24dp</code>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       COMPONENTS — Interactive showcase
+       ============================================ -->
+  <section class="md-components" id="components">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Library</span>
+      <h2 class="md-section-title">Every component, one system.</h2>
+      <p class="md-section-subtitle">Cards, buttons, chips, switches, sliders, text fields — all following the same elevation, color, and motion tokens.</p>
+    </div>
+
+    <div class="components-grid">
+      <!-- Card -->
+      <div class="md-card spotlight" style="grid-column: span 2;">
+        <div class="md-card__media" style="background: linear-gradient(135deg, var(--md-primary), var(--md-tertiary));">
+          <span class="material-icons-outlined md-card__media-icon">image</span>
+        </div>
+        <div class="md-card__content">
+          <h3 class="md-card__title">Elevated Card</h3>
+          <p class="md-card__subtitle">dp 1 resting → dp 2 on hover</p>
+          <p class="md-card__body">Cards are the fundamental building block. They rest at 1dp elevation and lift to 2dp on hover, with shadow transitioning via the standard easing curve.</p>
+        </div>
+        <div class="md-card__actions">
+          <button class="md-btn md-btn--text">Learn More</button>
+          <button class="md-btn md-btn--text">Dismiss</button>
+        </div>
+      </div>
+
+      <!-- Outlined Card -->
+      <div class="md-card md-card--outlined spotlight">
+        <div class="md-card__content">
+          <h3 class="md-card__title">Outlined Card</h3>
+          <p class="md-card__subtitle">Border instead of shadow</p>
+          <p class="md-card__body">For secondary content that shouldn't compete with elevated cards.</p>
+        </div>
+        <div class="md-card__actions">
+          <button class="md-btn md-btn--text">Action</button>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="component-showcase">
+        <h4 class="component-showcase__title">Buttons</h4>
+        <div class="component-showcase__row">
+          <button class="md-btn md-btn--filled">Filled</button>
+          <button class="md-btn md-btn--outlined">Outlined</button>
+          <button class="md-btn md-btn--text">Text</button>
+          <button class="md-btn md-btn--tonal">Tonal</button>
+          <button class="md-btn md-btn--elevated">Elevated</button>
+        </div>
+        <div class="component-showcase__row">
+          <button class="md-btn md-btn--filled md-btn--icon" aria-label="Favorite">
+            <span class="material-icons-outlined" aria-hidden="true">favorite</span>
+          </button>
+          <button class="md-btn md-btn--outlined md-btn--icon" aria-label="Bookmark">
+            <span class="material-icons-outlined" aria-hidden="true">bookmark</span>
+          </button>
+          <button class="md-btn md-btn--text md-btn--icon" aria-label="Share">
+            <span class="material-icons-outlined" aria-hidden="true">share</span>
+          </button>
+          <button class="md-fab md-fab--small" aria-label="Add">
+            <span class="material-icons-outlined" aria-hidden="true">add</span>
+          </button>
+          <button class="md-fab md-fab--primary" aria-label="Edit">
+            <span class="material-icons-outlined" aria-hidden="true">edit</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Chips -->
+      <div class="component-showcase">
+        <h4 class="component-showcase__title">Chips</h4>
+        <div class="component-showcase__row">
+          <span class="md-chip md-chip--assist">
+            <span class="material-icons-outlined md-chip__icon" aria-hidden="true">face</span>
+            Assist
+          </span>
+          <span class="md-chip md-chip--filter md-chip--selected">
+            <span class="material-icons-outlined md-chip__icon" aria-hidden="true">check</span>
+            Filter
+          </span>
+          <span class="md-chip md-chip--input">Input Chip</span>
+          <span class="md-chip md-chip--suggestion">
+            <span class="material-icons-outlined md-chip__icon" aria-hidden="true">add</span>
+            Suggestion
+          </span>
+        </div>
+      </div>
+
+      <!-- Switches & Toggles -->
+      <div class="component-showcase">
+        <h4 class="component-showcase__title">Switches & Toggles</h4>
+        <div class="component-showcase__row" style="align-items: center; gap: 24px;">
+          <label class="md-switch">
+            <input type="checkbox" checked>
+            <span class="md-switch__track"><span class="md-switch__thumb"></span></span>
+            <span class="md-switch__label">Notifications</span>
+          </label>
+          <label class="md-switch">
+            <input type="checkbox">
+            <span class="md-switch__track"><span class="md-switch__thumb"></span></span>
+            <span class="md-switch__label">Dark Mode</span>
+          </label>
+        </div>
+        <div class="component-showcase__row" style="align-items: center; gap: 16px;">
+          <span class="md-checkbox">
+            <input type="checkbox" id="chk1" checked>
+            <span class="md-checkbox__box"><span class="material-icons-outlined" aria-hidden="true">check</span></span>
+            <label for="chk1">Checkbox A</label>
+          </span>
+          <span class="md-checkbox">
+            <input type="checkbox" id="chk2">
+            <span class="md-checkbox__box"><span class="material-icons-outlined" aria-hidden="true">check</span></span>
+            <label for="chk2">Checkbox B</label>
+          </span>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="component-showcase" style="grid-column: span 2;">
+        <h4 class="component-showcase__title">Slider</h4>
+        <div class="component-showcase__row" style="align-items: center; gap: 16px;">
+          <span class="material-icons-outlined" aria-hidden="true" style="color: var(--md-on-surface-variant); font-size: 20px;">volume_down</span>
+          <input type="range" class="md-slider" min="0" max="100" value="60">
+          <span class="material-icons-outlined" aria-hidden="true" style="color: var(--md-on-surface-variant); font-size: 20px;">volume_up</span>
+          <span class="md-slider__value">60</span>
+        </div>
+      </div>
+
+      <!-- Text Fields -->
+      <div class="component-showcase" style="grid-column: span 2;">
+        <h4 class="component-showcase__title">Text Fields</h4>
+        <div class="component-showcase__row" style="gap: 16px;">
+          <div class="md-field">
+            <input type="text" id="tf1" class="md-field__input" placeholder=" " required>
+            <label for="tf1" class="md-field__label">Filled TextField</label>
+            <span class="md-field__support">Helper text</span>
+          </div>
+          <div class="md-field md-field--outlined">
+            <input type="text" id="tf2" class="md-field__input" placeholder=" " required>
+            <label for="tf2" class="md-field__label">Outlined TextField</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       DASHBOARD — Product proof
+       ============================================ -->
+  <section class="md-dashboard" id="dashboard">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Product Proof</span>
+      <h2 class="md-section-title">See it in action.</h2>
+      <p class="md-section-subtitle">A complete Material Design dashboard with navigation rail, elevation hierarchy, and real-time data.</p>
+    </div>
+
+    <div class="dashboard-layout">
+      <!-- Navigation Rail -->
+      <nav class="nav-rail md-card md-card--elevated" aria-label="Dashboard navigation">
+        <div class="nav-rail__items">
+          <a href="#" class="nav-rail__item nav-rail__item--active" aria-current="page">
+            <span class="material-icons-outlined" aria-hidden="true">dashboard</span>
+            <span class="nav-rail__label">Home</span>
+          </a>
+          <a href="#" class="nav-rail__item">
+            <span class="material-icons-outlined" aria-hidden="true">analytics</span>
+            <span class="nav-rail__label">Analytics</span>
+            <span class="md-badge">3</span>
+          </a>
+          <a href="#" class="nav-rail__item">
+            <span class="material-icons-outlined" aria-hidden="true">folder</span>
+            <span class="nav-rail__label">Projects</span>
+          </a>
+          <a href="#" class="nav-rail__item">
+            <span class="material-icons-outlined" aria-hidden="true">chat</span>
+            <span class="nav-rail__label">Messages</span>
+            <span class="md-badge">12</span>
+          </a>
+          <a href="#" class="nav-rail__item">
+            <span class="material-icons-outlined" aria-hidden="true">settings</span>
+            <span class="nav-rail__label">Settings</span>
+          </a>
+        </div>
+        <div class="nav-rail__profile">
+          <div class="md-avatar md-avatar--filled">
+            <span class="material-icons-outlined" aria-hidden="true">person</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="dashboard-main" aria-label="Dashboard content">
+        <div class="dashboard-header">
+          <div>
+            <h3 class="dashboard-greeting">Good morning, Sarah</h3>
+            <p class="dashboard-sub">Here's what's happening with your projects today.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <div style="max-width: 240px; position: relative;">
+              <span class="material-icons-outlined" aria-hidden="true" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 18px; color: var(--md-on-surface-variant); pointer-events: none;">search</span>
+              <input type="text" placeholder="Search projects..." aria-label="Search projects" style="height: 40px; padding: 0 12px 0 34px; font: var(--md-body-medium); border: 1px solid var(--md-outline); border-radius: var(--md-radius-full); background: transparent; color: var(--md-on-surface); width: 100%; outline: none; transition: border-color var(--md-duration-short) var(--md-easing-standard);" onfocus="this.style.borderColor='var(--md-primary)'" onblur="this.style.borderColor='var(--md-outline)'">
+            </div>
+            <button class="md-btn md-btn--filled md-btn--icon-label">
+              <span class="material-icons-outlined" aria-hidden="true">add</span>
+              New Project
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="stats-row">
+          <div class="md-card md-card--elevated spotlight">
+            <div class="md-card__content md-card__content--compact">
+              <div class="stat-header">
+                <span class="material-icons-outlined stat-icon stat-icon--primary">payments</span>
+                <span class="md-badge md-badge--success">+12.5%</span>
+              </div>
+              <span class="stat-value" data-count="48,295" data-prefix="$">$0</span>
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px;">
+                <span class="stat-label">Revenue</span>
+                <svg width="64" height="24" viewBox="0 0 64 24" fill="none" style="margin-left: auto;" aria-hidden="true">
+                  <polyline points="0,20 8,18 16,14 24,16 32,10 40,8 48,6 56,4 64,2" stroke="var(--md-primary)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="md-card md-card--elevated spotlight">
+            <div class="md-card__content md-card__content--compact">
+              <div class="stat-header">
+                <span class="material-icons-outlined stat-icon stat-icon--secondary">group</span>
+                <span class="md-badge md-badge--success">+8.2%</span>
+              </div>
+              <span class="stat-value" data-count="2,847">0</span>
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px;">
+                <span class="stat-label">Active Users</span>
+                <svg width="64" height="24" viewBox="0 0 64 24" fill="none" style="margin-left: auto;" aria-hidden="true">
+                  <polyline points="0,18 8,16 16,20 24,12 32,14 40,8 48,10 56,6 64,4" stroke="var(--md-secondary)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="md-card md-card--elevated spotlight">
+            <div class="md-card__content md-card__content--compact">
+              <div class="stat-header">
+                <span class="material-icons-outlined stat-icon stat-icon--tertiary">trending_up</span>
+                <span class="md-badge md-badge--error">-0.4%</span>
+              </div>
+              <span class="stat-value" data-count="3.6" data-suffix="%">0%</span>
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px;">
+                <span class="stat-label">Conversion</span>
+                <svg width="64" height="24" viewBox="0 0 64 24" fill="none" style="margin-left: auto;" aria-hidden="true">
+                  <polyline points="0,8 8,6 16,10 24,8 32,12 40,10 48,14 56,12 64,16" stroke="var(--md-tertiary)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart Card -->
+        <div class="md-card md-card--elevated spotlight">
+          <div class="md-card__content">
+            <div class="chart-header">
+              <div>
+                <h4 class="md-card__title">Revenue Overview</h4>
+                <p style="font: var(--md-body-small); color: var(--md-on-surface-variant); margin-top: 2px;">Weekly performance across all projects</p>
+              </div>
+              <div class="md-segmented-button">
+                <button class="md-seg-btn md-seg-btn--active" data-period="week">Week</button>
+                <button class="md-seg-btn" data-period="month">Month</button>
+                <button class="md-seg-btn" data-period="year">Year</button>
+              </div>
+            </div>
+            <svg class="md-chart" viewBox="0 0 600 200" preserveAspectRatio="none" aria-label="Revenue chart">
+              <defs>
+                <linearGradient id="md-chart-fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--md-primary)" stop-opacity="0.15"/>
+                  <stop offset="100%" stop-color="var(--md-primary)" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="md-chart-stroke" x1="0" y1="0" x2="600" y2="0">
+                  <stop offset="0%" stop-color="var(--md-primary)"/>
+                  <stop offset="100%" stop-color="var(--md-tertiary)"/>
+                </linearGradient>
+              </defs>
+              <g aria-hidden="true">
+                <line x1="0" y1="50" x2="600" y2="50" stroke="var(--md-outline-variant)" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.5"/>
+                <line x1="0" y1="100" x2="600" y2="100" stroke="var(--md-outline-variant)" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.5"/>
+                <line x1="0" y1="150" x2="600" y2="150" stroke="var(--md-outline-variant)" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.5"/>
+              </g>
+              <path class="md-chart__area" d="M0,150 C50,140 100,100 150,105 C200,110 250,60 300,50 C350,40 400,70 450,30 C500,20 550,25 600,20 L600,200 L0,200 Z" fill="url(#md-chart-fill)"/>
+              <path class="md-chart__line" d="M0,150 C50,140 100,100 150,105 C200,110 250,60 300,50 C350,40 400,70 450,30 C500,20 550,25 600,20" fill="none" stroke="url(#md-chart-stroke)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="0" cy="150" r="4" fill="var(--md-primary)"/>
+              <circle cx="150" cy="105" r="4" fill="var(--md-primary)"/>
+              <circle cx="300" cy="50" r="4" fill="var(--md-primary)"/>
+              <circle cx="450" cy="30" r="4" fill="var(--md-primary)"/>
+              <circle cx="600" cy="20" r="4" fill="var(--md-tertiary)"/>
+              <!-- Value labels -->
+              <text x="300" y="44" text-anchor="middle" font-size="11" fill="var(--md-on-surface)" font-family="var(--font)" font-weight="600">$12.4k</text>
+            </svg>
+            <div class="md-chart__labels">
+              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity + Projects row -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <!-- Activity -->
+          <div class="md-card md-card--elevated spotlight">
+            <div class="md-card__content">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                <h4 class="md-card__title">Recent Activity</h4>
+                <button class="md-btn md-btn--text" style="font-size: 0.8125rem;">View all</button>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="md-avatar md-avatar--small md-avatar--green">
+                    <span class="material-icons-outlined" aria-hidden="true">check_circle</span>
+                  </div>
+                  <div class="activity-info">
+                    <span class="activity-text"><strong>New deployment</strong> — v2.4.1 shipped to production</span>
+                    <span class="activity-time">2 minutes ago</span>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="md-avatar md-avatar--small md-avatar--amber">
+                    <span class="material-icons-outlined" aria-hidden="true">warning</span>
+                  </div>
+                  <div class="activity-info">
+                    <span class="activity-text"><strong>Server alert</strong> — CPU usage at 87% on us-east-1</span>
+                    <span class="activity-time">15 minutes ago</span>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="md-avatar md-avatar--small md-avatar--primary">
+                    <span class="material-icons-outlined" aria-hidden="true">person_add</span>
+                  </div>
+                  <div class="activity-info">
+                    <span class="activity-text"><strong>New signup</strong> — Acme Corp upgraded to Pro</span>
+                    <span class="activity-time">1 hour ago</span>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="md-avatar md-avatar--small" style="background: var(--md-tertiary-container); color: var(--md-on-tertiary-container);">
+                    <span class="material-icons-outlined" aria-hidden="true">code</span>
+                  </div>
+                  <div class="activity-info">
+                    <span class="activity-text"><strong>PR merged</strong> — feat: add dark mode tokens (#847)</span>
+                    <span class="activity-time">3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Projects -->
+          <div class="md-card md-card--elevated spotlight">
+            <div class="md-card__content">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                <h4 class="md-card__title">Active Projects</h4>
+                <button class="md-btn md-btn--text" style="font-size: 0.8125rem;">View all</button>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <div style="width: 40px; height: 40px; border-radius: var(--md-radius-xs); background: var(--md-primary-container); display: flex; align-items: center; justify-content: center;">
+                    <span class="material-icons-outlined" aria-hidden="true" style="font-size: 20px; color: var(--md-on-primary-container);">web</span>
+                  </div>
+                  <div style="flex: 1; min-width: 0;">
+                    <div style="font: var(--md-label-large); color: var(--md-on-surface);">Layer Documentation</div>
+                    <div style="font: var(--md-body-small); color: var(--md-on-surface-variant);">Updated 2h ago</div>
+                  </div>
+                  <div style="width: 80px; height: 4px; border-radius: 2px; background: var(--md-surface-container-highest); overflow: hidden;">
+                    <div style="width: 85%; height: 100%; background: var(--md-primary); border-radius: 2px;"></div>
+                  </div>
+                  <span style="font: var(--md-label-small); color: var(--md-on-surface-variant);">85%</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <div style="width: 40px; height: 40px; border-radius: var(--md-radius-xs); background: var(--md-secondary-container); display: flex; align-items: center; justify-content: center;">
+                    <span class="material-icons-outlined" aria-hidden="true" style="font-size: 20px; color: var(--md-on-secondary-container);">palette</span>
+                  </div>
+                  <div style="flex: 1; min-width: 0;">
+                    <div style="font: var(--md-label-large); color: var(--md-on-surface);">Color System v3</div>
+                    <div style="font: var(--md-body-small); color: var(--md-on-surface-variant);">Updated 5h ago</div>
+                  </div>
+                  <div style="width: 80px; height: 4px; border-radius: 2px; background: var(--md-surface-container-highest); overflow: hidden;">
+                    <div style="width: 62%; height: 100%; background: var(--md-secondary); border-radius: 2px;"></div>
+                  </div>
+                  <span style="font: var(--md-label-small); color: var(--md-on-surface-variant);">62%</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <div style="width: 40px; height: 40px; border-radius: var(--md-radius-xs); background: var(--md-tertiary-container); display: flex; align-items: center; justify-content: center;">
+                    <span class="material-icons-outlined" aria-hidden="true" style="font-size: 20px; color: var(--md-on-tertiary-container);">integration_instructions</span>
+                  </div>
+                  <div style="flex: 1; min-width: 0;">
+                    <div style="font: var(--md-label-large); color: var(--md-on-surface);">React Starter Kit</div>
+                    <div style="font: var(--md-body-small); color: var(--md-on-surface-variant);">Updated 1d ago</div>
+                  </div>
+                  <div style="width: 80px; height: 4px; border-radius: 2px; background: var(--md-surface-container-highest); overflow: hidden;">
+                    <div style="width: 38%; height: 100%; background: var(--md-tertiary); border-radius: 2px;"></div>
+                  </div>
+                  <span style="font: var(--md-label-small); color: var(--md-on-surface-variant);">38%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TESTIMONIALS — Social Proof
+       ============================================ -->
+  <section class="md-testimonials" id="testimonials">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Trusted by Teams</span>
+      <h2 class="md-section-title">Developers love Layer.</h2>
+      <p class="md-section-subtitle">Shipping faster with a design system that actually works.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="md-card md-card--elevated testimonial-card spotlight">
+        <div class="md-card__content">
+          <p class="testimonial-text">"Layer cut our component development time by 60%. The elevation system alone saved us weeks of visual QA."</p>
+          <div class="testimonial-author">
+            <div class="md-avatar md-avatar--small md-avatar--primary"><span class="material-icons-outlined" aria-hidden="true">person</span></div>
+            <div>
+              <span class="testimonial-name">Sarah Chen</span>
+              <span class="testimonial-role">Lead Engineer, Acme Corp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated testimonial-card spotlight">
+        <div class="md-card__content">
+          <p class="testimonial-text">"Finally, a Material library that respects accessibility out of the box. Our WCAG audit passed on the first try."</p>
+          <div class="testimonial-author">
+            <div class="md-avatar md-avatar--small md-avatar--secondary"><span class="material-icons-outlined" aria-hidden="true">person</span></div>
+            <div>
+              <span class="testimonial-name">Marcus Rivera</span>
+              <span class="testimonial-role">UX Director, Flowstate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated testimonial-card spotlight">
+        <div class="md-card__content">
+          <p class="testimonial-text">"The dynamic color system is incredible. We themed our entire product in an afternoon. Clients thought we hired a design agency."</p>
+          <div class="testimonial-author">
+            <div class="md-avatar md-avatar--small md-avatar--tertiary"><span class="material-icons-outlined" aria-hidden="true">person</span></div>
+            <div>
+              <span class="testimonial-name">Priya Sharma</span>
+              <span class="testimonial-role">CTO, Novabuild</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       PRICING
+       ============================================ -->
+  <section class="md-pricing" id="pricing">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Pricing</span>
+      <h2 class="md-section-title">Start free, scale when ready.</h2>
+      <p class="md-section-subtitle">No credit card required. Upgrade when your team needs more.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="md-card md-card--outlined spotlight">
+        <div class="md-card__content md-card__content--center">
+          <h3 class="md-card__title">Starter</h3>
+          <div class="pricing-amount"><span class="pricing-currency">$</span>0</div>
+          <span class="pricing-period">forever free</span>
+          <ul class="pricing-features">
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> 24 core components</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Light & dark themes</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Community support</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> MIT license</li>
+          </ul>
+          <button class="md-btn md-btn--outlined btn--full">Get Started</button>
+        </div>
+      </div>
+
+      <div class="md-card md-card--elevated md-card--featured spotlight">
+        <div class="md-card__content md-card__content--center">
+          <span class="md-badge md-badge--primary">Most Popular</span>
+          <h3 class="md-card__title">Professional</h3>
+          <div class="pricing-amount"><span class="pricing-currency">$</span>29</div>
+          <span class="pricing-period">per developer / month</span>
+          <ul class="pricing-features">
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> All 48+ components</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Dynamic color theming</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Figma design tokens</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Priority support</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Early access to new components</li>
+          </ul>
+          <button class="md-btn md-btn--filled btn--full">Choose Professional</button>
+        </div>
+      </div>
+
+      <div class="md-card md-card--outlined spotlight">
+        <div class="md-card__content md-card__content--center">
+          <h3 class="md-card__title">Enterprise</h3>
+          <div class="pricing-amount"><span class="pricing-currency">$</span>99</div>
+          <span class="pricing-period">per developer / month</span>
+          <ul class="pricing-features">
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Everything in Professional</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Custom elevation tokens</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> Dedicated support engineer</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> SLA guarantee</li>
+            <li><span class="material-icons-outlined" aria-hidden="true">check</span> On-premise deployment</li>
+          </ul>
+          <button class="md-btn md-btn--outlined btn--full">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FAQ
+       ============================================ -->
+  <section class="md-faq" id="faq">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">FAQ</span>
+      <h2 class="md-section-title">Common questions.</h2>
+      <p class="md-section-subtitle">Everything you need to know about getting started with Layer.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="md-card md-card--outlined faq-item">
+        <summary class="faq-question">
+          <span>Is Layer free to use?</span>
+          <span class="material-icons-outlined faq-icon" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes. Layer's Starter plan includes 24 core components under the MIT license. You can use them in personal and commercial projects with no restrictions. Upgrade to Professional for the full 48+ component library, dynamic color theming, and Figma design tokens.</p>
+        </div>
+      </details>
+
+      <details class="md-card md-card--outlined faq-item">
+        <summary class="faq-question">
+          <span>Does Layer work with React, Vue, or vanilla JS?</span>
+          <span class="material-icons-outlined faq-icon" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Layer ships as pure CSS design tokens and HTML component patterns. It works with any framework — React, Vue, Svelte, Angular, or vanilla JavaScript. We also provide framework-specific starter kits for React and Vue.</p>
+        </div>
+      </details>
+
+      <details class="md-card md-card--outlined faq-item">
+        <summary class="faq-question">
+          <span>How does the elevation system work?</span>
+          <span class="material-icons-outlined faq-icon" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Layer implements Material Design 3's elevation system with 10 levels (dp 0 through dp 24). Each level has a corresponding shadow that communicates visual hierarchy. Cards rest at dp 1, lift to dp 2 on hover, and dialogs float at dp 24. The system is fully customizable through CSS variables.</p>
+        </div>
+      </details>
+
+      <details class="md-card md-card--outlined faq-item">
+        <summary class="faq-question">
+          <span>Is Layer accessible?</span>
+          <span class="material-icons-outlined faq-icon" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes. Every component meets WCAG AA contrast requirements, supports full keyboard navigation, includes visible focus indicators, and respects prefers-reduced-motion. Screen reader compatibility is built into every interactive element.</p>
+        </div>
+      </details>
+
+      <details class="md-card md-card--outlined faq-item">
+        <summary class="faq-question">
+          <span>Can I customize the color theme?</span>
+          <span class="material-icons-outlined faq-icon" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. Layer uses CSS custom properties for every color token. Override them to match your brand, or use the built-in dynamic color system to generate a full palette from a single seed color. Dark mode is included and toggles automatically.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="md-final-cta">
+    <div class="md-final-cta__bg" aria-hidden="true">
+      <div class="md-final-cta__orb md-final-cta__orb--1"></div>
+      <div class="md-final-cta__orb md-final-cta__orb--2"></div>
+      <div class="md-final-cta__orb md-final-cta__orb--3"></div>
+    </div>
+    <div class="md-final-cta__inner">
+      <div class="md-final-cta__badge">
+        <span class="material-icons-outlined" aria-hidden="true">rocket_launch</span>
+        <span>Trusted by 2,400+ teams</span>
+      </div>
+      <h2 class="md-final-cta__title">Ready to ship<br>faster?</h2>
+      <p class="md-final-cta__sub">Start with the free tier. No credit card required.<br>Upgrade when your team needs more.</p>
+      <div class="md-final-cta__actions">
+        <a href="#pricing" class="md-btn md-btn--filled md-btn--lg">
+          <span class="material-icons-outlined" aria-hidden="true">arrow_forward</span>
+          Get Started Free
+        </a>
+        <a href="#contact" class="md-btn md-btn--outlined md-btn--lg">Talk to Sales</a>
+      </div>
+      <div class="md-final-cta__proof">
+        <div class="md-final-cta__proof-item">
+          <span class="material-icons-outlined" aria-hidden="true">check_circle</span>
+          <span>Free forever plan</span>
+        </div>
+        <div class="md-final-cta__proof-item">
+          <span class="material-icons-outlined" aria-hidden="true">check_circle</span>
+          <span>5-minute setup</span>
+        </div>
+        <div class="md-final-cta__proof-item">
+          <span class="material-icons-outlined" aria-hidden="true">check_circle</span>
+          <span>Cancel anytime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT FORM
+       ============================================ -->
+  <section class="md-contact" id="contact">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Contact</span>
+      <h2 class="md-section-title">Get in touch.</h2>
+      <p class="md-section-subtitle">Have questions about Layer? We'd love to hear from you.</p>
+    </div>
+
+    <div class="md-card md-card--elevated contact-card">
+      <form class="md-card__content" id="contactForm" novalidate>
+        <div class="md-field">
+          <input type="text" id="name" class="md-field__input" placeholder=" " required autocomplete="name">
+          <label for="name" class="md-field__label">Full Name</label>
+          <span class="md-field__support md-field__support--error">Please enter your name</span>
+        </div>
+        <div class="md-field">
+          <input type="email" id="email" class="md-field__input" placeholder=" " required autocomplete="email">
+          <label for="email" class="md-field__label">Email Address</label>
+          <span class="md-field__support md-field__support--error">Please enter a valid email</span>
+        </div>
+        <div class="md-field">
+          <label for="subject" style="display: block; font: var(--md-body-small); color: var(--md-on-surface-variant); margin-bottom: 6px; padding-left: 16px;">Subject</label>
+          <select id="subject" class="md-field__input" required style="padding-top: 0;">
+            <option value="" disabled selected>Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="enterprise">Enterprise Sales</option>
+            <option value="partnership">Partnership</option>
+          </select>
+        </div>
+        <div class="md-field">
+          <textarea id="message" class="md-field__input md-field__input--textarea" placeholder=" " rows="4" required></textarea>
+          <label for="message" class="md-field__label">Message</label>
+          <span class="md-field__support md-field__support--error">At least 10 characters</span>
+        </div>
+        <button type="submit" class="md-btn md-btn--filled md-btn--lg btn--full contact__submit">Send Message</button>
+        <div class="contact-success" id="contactSuccess" aria-live="polite">
+          <span class="material-icons-outlined" aria-hidden="true">check_circle</span>
+          Message sent successfully! We'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SNACKBAR DEMO
+       ============================================ -->
+  <section class="md-toast-demo">
+    <div class="md-section-header">
+      <span class="md-section-eyebrow">Feedback</span>
+      <h2 class="md-section-title">Snackbar notifications</h2>
+      <p class="md-section-subtitle">Material Design's feedback mechanism at dp 6 elevation.</p>
+    </div>
+    <div class="component-showcase__row">
+      <button class="md-btn md-btn--filled toast-trigger" data-type="success">
+        <span class="material-icons-outlined" aria-hidden="true">check_circle</span> Success
+      </button>
+      <button class="md-btn md-btn--error toast-trigger" data-type="error">
+        <span class="material-icons-outlined" aria-hidden="true">error</span> Error
+      </button>
+      <button class="md-btn md-btn--tonal toast-trigger" data-type="info">
+        <span class="material-icons-outlined" aria-hidden="true">info</span> Info
+      </button>
+    </div>
+  </section>
+
+  <div class="md-snackbar-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span class="material-icons-outlined" aria-hidden="true">keyboard_arrow_up</span>
+  </button>
+
+
+  <!-- ============================================
+       CONTROL PANEL
+       ============================================ -->
+  <div class="control-panel md-card md-card--elevated" id="controlPanel" role="region" aria-label="Material controls">
+    <button class="control-panel__toggle" id="controlToggle" aria-label="Toggle controls" aria-expanded="false">
+      <span class="material-icons-outlined" aria-hidden="true">tune</span>
+    </button>
+    <div class="control-panel__body" id="controlBody" aria-hidden="true">
+      <span class="control-panel__title">Customize Layer</span>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Corner Radius</span>
+          <span class="control-panel__value" id="radiusValue">16px</span>
+        </div>
+        <input type="range" id="radiusSlider" class="md-slider" min="0" max="28" value="16" step="1" aria-label="Corner radius">
+      </div>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Elevation Scale</span>
+          <span class="control-panel__value" id="elevationValue">1x</span>
+        </div>
+        <input type="range" id="elevationSlider" class="md-slider" min="0.5" max="2" value="1" step="0.1" aria-label="Elevation scale">
+      </div>
+
+      <div class="control-panel__control">
+        <div class="control-panel__row">
+          <span class="control-panel__label">Motion Speed</span>
+          <span class="control-panel__value" id="motionValue">1x</span>
+        </div>
+        <input type="range" id="motionSlider" class="md-slider" min="0.5" max="2" value="1" step="0.1" aria-label="Motion speed">
+      </div>
+
+      <div class="control-panel__presets">
+        <button class="md-preset md-preset--active" data-radius="16" data-elevation="1" data-motion="1">Default</button>
+        <button class="md-preset" data-radius="0" data-elevation="0.5" data-motion="0.5">Minimal</button>
+        <button class="md-preset" data-radius="28" data-elevation="1.5" data-motion="1.5">Expressive</button>
+        <button class="md-preset" data-radius="12" data-elevation="2" data-motion="2">Bold</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="md-footer">
+    <div class="md-footer__inner">
+      <div class="md-footer__brand">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect width="28" height="28" rx="8" fill="var(--md-primary)"/>
+          <path d="M8 10h12M8 14h8M8 18h10" stroke="var(--md-on-primary)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Layer</span>
+      </div>
+      <div class="md-footer__links">
+        <a href="#">Documentation</a>
+        <a href="#">GitHub</a>
+        <a href="#">Changelog</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <p class="md-footer__copy">&copy; 2026 Layer Design Systems, Inc. Built with mathematical precision.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

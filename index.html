@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Work — Rishikesh Sonawane</title>
+<meta name="description" content="Five concept projects by Rishikesh Sonawane: OCHRE, KEEL, ATELIER &amp; CO, LUMEN and LAYER. Each explores a different design language and interaction system.">
+<style>
+  :root {
+    --bg: #F6F3EE;
+    --ink: #1C1917;
+    --muted: #6B6258;
+    --line: #E3DDD2;
+    --accent: #A85D3F;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  header.site-head { padding: 64px 0 40px; }
+  .kicker {
+    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500; font-size: clamp(34px, 6vw, 64px);
+    line-height: 1.05; letter-spacing: -0.01em;
+  }
+  .lede {
+    margin-top: 20px; max-width: 560px; color: var(--muted);
+    font-size: 17px;
+  }
+
+  .count { display: block; font-size: 12px; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 8px; }
+
+  ul.projects { list-style: none; margin: 40px 0 0; border-top: 1px solid var(--line); }
+  ul.projects li { border-bottom: 1px solid var(--line); }
+  ul.projects a {
+    display: grid; grid-template-columns: 72px 1fr auto;
+    gap: 20px; align-items: baseline;
+    padding: 28px 4px; text-decoration: none; color: inherit;
+    transition: padding 0.25s ease, background 0.25s ease;
+  }
+  ul.projects a:hover { padding-left: 12px; background: #F0EAE0; }
+  .no { font-size: 13px; letter-spacing: 0.14em; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .proj-name { font-family: Georgia, "Times New Roman", serif; font-size: clamp(22px, 3.4vw, 34px); font-weight: 500; }
+  .proj-meta { display: block; font-size: 14px; color: var(--muted); margin-top: 4px; }
+  .arrow { font-size: 18px; color: var(--accent); align-self: center; transform: translateX(0); transition: transform 0.25s ease; }
+  ul.projects a:hover .arrow { transform: translateX(6px); }
+
+  footer.site-foot { padding: 56px 0 72px; color: var(--muted); font-size: 14px; }
+  footer.site-foot a { color: var(--accent); text-decoration: none; }
+  footer.site-foot a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    ul.projects a { grid-template-columns: 44px 1fr; gap: 12px; }
+    .arrow { display: none; }
+    header.site-head { padding: 40px 0 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    ul.projects a, .arrow { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <p class="kicker">Selected work · Concept projects</p>
+      <h1>Five projects.<br>Five design languages.</h1>
+      <p class="lede">A collection of concept projects by Rishikesh Sonawane, each exploring a different visual and interaction system — from handcrafted editorial to systematic interface design.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <ul class="projects">
+        <li>
+          <a href="./Bohemian/">
+            <span class="no">01</span>
+            <span>
+              <span class="proj-name">OCHRE</span>
+              <span class="proj-meta">Bohemian editorial · Natural dye &amp; handloom brand</span>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Bento-Grid/">
+            <span class="no">02</span>
+            <span>
+              <span class="proj-name">KEEL</span>
+              <span class="proj-meta">Bento grid · Deployment control plane</span>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Skeuo/">
+            <span class="no">03</span>
+            <span>
+              <span class="proj-name">ATELIER &amp; CO</span>
+              <span class="proj-meta">Skeuomorphic · Tactile luxury materials</span>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="./DarkMode-UI/">
+            <span class="no">04</span>
+            <span>
+              <span class="proj-name">LUMEN</span>
+              <span class="proj-meta">Premium dark UI · Analytics product</span>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Material-Design/">
+            <span class="no">05</span>
+            <span>
+              <span class="proj-name">LAYER</span>
+              <span class="proj-meta">Material Design 3 · Component library</span>
+            </span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>Designed &amp; developed by Rishikesh Sonawane. All projects are concept work.</p>
+      <p style="margin-top:6px"><a href="https://github.com/rishikesh-sonawane">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
