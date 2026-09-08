@@ -46,87 +46,87 @@ Not what template fits. Not what's trending. But what texture, rhythm, and mater
 ```
  ┌─────────────────────────────────────────────────────────────────┐
  │                                                                 │
- │   0 1   S T O N E                                              │
+ │   0 1   S T O N E                                               │
  │         Luxury Real Estate                                      │
- │         Next.js · TypeScript · Tailwind CSS v4 · Leaflet       │
+ │         Next.js · TypeScript · Tailwind CSS v4 · Leaflet        │
  │         "Built to endure. Designed to inspire."                 │
  │                                                                 │
- │   ◆ Quiet Luxury + Swiss Editorial                             │
- │   ◆ 5 European properties · 34 React components                │
+ │   ◆ Quiet Luxury + Swiss Editorial                              │
+ │   ◆ 5 European properties · 34 React components                 │
  │   ◆ Interactive SVG floor plans · Leaflet maps                  │
- │   ◆ Custom cursor · Noise overlay · Parallax hero              │
+ │   ◆ Custom cursor · Noise overlay · Parallax hero               │
  │                                                                 │
- │   → stone-residences.vercel.app                                │
+ │   → stone-residences.vercel.app                                 │
  │                                                                 │
  ├─────────────────────────────────────────────────────────────────┤
  │                                                                 │
- │   0 2   O C H R E                                              │
+ │   0 2   O C H R E                                               │
  │         Mediterranean Natural-Dye Brand                         │
  │         HTML5 · CSS3 · Canvas 2D API                            │
  │         "Cloth remembers the hands that make it."               │
  │                                                                 │
- │   ◆ Bohemian Editorial                                         │
+ │   ◆ Bohemian Editorial                                          │
  │   ◆ Every visual drawn at runtime via Canvas 2D                 │
  │   ◆ Interactive dye-bath selector · Floating botanicals         │
  │   ◆ Bilingual Spanish/English navigation                        │
  │                                                                 │
- │   → rishikesh-sonawane.github.io/web-designs/Bohemian/         │
+ │   → rishikesh-sonawane.github.io/web-designs/Bohemian/          │
  │                                                                 │
  ├─────────────────────────────────────────────────────────────────┤
  │                                                                 │
- │   0 3   K E E L                                                │
+ │   0 3   K E E L                                                 │
  │         Deployment Control Plane                                │
  │         HTML5 · CSS Grid · Canvas 2D API                        │
  │         "Production, kept steady."                              │
  │                                                                 │
- │   ◆ Bento Grid / Technical Minimalism                          │
+ │   ◆ Bento Grid / Technical Minimalism                           │
  │   ◆ 15+ grid cells with live data visualizations                │
  │   ◆ Deploy pipeline · SLO gauge · Service map                   │
  │   ◆ Dark mode toggle · Clipboard API color copy                 │
  │                                                                 │
- │   → rishikesh-sonawane.github.io/web-designs/Bento-Grid/       │
+ │   → rishikesh-sonawane.github.io/web-designs/Bento-Grid/        │
  │                                                                 │
  ├─────────────────────────────────────────────────────────────────┤
  │                                                                 │
- │   0 4   A T E L I E R  &  C O                                  │
+ │   0 4   A T E L I E R  &  C O                                   │
  │         Skeuomorphic Leather Goods                              │
  │         HTML5 · CSS3 · SVG Filters                              │
  │         "Materials you can feel."                               │
  │                                                                 │
- │   ◆ Skeuomorphic Tactile                                       │
+ │   ◆ Skeuomorphic Tactile                                        │
  │   ◆ 6 CSS-generated material textures — zero images             │
  │   ◆ Draggable control panel · Spotlight cursor                  │
  │   ◆ Physical button states · Chrome specular highlights         │
  │                                                                 │
- │   → rishikesh-sonawane.github.io/web-designs/Skeuo/            │
+ │   → rishikesh-sonawane.github.io/web-designs/Skeuo/             │
  │                                                                 │
  ├─────────────────────────────────────────────────────────────────┤
  │                                                                 │
- │   0 5   L U M E N                                              │
+ │   0 5   L U M E N                                               │
  │         Premium Dark Analytics                                  │
  │         HTML5 · CSS3 · Canvas 2D API                            │
  │         "Premium darkness for serious analytics."               │
  │                                                                 │
- │   ◆ Premium Dark / Atmospheric                                 │
+ │   ◆ Premium Dark / Atmospheric                                  │
  │   ◆ Cursor-following radial glow on feature cards               │
  │   ◆ Obsidian layer system · Light-pipe navigation               │
- │   ◆ Keycap buttons · Cosmic shadows · Telemetry ticker         │
+ │   ◆ Keycap buttons · Cosmic shadows · Telemetry ticker          │
  │                                                                 │
- │   → rishikesh-sonawane.github.io/web-designs/DarkMode-UI/      │
+ │   → rishikesh-sonawane.github.io/web-designs/DarkMode-UI/       │
  │                                                                 │
  ├─────────────────────────────────────────────────────────────────┤
  │                                                                 │
- │   0 6   L A Y E R                                              │
+ │   0 6   L A Y E R                                               │
  │         Material Design 3 Library                               │
  │         HTML5 · CSS3 · SVG                                      │
  │         "Components, systematically."                           │
  │                                                                 │
- │   ◆ Material Design 3 / Systematic                             │
- │   ◆ 398/412 CSS variables from token system                    │
+ │   ◆ Material Design 3 / Systematic                              │
+ │   ◆ 398/412 CSS variables from token system                     │
  │   ◆ SVG path morph chart · Material ripple effects              │
- │   ◆ 93 ARIA attributes · Floating control panel                │
+ │   ◆ 93 ARIA attributes · Floating control panel                 │
  │                                                                 │
- │   → rishikesh-sonawane.github.io/web-designs/Material-Design/  │
+ │   → rishikesh-sonawane.github.io/web-designs/Material-Design/   │
  │                                                                 │
  └─────────────────────────────────────────────────────────────────┘
 ```
