@@ -3,6 +3,48 @@
   "use strict";
 
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var isCoarse = window.matchMedia("(pointer: coarse)").matches;
+
+  /* ---------- Custom cursor ---------- */
+  if (!prefersReduced && !isCoarse) {
+    var dot = document.querySelector(".cursor-dot");
+    var ring = document.querySelector(".cursor-ring");
+    if (dot && ring) {
+      var mx = -100, my = -100;
+      var rx = -100, ry = -100;
+      document.addEventListener("mousemove", function (e) {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.left = mx + "px";
+        dot.style.top = my + "px";
+      });
+      (function loop() {
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + "px";
+        ring.style.top = ry + "px";
+        requestAnimationFrame(loop);
+      })();
+      var hoverEls = document.querySelectorAll("a, button, .work-item__media, input, textarea, select");
+      hoverEls.forEach(function (el) {
+        el.addEventListener("mouseenter", function () { ring.classList.add("is-hover"); });
+        el.addEventListener("mouseleave", function () { ring.classList.remove("is-hover"); });
+      });
+      document.addEventListener("mousedown", function () { ring.classList.add("is-click"); });
+      document.addEventListener("mouseup", function () { ring.classList.remove("is-click"); });
+    }
+  }
+
+  /* ---------- Page loader ---------- */
+  var loader = document.getElementById("pageLoader");
+  if (loader) {
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () { loader.remove(); }, 600);
+      }, 1400);
+    });
+  }
 
   /* ---------- Mobile nav ---------- */
   var toggle = document.getElementById("navToggle");
@@ -21,6 +63,79 @@
         toggle.setAttribute("aria-label", "Open menu");
       }
     });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && links.getAttribute("data-open") === "true") {
+        links.setAttribute("data-open", "false");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open menu");
+      }
+    });
+  }
+
+  /* ---------- Scroll progress bar ---------- */
+  var progressBar = document.querySelector(".scroll-progress__bar");
+  if (progressBar) {
+    window.addEventListener("scroll", function () {
+      var scrollTop = window.scrollY;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = scrollPercent + "%";
+    }, { passive: true });
+  }
+
+  /* ---------- Now Playing toggle ---------- */
+  var nowPlaying = document.getElementById("nowPlaying");
+  if (nowPlaying) {
+    nowPlaying.addEventListener("click", function () {
+      nowPlaying.classList.toggle("is-active");
+    });
+  }
+
+  /* ---------- Back to top ---------- */
+  var backToTop = document.getElementById("backToTop");
+  if (backToTop) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 600) {
+        backToTop.classList.add("is-visible");
+      } else {
+        backToTop.classList.remove("is-visible");
+      }
+    }, { passive: true });
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  /* ---------- Magnetic button ---------- */
+  var magneticBtns = document.querySelectorAll(".magnetic-btn");
+  if (magneticBtns.length && !prefersReduced) {
+    magneticBtns.forEach(function (btn) {
+      btn.addEventListener("mousemove", function (e) {
+        var rect = btn.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = "translate(" + (x * 0.15) + "px, " + (y * 0.15) + "px)";
+      });
+      btn.addEventListener("mouseleave", function () {
+        btn.style.transform = "translate(0, 0)";
+      });
+    });
+  }
+
+  /* ---------- Service card tilt ---------- */
+  var serviceCards = document.querySelectorAll(".service");
+  if (serviceCards.length && !prefersReduced) {
+    serviceCards.forEach(function (card) {
+      card.addEventListener("mousemove", function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = "perspective(800px) rotateY(" + (x * 5) + "deg) rotateX(" + (-y * 5) + "deg) translateY(-4px)";
+      });
+      card.addEventListener("mouseleave", function () {
+        card.style.transform = "";
+      });
+    });
   }
 
   /* ---------- Scroll reveal ---------- */
@@ -36,8 +151,30 @@
             io.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+      }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
       revealEls.forEach(function (el) { io.observe(el); });
+    }
+  }
+
+  /* ---------- Cookie consent ---------- */
+  var cookieBanner = document.getElementById("cookieConsent");
+  if (cookieBanner) {
+    var accepted = localStorage.getItem("cookie-accepted");
+    if (!accepted) {
+      setTimeout(function () { cookieBanner.classList.add("is-visible"); }, 2000);
+    }
+    var acceptBtn = cookieBanner.querySelector("[data-accept]");
+    if (acceptBtn) {
+      acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("cookie-accepted", "true");
+        cookieBanner.classList.remove("is-visible");
+      });
+    }
+    var dismissBtn = cookieBanner.querySelector("[data-dismiss]");
+    if (dismissBtn) {
+      dismissBtn.addEventListener("click", function () {
+        cookieBanner.classList.remove("is-visible");
+      });
     }
   }
 
@@ -45,9 +182,7 @@
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
-  /* ---------- Contact form ----------
-     Submits to the Formspree endpoint configured below (JSON POST).
-     Until an endpoint is set, falls back to opening a pre-filled email. */
+  /* ---------- Contact form ---------- */
   var FORM_ENDPOINT = "https://formspree.io/f/xljepkek";
   var CONTACT_EMAIL = "rishikeshsonawane1465@gmail.com";
   var form = document.getElementById("contactForm");
@@ -82,7 +217,6 @@
       }
 
       if (!FORM_ENDPOINT) {
-        // Honest fallback: open the visitor's email app with everything pre-filled.
         var subject = encodeURIComponent("Project enquiry from " + name);
         var body = encodeURIComponent(
           "Hi Rishikesh,\n\n" + message + "\n\n— " + name +
@@ -96,7 +230,6 @@
         return;
       }
 
-      // Real submission via Formspree
       var btnText = submitBtn ? submitBtn.textContent : "";
       if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Sending…"; }
       setStatus("Sending…");

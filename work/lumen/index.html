@@ -19,6 +19,18 @@
 <style>:root { --proj-accent: #C9A96E; }</style>
 </head>
 <body>
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Noise overlay -->
+<div class="noise-overlay" aria-hidden="true">
+  <svg width="100%" height="100%"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"></feTurbulence></filter><rect width="100%" height="100%" filter="url(#noise)"></rect></svg>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar"></div></div>
+
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-nav">
@@ -235,5 +247,21 @@
 </footer>
 
 <script src="../../script.js"></script>
+<!-- Now Playing -->
+<div class="now-playing is-active" id="nowPlaying" role="status" aria-label="Now playing: The Nights by Avicii">
+  <div class="now-playing__art"><div class="now-playing__art-inner"></div></div>
+  <div class="now-playing__info">
+    <span class="now-playing__title">The Nights</span>
+    <span class="now-playing__artist">Avicii</span>
+  </div>
+  <div class="now-playing__eq">
+    <div class="now-playing__bar"></div>
+    <div class="now-playing__bar"></div>
+    <div class="now-playing__bar"></div>
+    <div class="now-playing__bar"></div>
+    <div class="now-playing__bar"></div>
+  </div>
+</div>
+
 </body>
 </html>
