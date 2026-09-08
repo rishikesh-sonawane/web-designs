@@ -3,3 +3,5 @@ Design_Portfolio/
 
 # Backup / scratch artifacts
 *.bak
+.vercel
+.env*
