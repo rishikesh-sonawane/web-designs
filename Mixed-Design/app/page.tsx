@@ -48,9 +48,9 @@ const faqs = [
   },
 ];
 
-const featured = properties[0];
-const secondary = properties[1];
-const tertiary = properties[2];
+const featured = properties[2];
+const secondary = properties[0];
+const tertiary = properties[1];
 
 export default function Home() {
   return (
