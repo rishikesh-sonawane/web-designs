@@ -28,7 +28,7 @@ export default function Footer() {
               <ul className="site-footer__nav">
                 <li><a href="https://github.com/rishikesh-sonawane" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/rishikeshsonawane1465/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/another.polymath._/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.instagram.com/rishidigital.co/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
               </ul>
             </div>
           </div>
